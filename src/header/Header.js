@@ -36,7 +36,9 @@ function Header() {
         </div>
         <div className="header-right-menu-side-language-choice-placeholder-position">
           <button className="button-language" type="button" name="button">English</button>
-          <FontAwesomeIcon icon={faFlagUsa} color="#009e7f" />
+          <div className="header-right-menu-side-language-choice-placeholder-position-flag">
+            <FontAwesomeIcon icon={faFlagUsa} color="#009e7f" />
+          </div>
         </div>
         <div className="header-right-menu-side-join-button">
           <button className="button-join" type="button" name="button">Join</button>
