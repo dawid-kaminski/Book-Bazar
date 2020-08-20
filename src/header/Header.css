@@ -28,13 +28,13 @@
 }
 
 .header-left-menu-choice-placeholder-position {
-  width: 12.3%;
+  width: 25.7%;
   height: 100%;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-left: 39px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .header-left-menu-choice-placeholder {
@@ -74,7 +74,8 @@
   color: rgb(0, 158, 127);
   display: flex;
 }
-.header-left-menu-choice-placeholder-angle-down{
+
+.header-left-menu-choice-placeholder-angle-down {
   width: 33%;
   height: 45%;
   margin: 0px;
@@ -85,12 +86,11 @@
 
 .header-right-menu-side {
   height: 100%;
-  width: 76.7%;
+  width: 64%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  align-items:
 }
 
 .header-right-menu-side-offer {
@@ -136,7 +136,7 @@
 .header-right-menu-side-language-choice-placeholder-position-flag {
   display: flex;
   position: relative;
-  right: 10px;
+  right: 75px;
 }
 
 .button-language {
@@ -155,14 +155,23 @@
   border-image: initial;
   border-radius: 6px;
   outline: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(0, 158, 127);
+  text-decoration: none;
 }
 
 .header-right-menu-side-join-button {
   height: 100%;
-  width: 11.5%;
-  margin-left: 20px;
+  width: 13%;
+  margin-left: 5px;
   padding: 0;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
