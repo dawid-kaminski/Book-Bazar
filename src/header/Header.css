@@ -125,7 +125,7 @@
 
 .header-right-menu-side-language-choice-placeholder-position {
   height: 100%;
-  width: 10%;
+  width: 16.5%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -141,7 +141,7 @@
 
 .button-language {
   width: 72%;
-  height: 38px;
+  height: 40px;
   display: flex;
   padding-right: 10px;
   justify-content: flex-end;

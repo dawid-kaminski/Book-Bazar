@@ -1,5 +1,10 @@
 .book-list-item {
+  display: flex;
   height: 100%;
-  width: 20%;
+  min-width: 20%;
   border: 1px solid blue;
+}
+
+.book-list {
+  max-width: 100%;
 }

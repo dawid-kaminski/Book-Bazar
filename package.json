@@ -1,5 +1,8 @@
 {
   "name": "my-app",
+  "author": "Dawid Kamiński",
+  "description": "",
+  "license": "",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
