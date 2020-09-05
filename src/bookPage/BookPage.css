@@ -2,7 +2,60 @@
   height: 100%;
   width: 100%;
   display: flex;;
-  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+}
+
+.book-page-layout {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.book-page-picture-info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;;
   flex-direction: row;
-  background-color: blue;
+  background-color: inherit;
+}
+
+.book-page-picture {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  display: flex;;
+  flex-direction: column;
+  background-color: inherit;
+}
+
+.book-page-picture-return-button {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: inherit;
+}
+
+.book-page-picture-return-button button {
+  padding: 0px 15px 0px 15px;
+  margin: 0;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(241, 241, 241);
+  color: rgb(119, 121, 140);
+}
+
+.book-page-picture-styling {
+
+}
+
+.book-page-info {
+
 }
