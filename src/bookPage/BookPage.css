@@ -29,8 +29,8 @@
 .book-page-picture {
   width: 50%;
   height: 130%;
+  padding: 60px;
   margin: 0;
-  padding: 0;
   display: flex;;
   flex-direction: column;
   background-color: inherit;
@@ -44,14 +44,23 @@
   background-color: inherit;
 }
 
+.button-arrow {
+  margin-right: 5px;
+}
+
 .book-page-picture-return-button button {
-  padding: 0px 15px 0px 15px;
-  margin: 0;
+  height: 30px;
+  padding: 0px 15px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  color: #77798c;
+  font-family: Lato, sans-serif;
   font-weight: 700;
+  font-size: 14px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(241, 241, 241);
-  color: rgb(119, 121, 140);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
 }
 
 .book-page-picture-styling {
