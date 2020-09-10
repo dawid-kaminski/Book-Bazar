@@ -20,7 +20,7 @@ function BookPage() {
               </button>
             </div>
             <div className="book-page-picture-styling">
-              <img src="https://siedmiorog.pl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/proces_prz_1_.jpg" height="450px" width="450px" />
+              <img src="https://siedmiorog.pl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/proces_prz_1_.jpg" height="450px" width="300px" />
             </div>
           </div>
           <div className="book-page-info">

@@ -31,6 +31,7 @@
   height: 130%;
   padding: 60px;
   margin: 0;
+  border-right: 1px solid rgb(241, 241, 241);
   display: flex;;
   flex-direction: column;
   background-color: inherit;
@@ -70,6 +71,7 @@
 .book-page-info {
   width: 50%;
   height: 130%;
+  border-left: 1px solid rgb(241, 241, 241);
   margin: 0;
   padding: 0;
   display: flex;;
