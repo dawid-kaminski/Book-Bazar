@@ -24,7 +24,9 @@ function BookPage() {
             </div>
           </div>
           <div className="book-page-info">
-
+            <div className="book-page-info-title">
+              Proces
+            </div>
           </div>
         </div>
       </div>
