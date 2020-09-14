@@ -73,7 +73,7 @@
   height: 130%;
   border-left: 1px solid rgb(241, 241, 241);
   margin: 0;
-  padding: 0;
+  padding: 55px 60px;
   display: flex;;
   flex-direction: column;
   background-color: inherit;
@@ -83,7 +83,84 @@
 .book-page-info-title {
   height: auto;
   width: 100%;
-  padding-top: 60px;
+  margin-bottom: 15px;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
+}
+
+.book-page-info-author {
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+}
+
+.feather-icon {
+  margin-right: 10px;
+}
+
+.book-page-info-description {
+  height: auto;
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(66, 69, 97);
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+}
+.book-page-info-description a {
+  color: #009e7f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.book-page-info-details {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.book-page-info-category {
+  width: 200px;
+  padding: 0;
   margin: 0;
   display: flex;
+  flex-shrink: 0;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(66, 69, 97);
+}
+
+.book-page-info-category-reply {
+
+}
+
+.book-page-info-button {
+
+}
+
+.button-left {
+  
+}
+
+.button-right {
+
 }
