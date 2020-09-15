@@ -75,6 +75,45 @@ function BookPage() {
               <div className="book-page-info-category-reply">
                 Meta
               </div>
+              <div className="book-page-info-category">
+                Publisher
+              </div>
+              <div className="book-page-info-category-reply">
+                Princenton Public Library
+              </div>
+              <div className="book-page-info-category">
+                ISBN
+              </div>
+              <div className="book-page-info-category-reply">
+                978-8-8929-3288-3
+              </div>
+              <div className="book-page-info-category">
+                Edition
+              </div>
+              <div className="book-page-info-category-reply">
+                New Edition, 2013
+              </div>
+              <div className="book-page-info-category">
+                Languages
+              </div>
+              <div className="book-page-info-category-reply">
+                Polish
+              </div>
+              <div className="book-page-info-category">
+                Country
+              </div>
+              <div className="book-page-info-category-reply">
+                Poland
+              </div>
+              <div className="book-page-info-category">
+                Number of reader
+              </div>
+              <div className="book-page-info-category-reply">
+                30000
+              </div>
+            </div>
+            <div className="book-page-info-price">
+              $25
             </div>
             <div className="book-page-info-button">
               <button className="button-left" onClick={onClickButtonLeft}>-</button>{count}
