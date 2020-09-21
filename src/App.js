@@ -10,12 +10,12 @@ import BookPage from './bookPage/BookPage.js';
 function App() {
   return (
     <div className="App">
-{/*   <Header></Header>
+      <Header></Header>
       <Navbar></Navbar>
       <Article></Article>
       <Footer></Footer>
-      <BookList></BookList> */}
-      <BookPage></BookPage>
+      <BookList></BookList>
+{/*   <BookPage></BookPage>  */}
     </div>
   );
 }

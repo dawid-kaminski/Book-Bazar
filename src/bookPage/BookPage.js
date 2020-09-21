@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './BookPage.css';
 import Header from '../header/Header.js';
+import BookList from '../bookList/BookList.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,6 +28,10 @@ function BookPage() {
   var onClickButtonRight=()=>{
     setCount(count + 1)
   }
+
+  // if (index == 2) {
+  //   set index 0;
+  // }
 
   return (
     <div className="book-page">
@@ -66,7 +71,7 @@ function BookPage() {
               musi jedynie pozostać do dyspozycji sądu. Pomimo pozorów
               normalności w życiu K. następuje seria absurdalnych,
               niezrozumiałych wydarzeń.
-              <a href="#">Read More</a>
+              <a href="#bookinfo">Read More</a>
             </div>
             <div className="book-page-info-details">
               <div className="book-page-info-product-details">
@@ -116,8 +121,10 @@ function BookPage() {
               $25
             </div>
             <div className="book-page-info-button">
-              <button className="button-left" onClick={onClickButtonLeft}>-</button>{count}
-              <button className="button-right" onClick={onClickButtonRight}>+</button>
+              <button className="button-sign" onClick={onClickButtonLeft}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+              </button>{count}
+              <button className="button-sign" onClick={onClickButtonRight}>+</button>
             </div>
             <div className="book-page-info-category">
               Novel
@@ -125,7 +132,7 @@ function BookPage() {
           </div>
         </div>
       </div>
-      <div className="about-the-book-section">
+      <div id="bookinfo" className="about-the-book-section">
         <div className="about-the-book">
           About The Book
           <div className="about-the-book-description">
@@ -168,6 +175,7 @@ function BookPage() {
           </div>
         </div>
       </div>
+      <BookList></BookList>
     </div>
   );
 }
