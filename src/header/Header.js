@@ -8,11 +8,11 @@ import { faCoffee, faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@for
 function Header() {
   return (
     <div className="header">
-      <div className="pickbazarlogo">
+      <div className="header__pickbazarlogo">
         <img src={Logo} />
       </div>
-      <div className="header-left-menu-choice-placeholder-position">
-        <div className="header-left-menu-choice-placeholder">
+      <div className="header__left-menu">
+        <div className="header__choice-placeholder">
             <div className="header-left-menu-choice-placeholder-book-icon">
               <FontAwesomeIcon icon={faBook} color="#009e7f" />
             </div>

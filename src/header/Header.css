@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.pickbazarlogo {
+.header__pickbazarlogo {
   height: 100%;
   width: 10.8%;
   padding: 0;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.pickbazarlogo img {
+.header__pickbazarlogo img {
   font-size: 26px;
   font-weight: bold;
   cursor: pointer;
@@ -29,7 +29,7 @@
   margin: 0;
 }
 
-.header-left-menu-choice-placeholder-position {
+.header__left-menu {
   width: 25.4%;
   height: 100%;
   display: flex;
@@ -39,7 +39,7 @@
   justify-content: flex-start;
 }
 
-.header-left-menu-choice-placeholder {
+.header__choice-placeholder {
   width: 148px;
   height: 35px;
   padding: 0;
