@@ -5,7 +5,8 @@ import Card from './GiftVoucher.png';
 function GiftVoucher() {
   return (
     <div class="gift-voucher">
-      <img src={Card} />
+      <img src={Card}
+      style={{width: 443, height: 206.21}}/>
     </div>
   );
 }
