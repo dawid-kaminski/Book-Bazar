@@ -1,12 +1,12 @@
 import React from 'react';
-import './CouponSavings.css';
+import '../Article.css';
 import Card from './CouponSavings.png';
 
 function CouponSavings() {
   return (
-    <div class="coupon-savings">
+    <div class="article__coupon-content">
       <img src={Card}
-      style={{width: 443, height: 206.21}}/>
+      style={{width: "100%", height: "100%"}}/>
     </div>
   );
 }
