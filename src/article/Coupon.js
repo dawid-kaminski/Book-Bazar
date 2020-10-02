@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import CouponSavings from '../article/couponSavings/CouponSavings.js';
 import FreeDelivery from '../article/freeDelivery/FreeDelivery.js';
 import GiftVoucher from '../article/giftVoucher/GiftVoucher.js';
+import './Article.css';
 
 function Coupon(props) {
   return (

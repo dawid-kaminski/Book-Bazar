@@ -15,12 +15,10 @@ function Article() {
     else {
       setActiveIndex(activeIndex - 1)
     }
-    console.log("left")
   }
 
   var onClickButtonRight=()=>{
     setActiveIndex(activeIndex + 1)
-    console.log("right")
   }
 
   return (

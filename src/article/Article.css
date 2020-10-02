@@ -22,6 +22,10 @@
 
 }
 
+.article__coupon {
+  padding: 0px 15px;
+}
+
 .article__coupon-content {
   height: 80%;
   width: 100%;
