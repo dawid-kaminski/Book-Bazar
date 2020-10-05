@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  /* height: 12%; */
   height: 80px;
   background-color: rgb(250, 250, 250);
   padding: 0;
@@ -12,12 +11,12 @@
 
 .header__pickbazarlogo {
   height: 100%;
-  width: 10.8%;
+  width: 11.2%;
   padding: 0;
   margin: 0;
   display: flex;
   font-size: 26px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -30,11 +29,10 @@
 }
 
 .header__left-menu {
-  width: 25.4%;
+  width: 10.4%;
   height: 100%;
   display: flex;
-  padding: 0;
-  margin-left: 43px;
+  padding-left: 10px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -88,7 +86,7 @@
 
 .header-right-menu-side {
   height: 100%;
-  width: 64%;
+  width: 78.4%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -97,7 +95,7 @@
 
 .header-right-menu-side-offer {
   height: 100%;
-  width: 13.5%;
+  width: 10.5%;
   margin: 0;
   padding: 0;
   font-family: Lato, sans-serif;
@@ -127,7 +125,7 @@
 
 .header-right-menu-side-language-choice-placeholder-position {
   height: 100%;
-  width: 16.5%;
+  width: 11.5%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -138,11 +136,11 @@
 .header-right-menu-side-language-choice-placeholder-position-flag {
   display: flex;
   position: relative;
-  right: 79px;
+  right: 85px;
 }
 
 .button-language {
-  width: 59%;
+  width: 72%;
   height: 40px;
   display: flex;
   padding-right: 10px;
@@ -169,8 +167,7 @@
 
 .header-right-menu-side-join-button {
   height: 100%;
-  width: 11.5%;
-  margin-left: 5px;
+  width: 7.5%;
   padding: 0;
   display: flex;
   justify-content: flex-start;

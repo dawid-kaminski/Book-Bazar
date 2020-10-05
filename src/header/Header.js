@@ -13,9 +13,9 @@ function Header() {
       </div>
       <div className="header__left-menu">
         <div className="header__choice-placeholder">
-            <div className="header-left-menu-choice-placeholder-book-icon">
-              <FontAwesomeIcon icon={faBook} color="#009e7f" />
-            </div>
+          <div className="header-left-menu-choice-placeholder-book-icon">
+            <FontAwesomeIcon icon={faBook} color="#009e7f" />
+          </div>
           <div className="header-left-menu-choice-placeholder-book-button">
             Book
           </div>
