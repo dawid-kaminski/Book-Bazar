@@ -13,10 +13,10 @@ function Header() {
       </div>
       <div className="header__left-menu">
         <div className="header__choice-placeholder">
-          <div className="header-left-menu-choice-placeholder-book-icon">
+          <div className="header__book-icon">
             <FontAwesomeIcon icon={faBook} color="#009e7f" />
           </div>
-          <div className="header-left-menu-choice-placeholder-book-button">
+          <div className="header__book-button">
             Book
           </div>
           <div className="header-left-menu-choice-placeholder-angle-down">

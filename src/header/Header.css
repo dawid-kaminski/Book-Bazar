@@ -53,7 +53,7 @@
   outline: 0px;
 }
 
-.header-left-menu-choice-placeholder-book-icon {
+.header__book-icon {
   width: 20%;
   height: 41%;
   padding: 0;
@@ -62,7 +62,7 @@
   display: flex;
 }
 
-.header-left-menu-choice-placeholder-book-button {
+.header__book-button {
   width: 36%;
   height: 45%;
   margin: 0;
