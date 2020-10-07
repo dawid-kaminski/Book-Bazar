@@ -35,7 +35,6 @@ function BookPage() {
 
   return (
     <div className="book-page">
-      <Header></Header>
       <div className="book-page-layout">
         <div className="book-page-picture-info">
           <div className="book-page-picture">
