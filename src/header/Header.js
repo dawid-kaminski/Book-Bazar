@@ -3,7 +3,6 @@ import './Header.css';
 import Logo from './pickbazarlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@fortawesome/free-solid-svg-icons'
-// import { question-circle, faBook } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
   return (
