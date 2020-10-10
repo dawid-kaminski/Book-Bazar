@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/">
             <Navbar></Navbar>
             <Article></Article>
-            <Footer></Footer>
+{/*             <Footer></Footer> */}
             <BookList></BookList>
           </Route>
           <Route exact path="/bookpage">
