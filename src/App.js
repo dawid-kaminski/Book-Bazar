@@ -25,7 +25,7 @@ function App() {
 {/*             <Footer></Footer> */}
             <BookList></BookList>
           </Route>
-          <Route exact path="/bookpage">
+          <Route exact path="/book/:bookId">
             <BookPage></BookPage>
           </Route>
         </Switch>

@@ -8,7 +8,7 @@ function BookList() {
     <div className="book-list">
       {
         getAllBooks().map((book)=>{
-          return <BookListItem title={book.title} img={book.img} ></BookListItem>
+          return <BookListItem title={book.title} img={book.img} id={book.id} ></BookListItem>
         })
       }
     </div>

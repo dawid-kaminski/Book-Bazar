@@ -4,6 +4,13 @@ import Header from '../header/Header.js';
 import BookList from '../bookList/BookList.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
+import { getBookById } from '../bookData.js';
 
 // function useState(defaultValue) {
 //   const value = defaultValue
@@ -15,9 +22,23 @@ import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
 
 function BookPage() {
 
+  let { bookId } = useParams();
+
+  const book = getBookById(bookId);
+  console.log(book)
+
+// let url = useParams()
+// console.log(url.bookId)
+// let bookId = url.bookId
+
   const [count, setCount] = useState(1)
 // const count = useState(1)[0]
 // const setCount = useState(1)[1]
+
+// const useStateTable = useState(1)
+// const count = useStateTable[0]
+// const setCount = useState[1]
+// useState zwraca tablice, której zerowym elementem jest zmienna count, która będzie przechowywać naszą wartość (liczbę), a drugim elementem tej tablicy jest funkcja, która będzie zmieniać tą wartość.
 
   var onClickButtonLeft=()=>{
     if (count > 0) {
@@ -47,12 +68,12 @@ function BookPage() {
               </button>
             </div>
             <div className="book-page-picture-styling">
-              <img src="https://siedmiorog.pl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/proces_prz_1_.jpg" height="450px" width="300px" />
+              <img src={book.img} height="450px" width="300px" />
             </div>
           </div>
           <div className="book-page-info">
             <div className="book-page-info-title">
-              Proces
+              {book.title}
             </div>
             <div className="book-page-info-author">
               <div className="feather-icon">

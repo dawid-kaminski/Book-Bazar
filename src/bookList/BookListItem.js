@@ -8,9 +8,9 @@ function BookListItem(props) {
   const history= useHistory()
 
   var onClickBook=()=>{
-    console.log(props.title)
+    console.log(props)
     console.log(history)
-    history.push("/bookpage")
+    history.push(`/book/${props.id}`)
   }
 
   return (
