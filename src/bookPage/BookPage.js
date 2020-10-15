@@ -49,11 +49,7 @@ function BookPage() {
   var onClickButtonRight=()=>{
     setCount(count + 1)
   }
-
-  // if (index == 2) {
-  //   set index 0;
-  // }
-
+  
   return (
     <div className="book-page">
       <div className="book-page-layout">
