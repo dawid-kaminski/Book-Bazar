@@ -6,6 +6,7 @@ import Article from './article/Article.js';
 import BookList from './bookList/BookList.js';
 import Footer from './footer/Footer.js';
 import BookPage from './bookPage/BookPage.js';
+import BookNavbar from './BookNavbar/BookNavbar.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,14 +17,19 @@ import {
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Header></Header>
         <Switch>
           <Route exact path="/">
-            <Navbar></Navbar>
-            <Article></Article>
-{/*             <Footer></Footer> */}
-            <BookList></BookList>
+            <div className="app__body">
+              <Navbar></Navbar>
+              <Article></Article>
+{/*           <Footer></Footer> */}
+              <div className="app__book-list">
+                <BookNavbar></BookNavbar>
+                <BookList></BookList>
+              </div>
+            </div>
           </Route>
           <Route exact path="/book/:bookId">
             <BookPage></BookPage>
