@@ -21,8 +21,8 @@ function App() {
         <Header></Header>
         <Switch>
           <Route exact path="/">
-            <div className="app__body">
               <Navbar></Navbar>
+                          <div className="app__body">
               <Article></Article>
 {/*           <Footer></Footer> */}
               <div className="app__book-list">
