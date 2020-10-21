@@ -3,7 +3,7 @@ import './BookGenre.css';
 
 function BookGenre(props) {
   return (
-    <div className="bookGenre">
+    <div className="book-genre">
       {props.name}
     </div>
   );
