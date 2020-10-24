@@ -1,7 +1,7 @@
 .book-genre {
   height: 50px;
   width: 100%;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
