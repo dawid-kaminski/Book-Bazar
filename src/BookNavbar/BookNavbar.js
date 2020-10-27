@@ -5,7 +5,7 @@ import BookGenre from './BookGenre/BookGenre.js';
 const data = [
   {
     value: "children_literature",
-    name: "Children Literature"
+    name: "Children Literature",
   },
   {
     value: "comic_book",
@@ -36,6 +36,10 @@ const data = [
     name: "Thriller"
   },
 ]
+
+export function getAllData() {
+  return data;
+}
 
 function BookNavbar() {
   return (

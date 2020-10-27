@@ -1,11 +1,20 @@
 import React from 'react';
 import './BookGenre.css';
-
-var onClickBook=()=>{
-  console.log("props")
-}
+import {
+  useHistory
+} from "react-router-dom";
+import data from '../BookNavbar.js';
+import { getAllData } from '../BookNavbar.js';
 
 function BookGenre(props) {
+
+  const history = useHistory()
+
+  var onClickBook=()=>{
+    console.log(props.name)
+    history.push(`/?genre=${props.value}`)
+  }
+
   return (
     <div className="book-genre" onClick={onClickBook}>
       {props.name}
