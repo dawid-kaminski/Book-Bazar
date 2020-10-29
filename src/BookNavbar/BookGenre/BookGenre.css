@@ -1,9 +1,10 @@
 .book-genre {
   height: 50px;
   width: 100%;
+  padding: 0px 20px 0px 50px;
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 }
