@@ -8,7 +8,7 @@ function Article() {
 
   const [activeIndex, setActiveIndex] = useState(2);
 
-  var onClickButtonLeft=()=>{
+  const onClickButtonLeft=()=>{
     if (activeIndex <= 2) {
       setActiveIndex(1000)
     }
@@ -17,7 +17,7 @@ function Article() {
     }
   }
 
-  var onClickButtonRight=()=>{
+  const onClickButtonRight=()=>{
     setActiveIndex(activeIndex + 1)
   }
 

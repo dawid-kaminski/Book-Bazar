@@ -5,13 +5,14 @@ import { useLocation } from "react-router-dom";
 import { getAllBooks } from '../bookData.js';
 
 function useQuery() {
+  console.log(new URLSearchParams(useLocation().search).get("genre"))
   return new URLSearchParams(useLocation().search);
 }
 
 function BookList() {
 
   const query = useQuery();
-
+  console.log(query)
   const genre = query.get("genre")
 
   return (
