@@ -36,7 +36,6 @@ function Article() {
       </div>
     </div>
   );
-
 }
 
 export default Article;
