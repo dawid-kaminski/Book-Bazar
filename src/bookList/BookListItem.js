@@ -14,6 +14,8 @@ function BookListItem(props) {
     history.push(`/book/${props.id}`)
   }
 
+console.log(props.title)
+
   return (
       <div className="book-list-item" onClick={onClickBook}>
         <img src={props.img} height="180px" width="140px" />
