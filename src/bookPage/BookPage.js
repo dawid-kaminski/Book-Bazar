@@ -49,10 +49,10 @@ function BookPage() {
   var onClickButtonRight=()=>{
     setCount(count + 1)
   }
-  
+
   return (
     <div className="book-page">
-      <div className="book-page-layout">
+      <div className="book-page__layout">
         <div className="book-page-picture-info">
           <div className="book-page-picture">
             <div className="book-page-picture-return-button">
