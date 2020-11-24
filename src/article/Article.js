@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Article.css';
 import Coupon from './Coupon.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +7,11 @@ import { faArrowLeft, faAngleLeft, faAngleRight, faFeatherAlt } from '@fortaweso
 function Article() {
 
   const [activeIndex, setActiveIndex] = useState(2);
+
+  useEffect (() => {
+    console.log("render")
+  })
+// useEffect użyte dla testu
 
   const onClickButtonLeft=()=>{
     if (activeIndex <= 2) {

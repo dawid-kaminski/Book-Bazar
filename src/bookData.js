@@ -19,9 +19,9 @@ const books = [
   },
   {
     id: "3",
-    title: "Listonosz",
-    img: "https://cdn-lubimyczytac.pl/upload/books/247000/247064/357033-352x500.jpg",
-    types: ["novel"]
+    title: "The Girl on the Train",
+    img: "https://images-na.ssl-images-amazon.com/images/I/41fMCU2vRPL._SX326_BO1,204,203,200_.jpg",
+    types: ["thriller"]
   },
   {
     id: "4",
@@ -37,9 +37,9 @@ const books = [
   },
   {
     id: "6",
-    title: "Obrona Sokratesa",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShb9SH5Y3KOLCEXK4s-12w5jzzlXA-Bu7JN2ekk7F9ZwdJ__C63Kg5IB31sw&usqp=CAc",
-    types: ["novel"]
+    title: "Flowers for Algernon",
+    img: "https://upload.wikimedia.org/wikipedia/en/e/ea/FlowersForAlgernon.jpg",
+    types: ["science_fiction"]
   },
   {
     id: "7",
@@ -55,9 +55,9 @@ const books = [
   },
   {
     id: "9",
-    title: "Małe życie",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgQurjLnrtjY-7uSDTkrOnvTgC1mnPvKjNh2SY4j9VLup86CG3mBTUnzwaNyAZq1HtruHkLG8&usqp=CAc",
-    types: ["novel"]
+    title: "The Silence of the Lambs",
+    img: "https://images-na.ssl-images-amazon.com/images/I/61xCUSb1dHL.jpg",
+    types: ["thriller"]
   },
   {
     id: "10",
@@ -67,15 +67,15 @@ const books = [
   },
   {
     id: "11",
-    title: "Dziennik Geniusza",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRPmyKNuDSBqrKW0UQa4ygyQDjAoZfz-3mv3cBnhgumkjqAQlw4OLD-yGZD3fp_5rmSCUqldF4&usqp=CAc",
-    types: ["novel"]
+    title: "Green Lantern",
+    img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeLAcdMilOJ3aX5ASxOvhrm8uJGepEcC7b8An678FDD1Yb7QDJ",
+    types: ["comic_book"]
   },
   {
     id: "12",
-    title: "Wstęp do psychoanalizy",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjF7Bvn50Zh6hyGXMxYB6iXhxv_gIJKWEWfoPlniH_rE_FV3MGP5RCarhFXYNySeG1GT29QEXi&usqp=CAc",
-    types: ["children_literature", "fantasy"]
+    title: "Batman",
+    img: "https://image.ceneostatic.pl/data/products/15692708/i-batman-zabojczy-zart.jpg",
+    types: ["children_literature", "comic_book"]
   },
   {
     id: "13",
@@ -85,9 +85,9 @@ const books = [
   },
   {
     id: "14",
-    title: "Sztuka Wojny",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvqQXbOzzuT1alza7YSgnsJUMcIts3UeJ62ef-8ZBPn6oOunubL6y6hIEEnw&usqp=CAc",
-    types: ["novel"]
+    title: "It",
+    img: "https://emp-scs-uat.img-osdw.pl/img-p/1/kipwn/d576082e/std/2bc-452/799392495o.jpg",
+    types: ["horror"]
   },
   {
     id: "15",
@@ -111,13 +111,13 @@ const books = [
     id: "18",
     title: "Mechaniczna Pomarańcza",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZFVQOeN6iBRsE0xpUpkz0lZY6erJpIm2PEiEJGwY0eMNPZK4Gio0YfdeZnQ&usqp=CAc",
-    types: ["novel", "fantasy", "thriller"]
+    types: ["science_fiction", "fantasy", "thriller"]
   },
   {
     id: "19",
-    title: "Pozostawieni",
-    img: "https://images-na.ssl-images-amazon.com/images/I/41g9+AbZrkL._SX327_BO1,204,203,200_.jpg",
-    types: ["novel"]
+    title: "Dracula",
+    img: "https://media.libris.to/jacket/09257725_dracula.jpg",
+    types: ["horror"]
   },
 ]
 
