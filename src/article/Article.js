@@ -8,11 +8,6 @@ function Article() {
 
   const [activeIndex, setActiveIndex] = useState(2);
 
-  useEffect (() => {
-    console.log("render")
-  })
-// useEffect użyte dla testu
-
   const onClickButtonLeft=()=>{
     if (activeIndex <= 2) {
       setActiveIndex(1000)
