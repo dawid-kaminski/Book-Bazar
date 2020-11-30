@@ -11,6 +11,7 @@ function Navbar() {
         Get your favorite books from our wide range of books.
       </div>
       <div className="navbar-search-bar">
+        <input type="search" name="search" placeholder="Search your products from here" />
       </div>
     </div>
   );
