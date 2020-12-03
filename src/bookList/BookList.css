@@ -1,7 +1,7 @@
 .book-list {
   height: 300px;
   width: 80%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;;
   flex-wrap: wrap;
   flex-direction: row;
