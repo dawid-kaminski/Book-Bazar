@@ -1,5 +1,6 @@
 .book-list-item {
   display: flex;
+  flex-direction: column;
   height: 100%;
   min-width: 20%;
 }
