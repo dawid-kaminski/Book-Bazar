@@ -3,6 +3,7 @@ import {
   useHistory
 } from "react-router-dom";
 import './BookListItem.css';
+import { getAllBooks } from '../bookData.js';
 
 function BookListItem(props) {
 
@@ -21,6 +22,7 @@ console.log(props.title)
         <img src={props.img} height="180px" width="140px" />
         <div className="book-title">
           {props.title}
+          {props.author}
         </div>
       </div>
     );

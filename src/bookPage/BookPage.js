@@ -75,18 +75,10 @@ function BookPage() {
               <div className="feather-icon">
                 <FontAwesomeIcon icon={faFeatherAlt} color="##0D1136" />
               </div>
-              Franz Kafka
+              {book.author}
             </div>
             <div className="book-page-info-description">
-              Głównym bohaterem powieści jest Józef K., kawaler,
-              prokurent bankowy, mieszkający w nieznanym z nazwy mieście,
-              określanym jako „stolica”. Pewnego dnia budzi się w swoim
-              mieszkaniu i zostaje zaskoczony najściem urzędników, którzy
-              oświadczają mu, że zostaje aresztowany, mimo iż nic złego
-              nie popełnił. Mimo aresztowania może prowadzić normalne życie,
-              musi jedynie pozostać do dyspozycji sądu. Pomimo pozorów
-              normalności w życiu K. następuje seria absurdalnych,
-              niezrozumiałych wydarzeń.
+              {book.description}
               <a href="#bookinfo">Read More</a>
             </div>
             <div className="book-page-info-details">

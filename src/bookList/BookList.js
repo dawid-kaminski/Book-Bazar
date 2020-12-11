@@ -24,7 +24,7 @@ function BookList() {
           }
           return book.types.includes(genre)
         }).map((book)=>{
-          return <BookListItem title={book.title} img={book.img} id={book.id} ></BookListItem>
+          return <BookListItem title={book.title} img={book.img} id={book.id} author={book.author} ></BookListItem>
         })
       }
     </div>
