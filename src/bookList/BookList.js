@@ -5,6 +5,9 @@ import { useLocation } from "react-router-dom";
 import { getAllBooks } from '../bookData.js';
 
 function useQuery() {
+
+console.log(new URLSearchParams(useLocation().search))
+
   console.log(new URLSearchParams(useLocation().search).get("genre"))
   return new URLSearchParams(useLocation().search);
 }
