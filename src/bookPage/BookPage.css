@@ -15,7 +15,7 @@
   background-color: inherit;
 }
 
-.book-page-picture-info {
+.book-page__picture-info {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -25,7 +25,7 @@
   background-color: inherit;
 }
 
-.book-page-picture {
+.book-page__picture {
   width: 50%;
   height: 100%;
   padding: 55px 60px;
@@ -36,7 +36,7 @@
   background-color: inherit;
 }
 
-.book-page-picture-return-button {
+.book-page__return-button {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@
   margin-right: 5px;
 }
 
-.book-page-picture-return-button button {
+.book-page__return-button button {
   height: 30px;
   padding: 0px 15px;
   background-color: #ffffff;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.book-page-picture-styling {
+.book-page__picture-styling {
   height: 90.5%;
   width: 100%;
   margin: 0;
@@ -73,11 +73,11 @@
   align-items: center;
 }
 
-.book-page-picture-styling img {
+.book-page__picture-styling img {
 
 }
 
-.book-page-info {
+.book-page__info {
   width: 50%;
   height: 100%;
   border-left: 1px solid rgb(241, 241, 241);
@@ -88,7 +88,7 @@
   background-color: inherit;
 }
 
-.book-page-info-title {
+.book-page__title {
   height: auto;
   width: 100%;
   margin-bottom: 15px;
@@ -100,7 +100,7 @@
   line-height: 1.2;
 }
 
-.book-page-info-author {
+.book-page__author {
   height: auto;
   width: 100%;
   margin-bottom: 30px;
@@ -116,7 +116,7 @@
   margin-right: 10px;
 }
 
-.book-page-info-description {
+.book-page__description {
   height: auto;
   width: 100%;
   margin-bottom: 40px;
@@ -130,13 +130,13 @@
   display: flex;
   flex-direction: column;
 }
-.book-page-info-description a {
+.book-page__description a {
   color: #009e7f;
   font-weight: 700;
   text-decoration: none;
 }
 
-.book-page-info-details {
+.book-page__details {
   width: 100%;
   padding: 0;
   margin-bottom: 40px;
@@ -145,7 +145,7 @@
   flex-wrap: wrap;
 }
 
-.book-page-info-product-details {
+.book-page__product-details {
   width: 200px;
   padding: 0;
   margin-bottom: 15px;
@@ -157,7 +157,7 @@
   color: rgb(66, 69, 97);
 }
 
-.book-page-info-product-details-reply {
+.book-page__book-detail {
   width: calc(100% - 200px);
   padding: 0;
   margin-bottom: 15px;

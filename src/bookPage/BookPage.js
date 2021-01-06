@@ -53,9 +53,9 @@ function BookPage() {
   return (
     <div className="book-page">
       <div className="book-page__layout">
-        <div className="book-page-picture-info">
-          <div className="book-page-picture">
-            <div className="book-page-picture-return-button">
+        <div className="book-page__picture-info">
+          <div className="book-page__picture">
+            <div className="book-page__return-button">
               <button type="button">
                 <div className="button-arrow">
                   <FontAwesomeIcon icon={faArrowLeft} color="#77798C" />
@@ -63,65 +63,65 @@ function BookPage() {
                 Back
               </button>
             </div>
-            <div className="book-page-picture-styling">
+            <div className="book-page__picture-styling">
               <img src={book.img} height="450px" width="300px" />
             </div>
           </div>
-          <div className="book-page-info">
-            <div className="book-page-info-title">
+          <div className="book-page__info">
+            <div className="book-page-__title">
               {book.title}
             </div>
-            <div className="book-page-info-author">
+            <div className="book-page__author">
               <div className="feather-icon">
                 <FontAwesomeIcon icon={faFeatherAlt} color="##0D1136" />
               </div>
               {book.author}
             </div>
-            <div className="book-page-info-description">
+            <div className="book-page__description">
               {book.description}
               <a href="#bookinfo">Read More</a>
             </div>
-            <div className="book-page-info-details">
-              <div className="book-page-info-product-details">
+            <div className="book-page__details">
+              <div className="book-page__product-details">
                 __typename
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 Meta
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 Publisher
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 Princenton Public Library
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 ISBN
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 978-8-8929-3288-3
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 Edition
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 New Edition, 2013
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 Languages
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 Polish
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 Country
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 Poland
               </div>
-              <div className="book-page-info-product-details">
+              <div className="book-page__product-details">
                 Number of reader
               </div>
-              <div className="book-page-info-product-details-reply">
+              <div className="book-page__book-detail">
                 30000
               </div>
             </div>
