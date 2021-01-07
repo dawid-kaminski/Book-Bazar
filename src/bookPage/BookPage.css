@@ -169,7 +169,7 @@
   color: rgb(66, 69, 97);
 }
 
-.book-page-info-price {
+.book-page__info-price {
   display: flex;
   -webkit-box-align: center;
   align-items: center;

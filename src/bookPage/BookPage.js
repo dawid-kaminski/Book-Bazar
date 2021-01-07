@@ -125,7 +125,7 @@ function BookPage() {
                 30000
               </div>
             </div>
-            <div className="book-page-info-price">
+            <div className="book-page__info-price">
               $25
             </div>
             <div className="book-page-info-button">
