@@ -134,7 +134,7 @@ function BookPage() {
               </button>{count}
               <button className="button-sign" onClick={onClickButtonRight}>+</button>
             </div>
-            <div className="book-page-info-category">
+            <div className="book-page__info-category">
               Novel
             </div>
           </div>
