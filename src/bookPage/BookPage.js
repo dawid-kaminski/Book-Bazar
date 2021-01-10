@@ -140,7 +140,7 @@ function BookPage() {
           </div>
         </div>
       </div>
-      <div id="bookinfo" className="about-the-book-section">
+      <div id="bookinfo" className="book-page__book-section">
         <div className="about-the-book">
           About The Book
           <div className="about-the-book-description">
