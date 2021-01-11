@@ -2,7 +2,7 @@ import React from 'react';
 import './BookList.css';
 import BookListItem from './BookListItem.js';
 import { useLocation } from "react-router-dom";
-import { getAllBooks } from '../bookData.js';
+import { useSelector } from "react-redux";
 
 function useQuery() {
 
@@ -13,6 +13,8 @@ console.log(new URLSearchParams(useLocation().search))
 }
 
 function BookList() {
+  const booklistStore = useSelector((state)=>state).booklist
+  console.log(booklistStore)
 
   const query = useQuery();
   console.log(query)
@@ -21,7 +23,7 @@ function BookList() {
   return (
     <div className="book-list">
       {
-        getAllBooks().filter(book=>{
+        booklistStore.filter(book=>{
           if(genre === null){
             return true
           }
