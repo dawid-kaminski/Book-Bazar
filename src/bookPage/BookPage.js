@@ -143,7 +143,7 @@ function BookPage() {
       <div id="bookinfo" className="book-page__book-section">
         <div className="about-the-book">
           About The Book
-          <div className="about-the-book-description">
+          <div className="book-page__description">
             Głównym bohaterem powieści jest Józef K., kawaler, prokurent
             bankowy, mieszkający w nieznanym z nazwy mieście, określanym jako
             „stolica”. Pewnego dnia budzi się w swoim mieszkaniu i zostaje
@@ -163,7 +163,7 @@ function BookPage() {
             niepełne i niespójne.
           </div>
         </div>
-        <div className="about-the-author">
+        <div className="book-page__author">
           About The Author
           <div className="book-page-info-author-bottom">
             <div className="feather-icon">

@@ -263,7 +263,7 @@
   line-height: 1.2;
 }
 
-.about-the-book-description {
+.book-page__description {
   margin-top: 20px;
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -272,7 +272,7 @@
   line-height: 2;
 }
 
-.about-the-author {
+.book-page__author {
   margin-bottom: 20px;
   display: flex;
   text-align: left;
