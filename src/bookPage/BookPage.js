@@ -165,7 +165,7 @@ function BookPage() {
         </div>
         <div className="book-page__author">
           About The Author
-          <div className="book-page-info-author-bottom">
+          <div className="book-page__author--bottom">
             <div className="feather-icon">
               <FontAwesomeIcon icon={faFeatherAlt} color="##0D1136" />
             </div>

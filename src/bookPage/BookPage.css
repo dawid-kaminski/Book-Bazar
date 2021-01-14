@@ -285,7 +285,7 @@
   line-height: 1.2;
 }
 
-.book-page-info-author-bottom {
+.book-page__author--bottom {
   height: auto;
   width: 100%;
   margin: 20px 0px;
