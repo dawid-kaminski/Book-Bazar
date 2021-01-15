@@ -171,7 +171,7 @@ function BookPage() {
             </div>
             Franz Kafka
           </div>
-          <div className="about-the-author-description">
+          <div className="book-page__author-description">
              niemieckojęzyczny pisarz pochodzenia żydowskiego, przez całe życie
              związany z Pragą. W swoich powieściach stworzył model sytuacji
              zwanej sytuacją kafkowską i określanej w języku niemieckim za
