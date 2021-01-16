@@ -141,7 +141,7 @@ function BookPage() {
         </div>
       </div>
       <div id="bookinfo" className="book-page__book-section">
-        <div className="about-the-book">
+        <div className="book-description">
           About The Book
           <div className="book-page__description">
             Głównym bohaterem powieści jest Józef K., kawaler, prokurent
