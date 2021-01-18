@@ -32,6 +32,11 @@ function BookList() {
           return <BookListItem title={book.title} img={book.img} id={book.id} author={book.author} ></BookListItem>
         })
       }
+      <button type="button">
+        <div className="button-div">
+          Load More
+        </div>
+      </button>
     </div>
     );
 }
