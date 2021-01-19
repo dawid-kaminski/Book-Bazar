@@ -1,13 +1,19 @@
 .book-list {
   height: 300px;
-  width: 80%;
+  width: 100%;
   /* border: 1px solid red; */
   display: flex;;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.button-div {
+.button-load-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-load-more button {
   font-size: 14px;
   padding: 0px 15px;
   font-weight: 700;

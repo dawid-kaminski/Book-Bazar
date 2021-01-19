@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import './BookList.css';
 import BookListItem from './BookListItem.js';
 import { useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { loadMoreBooks } from "../ducks/booklist"
 
 function useQuery() {
 
@@ -14,16 +15,25 @@ console.log(new URLSearchParams(useLocation().search))
 
 function BookList() {
   const booklistStore = useSelector((state)=>state).booklist
+  const dispatch = useDispatch()
   console.log(booklistStore)
 
   const query = useQuery();
   console.log(query)
   const genre = query.get("genre")
 
+  const onClick = useCallback(
+  () => {
+    dispatch(loadMoreBooks({amount: 10}));
+  },
+  [],
+);
+
+
   return (
     <div className="book-list">
       {
-        booklistStore.filter(book=>{
+        booklistStore.list.filter(book=>{
           if(genre === null){
             return true
           }
@@ -32,11 +42,11 @@ function BookList() {
           return <BookListItem title={book.title} img={book.img} id={book.id} author={book.author} ></BookListItem>
         })
       }
-      <button type="button">
-        <div className="button-div">
-          Load More
-        </div>
-      </button>
+      <div className="button-load-more">
+        <button type="button" onClick={onClick}>
+            Load More
+        </button>
+      </div>
     </div>
     );
 }
