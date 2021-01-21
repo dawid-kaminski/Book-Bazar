@@ -4,7 +4,7 @@ import { getAllBooks } from "../bookData.js";
 const booklistSlice = createSlice({
   name: 'booklist',
   initialState: {
-    list: getAllBooks().slice(0, 10),
+    list: getAllBooks().slice(0, 20),
   },
   reducers: {
     loadMoreBooks(state, action) {
