@@ -3,7 +3,6 @@ import {
   useHistory
 } from "react-router-dom";
 import './BookListItem.css';
-import { getAllBooks } from '../bookData.js';
 
 function BookListItem(props) {
 

@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useMemo} from 'react';
 import './BookList.css';
 import BookListItem from './BookListItem.js';
 import { useLocation } from "react-router-dom";
@@ -29,6 +29,9 @@ function BookList() {
   [],
 );
 
+const GetAllBooksRender = React.memo(({title, img, id, author}) => {
+  return <BookListItem title={title} img={img} id={id} author={author} ></BookListItem>  
+}, [])
 
   return (
     <div className="book-list">
@@ -39,7 +42,7 @@ function BookList() {
           }
           return book.types.includes(genre)
         }).map((book)=>{
-          return <BookListItem title={book.title} img={book.img} id={book.id} author={book.author} ></BookListItem>
+          return <GetAllBooksRender title={book.title} author={book.author} id={book.id} img={book.img}></GetAllBooksRender>
         })
       }
       <div className="button-load-more">
