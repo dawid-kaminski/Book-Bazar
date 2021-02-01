@@ -19,9 +19,9 @@ console.log(props.title)
   return (
       <div className="book-list-item" onClick={onClickBook}>
         <img src={props.img} height="180px" width="140px" />
-        <div className="book-title">
-          {props.title}
-          {props.author}
+        <div className="book">
+          <div className="book-title">{props.title}</div>
+          <div className="book-author">{props.author}</div>
         </div>
       </div>
     );
