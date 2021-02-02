@@ -34,21 +34,23 @@ const GetAllBooksRender = React.memo(({title, img, id, author}) => {
 }, [])
 
   return (
-    <div className="book-list">
-      {
-        booklistStore.list.filter(book=>{
-          if(genre === null){
-            return true
-          }
-          return book.types.includes(genre)
-        }).map((book)=>{
-          return <GetAllBooksRender title={book.title} author={book.author} id={book.id} img={book.img}></GetAllBooksRender>
-        })
-      }
-      <div className="button-load-more">
-        <button type="button" onClick={onClick}>
-            Load More
-        </button>
+    <div className="book-list-parent">
+      <div className="book-list">
+        {
+          booklistStore.list.filter(book=>{
+            if(genre === null){
+              return true
+            }
+            return book.types.includes(genre)
+          }).map((book)=>{
+            return <GetAllBooksRender title={book.title} author={book.author} id={book.id} img={book.img}></GetAllBooksRender>
+          })
+        }
+        <div className="button-load-more">
+          <button type="button" onClick={onClick}>
+              Load More
+          </button>
+        </div>
       </div>
     </div>
     );

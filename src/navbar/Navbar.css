@@ -43,6 +43,7 @@
 
 .navbar__search-bar {
   height: 48%;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   -webkit-box-align: center;

@@ -4,6 +4,10 @@ import BookGenre from './BookGenre/BookGenre.js';
 
 const data = [
   {
+    value: "all",
+    name: "All",
+  },
+  {
     value: "children_literature",
     name: "Children Literature",
   },

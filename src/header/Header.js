@@ -6,7 +6,7 @@ import { faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@fortawesome/f
 
 function Header() {
   return (
-    <div className="header">
+    <div className={true === true ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo">
         <img src={Logo} />
       </div>
@@ -23,6 +23,10 @@ function Header() {
           </div>
         </div>
       </div>
+      {/*<div className={true === true ? 'visible-searchbar' : 'invisible-searchbar' } >
+
+
+      </div> */}
       <div className="header__right-menu">
         <div className="header__offer">
           Offer

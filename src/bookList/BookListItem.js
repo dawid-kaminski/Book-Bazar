@@ -17,14 +17,14 @@ function BookListItem(props) {
 console.log(props.title)
 
   return (
-      <div className="book-list-item" onClick={onClickBook}>
-        <img src={props.img} height="180px" width="140px" />
-        <div className="book">
-          <div className="book-title">{props.title}</div>
-          <div className="book-author">{props.author}</div>
-        </div>
+    <div className="book-list-item" onClick={onClickBook}>
+      <div className="book-list-item__img"><img src={props.img} height="180px" width="140px" /></div>
+      <div className="book">
+        <div className="book-title">{props.title}</div>
+        <div className="book-author">{props.author}</div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default BookListItem;

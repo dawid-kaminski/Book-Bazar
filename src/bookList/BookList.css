@@ -1,10 +1,21 @@
-.book-list {
-  height: 300px;
+.book-list-parent {
+  height: 100%;
   width: 100%;
-  /* border: 1px solid red; */
+  padding: 0px 20px;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.book-list {
+  height: 100%;
+  width: 97%;
+  background-color: brown;
   display: flex;;
   flex-wrap: wrap;
   flex-direction: row;
+  border-radius: 6px 0px 0px 6px;
+  overflow-y: scroll;
 }
 
 .button-load-more {

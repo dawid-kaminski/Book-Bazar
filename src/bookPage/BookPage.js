@@ -68,7 +68,7 @@ function BookPage() {
             </div>
           </div>
           <div className="book-page__info">
-            <div className="book-page-__title">
+            <div className="book-page__title">
               {book.title}
             </div>
             <div className="book-page__author">
@@ -163,7 +163,7 @@ function BookPage() {
             niepełne i niespójne.
           </div>
         </div>
-        <div className="book-page__author">
+        <div className="book-page__about">
           About The Author
           <div className="book-page__author--bottom">
             <div className="feather-icon">
@@ -182,8 +182,10 @@ function BookPage() {
              literackiego świata Kafki.
           </div>
         </div>
+        <div className="book-page__related">Related items
+        </div>
       </div>
-      <BookList></BookList>
+      <div className="book-page__related-books"><BookList></BookList></div>
     </div>
   );
 }
