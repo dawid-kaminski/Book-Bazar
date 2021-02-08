@@ -1,10 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Header.css';
 import Logo from './pickbazarlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
+
+//   useEffect(() => {
+//   document.addEventListener('scroll', () => {
+//     if(window.scrollY > 400 && window.scrollY < 402) {
+//  // setFixedHeader(true)
+// }
+//   });
+//  return () => {document.removeEventListener('scroll')}
+// }, [])
+
+  var y = document.scrollY
+
+ document.addEventListener('scroll', ()=> {
+    console.log('scrolled!');
+  });
+
+  const [FixedHeader, setFixedHeader] = useState(false);
+
   return (
     <div className={true === true ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo">
