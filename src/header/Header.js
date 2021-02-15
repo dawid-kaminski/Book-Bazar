@@ -6,25 +6,25 @@ import { faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@fortawesome/f
 
 function Header() {
 
-//   useEffect(() => {
-//   document.addEventListener('scroll', () => {
-//     if(window.scrollY > 400 && window.scrollY < 402) {
-//  // setFixedHeader(true)
-// }
-//   });
-//  return () => {document.removeEventListener('scroll')}
-// }, [])
+  const [fixedHeader, setFixedHeader] = useState(false);
 
-  var y = document.scrollY
-
- document.addEventListener('scroll', ()=> {
-    console.log('scrolled!');
-  });
-
-  const [FixedHeader, setFixedHeader] = useState(false);
+  useEffect(() => {
+    document.addEventListener('scroll', (event) => {
+      // console.log(event.target.getBoundingClientRect())
+      if(window.scrollY > 400 && window.scrollY < 500) {
+        setFixedHeader(true)
+        console.log("true")
+      } 
+      if(window.scrollY < 400 && window.scrollY > 300) { 
+        setFixedHeader(false)
+        console.log("false")
+      }
+    });
+    return () => {document.removeEventListener('scroll')}
+  }, [])
 
   return (
-    <div className={true === true ? 'header-fixed' : 'header' } >
+    <div className={fixedHeader === true ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo">
         <img src={Logo} />
       </div>
@@ -41,10 +41,10 @@ function Header() {
           </div>
         </div>
       </div>
-      {/*<div className={true === true ? 'visible-searchbar' : 'invisible-searchbar' } >
+      <div className={fixedHeader === true ? 'visible-searchbar' : 'invisible-searchbar' } >
 
 
-      </div> */}
+      </div>
       <div className="header__right-menu">
         <div className="header__offer">
           Offer
@@ -62,7 +62,7 @@ function Header() {
           </div>
         </div>
         <div className="header__button-join">
-          <button className="button-join" type="button" name="button">Join</button>
+         <button className="button-join" type="button" name="button">Join</button>
         </div>
       </div>
     </div>

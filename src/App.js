@@ -7,6 +7,7 @@ import BookList from './bookList/BookList.js';
 import Footer from './footer/Footer.js';
 import BookPage from './bookPage/BookPage.js';
 import BookNavbar from './BookNavbar/BookNavbar.js';
+import YourOrder from './yourOrder/yourorder.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,13 +19,14 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header></Header>
+ {/*       <YourOrder></YourOrder>   */}
+      <Header></Header>
         <Switch>
           <Route exact path="/">
             <Navbar></Navbar>
             <div className="app__body">
               <Article></Article>
-{/*           <Footer></Footer> */}
+{/*          <Footer></Footer> */}
               <div className="app__book-list">
                 <BookNavbar></BookNavbar>
                 <BookList></BookList>
