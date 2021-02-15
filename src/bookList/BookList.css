@@ -9,9 +9,10 @@
 
 .book-list {
   height: 100%;
-  width: 97%;
-  background-color: brown;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
   display: flex;;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   border-radius: 6px 0px 0px 6px;
@@ -19,9 +20,11 @@
 }
 
 .button-load-more {
+  height: 20%;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .button-load-more button {

@@ -1,5 +1,6 @@
 .bookNavbar {
+  padding-top: 35px;
   height: auto;
-  width: 18.5%;
-  background-color: red;
+  width: 23%;
+  background-color: rgb(255, 255, 255);
 }
