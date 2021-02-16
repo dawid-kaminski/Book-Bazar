@@ -26,7 +26,6 @@ function App() {
             <Navbar></Navbar>
             <div className="app__body">
               <Article></Article>
-{/*          <Footer></Footer> */}
               <div className="app__book-list">
                 <BookNavbar></BookNavbar>
                 <BookList></BookList>
