@@ -28,7 +28,7 @@
 .book {
   height: 15%;
   width: 100%;
-  padding: 0px;
+  padding-bottom: 40px;
   margin: 0;
   display: flex;
   flex-direction: column;

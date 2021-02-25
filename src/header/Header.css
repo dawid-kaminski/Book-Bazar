@@ -12,7 +12,7 @@
 .header-fixed {
   width: 100%;
   height: 80px;
-  background-color: red;
+  background-color: white;
   padding: 0;
   margin: 0;
   display: flex;
@@ -103,16 +103,50 @@
   justify-content: flex-end;
 }
 
+.header__visible-searchbar {
+  height: 100%;
+  width: 61.5%;
+  padding: 0;
+  margin: 0;
+}
+
+.header__invisible-searchbar {
+  display: none;
+}
+
+.header__search-bar-container {
+  height: 100%;
+  width: 97.5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__search-bar {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.header__search-bar input {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  color: rgb(119, 121, 140);
+  background-color: rgb(250, 250, 250);
+}
+
 .header__offer {
   height: 100%;
-  width: 10.5%;
+  width: 7%;
   margin: 0;
   padding: 0;
   font-family: Lato, sans-serif;
   font-size: 15px;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -177,7 +211,7 @@
 
 .header__button-join {
   height: 100%;
-  width: 7.5%;
+  width: 8.5%;
   padding: 0;
   display: flex;
   justify-content: flex-start;

@@ -4,7 +4,6 @@ import Header from './header/Header.js';
 import Navbar from './navbar/Navbar.js';
 import Article from './article/Article.js';
 import BookList from './bookList/BookList.js';
-import Footer from './footer/Footer.js';
 import BookPage from './bookPage/BookPage.js';
 import BookNavbar from './BookNavbar/BookNavbar.js';
 import YourOrder from './yourOrder/yourorder.js';

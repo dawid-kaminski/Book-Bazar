@@ -41,11 +41,14 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className={fixedHeader === true ? 'visible-searchbar' : 'invisible-searchbar' } >
-
-
-      </div>
       <div className="header__right-menu">
+        <div className={fixedHeader === true ? 'header__visible-searchbar' : 'header__invisible-searchbar' } >
+          <div className="header__search-bar-container">
+            <div className="header__search-bar">
+              <input type="search" name="search" placeholder="Search your products from here" />
+            </div>
+          </div>
+        </div>
         <div className="header__offer">
           Offer
         </div>
