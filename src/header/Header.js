@@ -2,29 +2,37 @@ import React, {useState, useEffect} from 'react';
 import './Header.css';
 import Logo from './pickbazarlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faQuestionCircle, faFlagUsa, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faQuestionCircle, faFlagUsa, faAngleDown, faSearch } from '@fortawesome/free-solid-svg-icons'
+import LogInPopUp from '../logInPopUp/LogInPopUp.js';
 
-function Header() {
+function Header(props) {
 
-  const [fixedHeader, setFixedHeader] = useState(false);
+  const [isFixedHeader, setIsFixedHeader] = useState(false);
+
+  const [isLogInPopUpOpen, setIsLogInPopUpOpen] = useState(false);
+
+  const onClickJoinButton = () => {
+    console.log(props.setIsLogInPopUpOpen(true))
+  }
 
   useEffect(() => {
-    document.addEventListener('scroll', (event) => {
+    const listener = (event) => {
       // console.log(event.target.getBoundingClientRect())
-      if(window.scrollY > 400 && window.scrollY < 500) {
-        setFixedHeader(true)
+      if(window.scrollY > 400 && isFixedHeader === false ) {
+        setIsFixedHeader(true)
         console.log("true")
       } 
-      if(window.scrollY < 400 && window.scrollY > 300) { 
-        setFixedHeader(false)
+      if(window.scrollY < 400 && isFixedHeader === true ) { 
+        setIsFixedHeader(false)
         console.log("false")
       }
-    });
-    return () => {document.removeEventListener('scroll')}
-  }, [])
+    }
+    document.addEventListener('scroll', listener );
+    return () => {document.removeEventListener('scroll', listener)}
+  }, [isFixedHeader])
 
   return (
-    <div className={fixedHeader === true ? 'header-fixed' : 'header' } >
+    <div className={isFixedHeader === true ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo">
         <img src={Logo} />
       </div>
@@ -42,9 +50,14 @@ function Header() {
         </div>
       </div>
       <div className="header__right-menu">
-        <div className={fixedHeader === true ? 'header__visible-searchbar' : 'header__invisible-searchbar' } >
+        <div className={isFixedHeader === true ? 'header__visible-searchbar' : 'header__invisible-searchbar' } >
           <div className="header__search-bar-container">
             <div className="header__search-bar">
+              <div className="header__search-icon-placeholder">
+                <div className="header__search-icon">
+                  <FontAwesomeIcon icon={faSearch} color="black" size="1.2x"/>
+                </div>
+              </div>
               <input type="search" name="search" placeholder="Search your products from here" />
             </div>
           </div>
@@ -65,7 +78,7 @@ function Header() {
           </div>
         </div>
         <div className="header__button-join">
-         <button className="button-join" type="button" name="button">Join</button>
+         <button className="button-join" type="button" name="button" onClick={onClickJoinButton} >Join</button>
         </div>
       </div>
     </div>

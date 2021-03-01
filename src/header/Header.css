@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
 }
 
@@ -18,6 +18,7 @@
   display: flex;
   position: fixed;
   align-items: center;
+  z-index: 100;
 }
 .header__pickbazarlogo {
   height: 100%;
@@ -126,6 +127,25 @@
   height: 60%;
   width: 100%;
   display: flex;
+  background-color: rgb(250, 250, 250);
+  border-radius: 6px;
+  border: 0.1px solid rgb(241, 241, 241);
+}
+
+.header__search-icon-placeholder {
+  height: 100%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__search-icon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__search-bar input {

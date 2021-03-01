@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './header/Header.js';
 import Navbar from './navbar/Navbar.js';
@@ -7,6 +7,7 @@ import BookList from './bookList/BookList.js';
 import BookPage from './bookPage/BookPage.js';
 import BookNavbar from './BookNavbar/BookNavbar.js';
 import YourOrder from './yourOrder/yourorder.js';
+import LogInPopUp from './logInPopUp/LogInPopUp.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,13 +16,17 @@ import {
 } from "react-router-dom";
 
 function App() {
+  
+  const [isLogInPopUpOpen, setIsLogInPopUpOpen] = useState(false);
+
   return (
     <Router>
       <div className="app">
  {/*       <YourOrder></YourOrder>   */}
-      <Header></Header>
+      <Header setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></Header>
         <Switch>
           <Route exact path="/">
+            {isLogInPopUpOpen === true ? <LogInPopUp></LogInPopUp> : null }
             <Navbar></Navbar>
             <div className="app__body">
               <Article></Article>
