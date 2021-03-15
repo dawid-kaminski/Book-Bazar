@@ -1,11 +1,27 @@
 import React from 'react';
 import './LogInPopUp.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGoogle, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { fasFacebook, faFacebookSquare, faGoogle, faSearch } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
-function LogInPopUp() {
+function LogInPopUp(props) {
+
+  const onClickJoinButton = () => {
+    props.setIsLogInPopUpOpen(false)
+    console.log(props)
+  }
+
   return (
     <div className="loginpopup">
+      <div className="loginpopup__close" onClick={onClickJoinButton}>
+        <FontAwesomeIcon icon={faFacebook} color="#009e7f" />
+      </div>
       <div className="loginpopup__form">
         <div className="loginpopup__welcome">
           Welcome Back

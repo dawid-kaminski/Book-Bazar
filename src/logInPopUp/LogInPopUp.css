@@ -10,12 +10,22 @@
   align-items: center;
 }
 
+.loginpopup__close {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  right: 0;
+}
+
 .loginpopup__form {
   height: 80%;
   width: 30%;
   background-color: rgb(255, 255, 255);
   opacity: initial;
   display: flex;
+  z-index: 999;
   flex-direction: column;
   overflow: auto;
   border-radius: 3px 3px 0px 0px;

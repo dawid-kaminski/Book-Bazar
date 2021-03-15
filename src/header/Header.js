@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import './Header.css';
 import Logo from './pickbazarlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,13 +7,13 @@ import { faBook, faQuestionCircle, faFlagUsa, faAngleDown, faSearch } from '@for
 import LogInPopUp from '../logInPopUp/LogInPopUp.js';
 
 function Header(props) {
+  const location = useLocation()
 
   const [isFixedHeader, setIsFixedHeader] = useState(false);
 
-  const [isLogInPopUpOpen, setIsLogInPopUpOpen] = useState(false);
-
   const onClickJoinButton = () => {
-    console.log(props.setIsLogInPopUpOpen(true))
+    props.setIsLogInPopUpOpen(true)
+    console.log(props)
   }
 
   useEffect(() => {
@@ -30,9 +31,10 @@ function Header(props) {
     document.addEventListener('scroll', listener );
     return () => {document.removeEventListener('scroll', listener)}
   }, [isFixedHeader])
+  console.log(location.pathname === "/checkout")
 
   return (
-    <div className={isFixedHeader === true ? 'header-fixed' : 'header' } >
+    <div className={(isFixedHeader === true || location.pathname === "/checkout") ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo">
         <img src={Logo} />
       </div>
@@ -50,7 +52,7 @@ function Header(props) {
         </div>
       </div>
       <div className="header__right-menu">
-        <div className={isFixedHeader === true ? 'header__visible-searchbar' : 'header__invisible-searchbar' } >
+        <div className={(isFixedHeader === true && location.pathname !== "/checkout") ? 'header__visible-searchbar' : 'header__invisible-searchbar' } >
           <div className="header__search-bar-container">
             <div className="header__search-bar">
               <div className="header__search-icon-placeholder">

@@ -6,7 +6,7 @@ import Article from './article/Article.js';
 import BookList from './bookList/BookList.js';
 import BookPage from './bookPage/BookPage.js';
 import BookNavbar from './BookNavbar/BookNavbar.js';
-import YourOrder from './yourOrder/yourorder.js';
+import CheckOut from './yourOrder/checkout.js';
 import LogInPopUp from './logInPopUp/LogInPopUp.js';
 import {
   BrowserRouter as Router,
@@ -22,11 +22,10 @@ function App() {
   return (
     <Router>
       <div className="app">
- {/*       <YourOrder></YourOrder>   */}
       <Header setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></Header>
         <Switch>
           <Route exact path="/">
-            {isLogInPopUpOpen === true ? <LogInPopUp></LogInPopUp> : null }
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
             <Navbar></Navbar>
             <div className="app__body">
               <Article></Article>
@@ -38,6 +37,9 @@ function App() {
           </Route>
           <Route exact path="/book/:bookId">
             <BookPage></BookPage>
+          </Route>
+          <Route exact path="/checkout">
+            <CheckOut></CheckOut>  
           </Route>
         </Switch>
       </div>

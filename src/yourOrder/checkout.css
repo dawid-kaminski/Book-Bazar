@@ -1,0 +1,122 @@
+.checkout {
+  height: 200vh;
+  width: 100vw;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-positioning {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(247, 247, 247);
+}
+
+.checkout-details {
+  height: 100%;
+  width: 62%;
+  display: flex;
+}
+
+.checkout-delivery-address-positioning {
+  height: 100%;
+  width: 62%;
+  display: flex;
+}
+
+.checkout-delivery-address {
+  height: 100%;
+  width: 62%;
+  display: flex;
+}
+
+.checkout-basket-positioning {
+  height: 100%;
+  width: 38%;
+  display: flex;
+  background-color: rgb(247, 247, 247);
+}
+
+.checkout-basket {
+  height: 100%;
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+}
+
+.checkout-basket-your-order {
+  height: 30%;
+  width: 97%;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.checkout-basket-products {
+
+}
+
+.checkout-basket-price {
+  height: 70%;
+  width: 100%;
+  border-top: 1px solid rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.checkout-basket-price-sub-total {
+  height: 15%;
+  width: 87%;
+  font-family: Lato, sans-serif;
+  font-size: calc(14px);
+  font-weight: 400;
+  color: rgb(119, 121, 140);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-basket-price-delivery-fee {
+  height: 15%;
+  width: 87%;
+  font-family: Lato, sans-serif;
+  font-size: calc(14px);
+  font-weight: 400;
+  color: rgb(119, 121, 140);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-basket-price-discount {
+  height: 15%;
+  width: 87%;
+  font-family: Lato, sans-serif;
+  font-size: calc(14px);
+  font-weight: 400;
+  color: rgb(119, 121, 140);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-basket-price-total {
+  height: 15%;
+  width: 87%;
+  font-family: Lato, sans-serif;
+  font-size: calc(14px);
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
