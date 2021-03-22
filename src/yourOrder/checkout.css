@@ -1,6 +1,7 @@
 .checkout {
-  height: 200vh;
+  height: calc(100vh - 80px);
   width: 100vw;
+  padding-top: 80px;
   background-color: inherit;
   display: flex;
   flex-direction: column;
@@ -65,7 +66,7 @@
 }
 
 .checkout-basket-price {
-  height: 70%;
+  height: 50%;
   width: 100%;
   border-top: 1px solid rgb(230, 230, 230);
   display: flex;
