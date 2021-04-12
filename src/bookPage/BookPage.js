@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import './BookPage.css';
 import Header from '../header/Header.js';
 import BookList from '../bookList/BookList.js'
+import { addBookToCart } from '../ducks/cart'
+import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -22,6 +24,7 @@ import { getBookById } from '../bookData.js';
 
 function BookPage() {
 
+  const dispatch = useDispatch()
   let { bookId } = useParams();
 
   const book = getBookById(bookId);
@@ -49,6 +52,13 @@ function BookPage() {
   var onClickButtonRight=()=>{
     setCount(count + 1)
   }
+
+  const onClick = useCallback(
+    () => {
+      dispatch(addBookToCart({bookId: book.id, bookAmount: count}));
+    },
+  [book.id, count, dispatch],
+);
 
   return (
     <div className="book-page">
@@ -129,10 +139,17 @@ function BookPage() {
               $25
             </div>
             <div className="book-page__info-button">
+              <div class="button">
               <button className="button-sign" onClick={onClickButtonLeft}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
               </button>{count}
               <button className="button-sign" onClick={onClickButtonRight}>+</button>
+              </div>
+              <div className="book-page__info-add-button">
+                <button type="button" onClick={onClick}>
+                  Add to cart
+                </button>
+              </div>
             </div>
             <div className="book-page__info-category">
               Novel

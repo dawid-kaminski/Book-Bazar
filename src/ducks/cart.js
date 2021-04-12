@@ -8,7 +8,8 @@ const cartSlice = createSlice({
   },
   reducers: {
     addBookToCart(state, action) {
-      console.log("addBookToCart")
+      const { bookAmount, bookId } = action.payload
+      console.log("addBookToCart", bookAmount, bookId)
     },
   }
 })
