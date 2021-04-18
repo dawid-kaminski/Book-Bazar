@@ -13,7 +13,7 @@ return (
     <div className="checkout-positioning">
       <div className="checkout-details">
         <div className="checkout-delivery-address-positioning">
-          <div className="checkout-delivery address">
+          <div className="checkout-delivery-address">
           
           </div>
         </div>
