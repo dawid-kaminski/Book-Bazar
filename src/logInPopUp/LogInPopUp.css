@@ -5,16 +5,19 @@
   position: absolute;
   top: 0;
   /* opacity: 0.5; */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .loginpopup__close {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  background-color: yellow;
   top: 0;
   right: 0;
 }
@@ -201,6 +204,10 @@ input:focus {
   background-color: rgb(66, 103, 178);
 }
 
+.fb-icon {
+  margin-right: 5px;
+}
+
 .loginpopup__button-google {
   height: 10%;
   width: 100%;
@@ -209,6 +216,10 @@ input:focus {
   align-items: flex-start;
   background-color:rgb(255, 255, 255);
   font-family: Lato, sans-serif; 
+}
+
+.google-icon {
+  margin-right: 5px;
 }
 
 .button-google {
