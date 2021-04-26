@@ -56,6 +56,7 @@ function BookPage() {
 
   const onClick = useCallback(
     () => {
+      console.log({bookId: book.id, bookAmount: count})
       dispatch(addBookToCart({bookId: book.id, bookAmount: count}));
     },
   [book.id, count, dispatch],

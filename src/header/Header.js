@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import './Header.css';
 import Logo from './pickbazarlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,12 +8,16 @@ import LogInPopUp from '../logInPopUp/LogInPopUp.js';
 
 function Header(props) {
   const location = useLocation()
-
+  const history = useHistory()
   const [isFixedHeader, setIsFixedHeader] = useState(false);
 
   const onClickJoinButton = () => {
     props.setIsLogInPopUpOpen(true)
     console.log(props)
+  }
+
+  const onClickNeedHelp = () => {
+    history.push('/checkout')
   }
 
   useEffect(() => {
@@ -67,7 +71,7 @@ function Header(props) {
         <div className="header__offer">
           Offer
         </div>
-        <div className="header__need-help">
+        <div className="header__need-help" onClick={onClickNeedHelp}>
           <div className="header__question-mark">
             <FontAwesomeIcon icon={faQuestionCircle} color="black" />
           </div>
