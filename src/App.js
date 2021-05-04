@@ -6,8 +6,9 @@ import Article from './article/Article.js';
 import BookList from './bookList/BookList.js';
 import BookPage from './bookPage/BookPage.js';
 import BookNavbar from './BookNavbar/BookNavbar.js';
-import CheckOut from './yourOrder/checkout.js';
+import CheckOut from './yourOrder/Checkout.js';
 import LogInPopUp from './logInPopUp/LogInPopUp.js';
+import Basket from './basket/Basket.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,11 +32,13 @@ function App() {
               <Article></Article>
               <div className="app__book-list">
                 <BookNavbar></BookNavbar>
+                <Basket></Basket>
                 <BookList></BookList>
               </div>
             </div>
           </Route>
           <Route exact path="/book/:bookId">
+            <Basket></Basket>
             <BookPage></BookPage>
           </Route>
           <Route exact path="/checkout">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './checkout.css';
+import './Checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
 import cart from '../ducks/cart';
@@ -32,15 +32,29 @@ return (
 								home
 							</div>
 							<div className="checkout-delivery-home-details-typing">
-								{/* <div className="">27 Street, 2569</div>
-								<div className="">Heritage Road Visalia,</div>
-								<div className="">CA 93291</div> */}
-								{"27 Street, 2569 \n Heritage Road Visalia, \n CA 93291"}
+								<div className="checkout-delivery-address-passage">
+									33 Baker Street
+								</div>
+								<div className="checkout-delivery-address-passage">
+									Crescent Road, CA
+								</div>
+								<div className="checkout-delivery-address-passage">
+									65746
+								</div>
 							</div>
 						</div>
 						<div className="checkout-delivery-office-address">
 							<div className="checkout-delivery-typing">
 								office
+							</div>
+							<div className="checkout-delivery-address-passage">
+								33 Baker Street
+							</div>
+							<div className="checkout-delivery-address-passage">
+								Crescent Road, CA
+							</div>
+							<div className="checkout-delivery-address-passage">
+								65746
 							</div>
 						</div>
 					</div>
@@ -53,7 +67,70 @@ return (
 						<div className="checkout-delivery-top-name">
 							Delivery Schedule
 						</div>
+						<button className="add-address">
+							+ Add Address
+						</button>
 					</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								Express-Delivery
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									90 min express delivery
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								8am-11am
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									8.00 AM - 11.00 AM
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								11am-2pm
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									11.00 AM - 2.00 PM
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								2pm-5pm
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									2.00 PM - 5.00 PM
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								5pm-8pm
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									5.00 PM - 8.00 PM
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-schedule-time">
+							<div className="checkout-delivery-typing">
+								Next Day
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									Next Day
+								</div>
+							</div>
+						</div>
 				</div>
 				<div className="checkout-delivery-contact-number">
 					<div className="checkout-delivery-top">
@@ -62,6 +139,29 @@ return (
 						</div>
 						<div className="checkout-delivery-top-name">
 							Contact Number
+						</div>
+						<button className="add-address">
+							+ Add Address
+						</button>
+					</div>
+					<div className="checkout-delivery-contact-number-primary">
+						<div className="checkout-delivery-typing">
+							Primary
+						</div>
+						<div className="checkout-delivery-home-details-typing">
+							<div className="checkout-delivery-address-passage">
+								202-555-0191
+							</div>
+						</div>
+					</div>
+					<div className="checkout-delivery-contact-number-secondary">
+						<div className="checkout-delivery-typing">
+							Secondary
+						</div>
+						<div className="checkout-delivery-home-details-typing">
+							<div className="checkout-delivery-address-passage">
+								202-555-0701
+							</div>
 						</div>
 					</div>
 				</div>
@@ -73,6 +173,69 @@ return (
 						<div className="checkout-delivery-top-name">
 							Payment Option
 						</div>
+					</div>
+					<div className="checkout-delivery-saved-cards-line">
+						<div className="checkout-delivery-saved-cards">
+							Saved Cards
+						</div>
+						<button className="add-address">
+							+ Add Address
+						</button>
+					</div>
+					<div className="checkout-delivery-payments-lineup">
+						<div className="checkout-delivery-card">
+							<div className="checkout-delivery-typing">
+								home
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									33 Baker Street
+								</div>
+								<div className="checkout-delivery-address-passage">
+									Crescent Road, CA
+								</div>
+								<div className="checkout-delivery-address-passage">
+									65746
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-card">
+							<div className="checkout-delivery-typing">
+								home
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									33 Baker Street
+								</div>
+								<div className="checkout-delivery-address-passage">
+									Crescent Road, CA
+								</div>
+								<div className="checkout-delivery-address-passage">
+									65746
+								</div>
+							</div>
+						</div>
+						<div className="checkout-delivery-card">
+							<div className="checkout-delivery-typing">
+								home
+							</div>
+							<div className="checkout-delivery-home-details-typing">
+								<div className="checkout-delivery-address-passage">
+									33 Baker Street
+								</div>
+								<div className="checkout-delivery-address-passage">
+									Crescent Road, CA
+								</div>
+								<div className="checkout-delivery-address-passage">
+									65746
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="checkout-delivery-payment-voucher">
+						<button className="voucher">
+							Do you have a voucher?
+						</button>	
 					</div>
 				</div>
 			</div>
