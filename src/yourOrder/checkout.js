@@ -237,6 +237,14 @@ return (
 							Do you have a voucher?
 						</button>	
 					</div>
+					<div className="checkout-delivery-payment-terms-and-conditions">
+						By making this purchase you agree to our<span className="terms-and-conditions">terms and conditions.</span>
+					</div>
+					<div className="checkout-delivery-payment-proceed-to-checkout">
+						<button className="checkout-button">
+							Proceed to Checkout
+						</button>
+					</div>
 				</div>
 			</div>
 			<div className="checkout-basket-positioning">
