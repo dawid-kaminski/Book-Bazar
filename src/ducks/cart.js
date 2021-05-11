@@ -11,7 +11,18 @@ const cartSlice = createSlice({
       console.log(action.payload)
       const { bookAmount, bookId } = action.payload
       console.log("addBookToCart", bookAmount, bookId)
-      state.list.push({id:bookId, amount:bookAmount})
+      const isBookInListAlready = state.list.find(element => element.id === bookId);
+      console.log(!!isBookInListAlready)
+      if (!!isBookInListAlready === true) {
+        const selectedBook = state.list.find(element => element.id === bookId)
+        console.log(selectedBook)
+        const selectedBookAmount = selectedBook.amount
+        const bookAmountSum = selectedBookAmount + bookAmount
+        const selectedBookIndex = state.list.findIndex(element => element.id === bookId)
+        state.list[selectedBookIndex] = {id:bookId, amount:bookAmountSum}
+      } else {
+        state.list.push({id:bookId, amount:bookAmount})
+      }
     },
   }
 })
