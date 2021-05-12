@@ -61,6 +61,7 @@
   position: fixed;
 	z-index: 999;
   background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 16%) 0px 21px 36px;
 }
 
 .open-basket-items-amount {
