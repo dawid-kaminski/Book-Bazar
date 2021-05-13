@@ -11,6 +11,10 @@ function Header(props) {
   const history = useHistory()
   const [isFixedHeader, setIsFixedHeader] = useState(false);
 
+  var onClickMainPage=()=>{
+    history.push(``)
+  }
+
   const onClickJoinButton = () => {
     props.setIsLogInPopUpOpen(true)
     console.log(props)
@@ -39,7 +43,7 @@ function Header(props) {
 
   return (
     <div className={(isFixedHeader === true || location.pathname === "/checkout") ? 'header-fixed' : 'header' } >
-      <div className="header__pickbazarlogo">
+      <div className="header__pickbazarlogo" onClick={onClickMainPage}>
         <img src={Logo} />
       </div>
       <div className="header__left-menu">
@@ -73,7 +77,7 @@ function Header(props) {
         </div>
         <div className="header__need-help" onClick={onClickNeedHelp}>
           <div className="header__question-mark">
-            <FontAwesomeIcon icon={faQuestionCircle} color="black" />
+            <FontAwesomeIcon icon={faQuestionCircle} />
           </div>
           Need Help
         </div>

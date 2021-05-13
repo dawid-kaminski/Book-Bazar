@@ -9,6 +9,7 @@ import BookNavbar from './BookNavbar/BookNavbar.js';
 import CheckOut from './yourOrder/Checkout.js';
 import LogInPopUp from './logInPopUp/LogInPopUp.js';
 import Basket from './basket/Basket.js';
+import Faq from './faq/Faq.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -42,7 +43,12 @@ function App() {
             <BookPage></BookPage>
           </Route>
           <Route exact path="/checkout">
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
             <CheckOut></CheckOut>  
+          </Route>
+          <Route exact path="/faq">
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
+            <Faq></Faq>  
           </Route>
         </Switch>
       </div>

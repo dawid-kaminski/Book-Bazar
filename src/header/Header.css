@@ -19,6 +19,7 @@
   align-items: center;
   z-index: 100;
 }
+
 .header__pickbazarlogo {
   height: 100%;
   width: 11.2%;
@@ -181,9 +182,17 @@
   align-items: center;
 }
 
+.header__need-help:hover {
+color: #009e7f;
+}
+
 .header__question-mark {
   padding: 0px;
   margin-right: 5px;
+}
+
+.header__question-mark:hover {
+color: #009e7f;
 }
 
 .header__language-choice-placeholder {
