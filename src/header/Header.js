@@ -21,7 +21,7 @@ function Header(props) {
   }
 
   const onClickNeedHelp = () => {
-    history.push('/checkout')
+    history.push('/faq')
   }
 
   useEffect(() => {
