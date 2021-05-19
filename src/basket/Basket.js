@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useHistory, useLocation } from "react-router-dom";
 import './Basket.css';
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,6 +24,12 @@ function Basket() {
 	const onClickCloseBasketButton = () => {
 		setIsBasketPopUpOpen(false)
 	}
+
+	const history = useHistory()
+
+  var onClickCheckoutPage=()=>{
+    history.push(`/checkout`)
+  }
 
 	const ClosedBasket = ()=>{
 		return(
@@ -94,7 +101,7 @@ function Basket() {
 						Do you have a voucher?
 					</button>	
 				</div>
-				<div className="open-basket-checkout">
+				<div className="open-basket-checkout" onClick={onClickCheckoutPage}>
 					<div className="open-basket-checkout-typing">
 						Checkout
 					</div>

@@ -1,49 +1,8 @@
 import React, { useState } from 'react';
 import './Faq.css';
-import { useSelector } from "react-redux";
-import Header from '../header/Header.js';
-import cart from '../ducks/cart';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import FaqListItem from './FaqListItem.js';
 
 function Faq(props) {
-
-	const [isCustomerContactOpen, setIsCustomerContactOpen] = useState(false);
-
-	const onClickOpenCustomerContact = () => {
-		setIsCustomerContactOpen(true)
-		console.log(props)
-	}
-
-	const onClickCloseCustomerContact = () => {
-		setIsCustomerContactOpen(false)
-	}
-
-	const OpenCustomerContact = ()=>{
-		return(
-			<div className="customer-contact-open">
-				<div className="faq__customer-contact-text">
-					How to contact with Customer Service?
-				</div>
-				<div className="faq__customer-contact-icon">
-					<FontAwesomeIcon icon={faPlus} />
-				</div>
-			</div>
-		)
-	}
-
-		const CloseCustomerContact = ()=>{
-		return(
-			<div className="customer-contact-closed">
-				<div className="faq__customer-contact-text">
-					How to contact with Customer Service?
-				</div>
-				<div className="faq__customer-contact-icon">
-					<FontAwesomeIcon icon={faPlus} />
-				</div>
-			</div>
-		)
-	}
 
 	return (
 		<div className="faq__background">
@@ -54,24 +13,10 @@ function Faq(props) {
 					</div>
 				</div>
 				<div className="faq__questions">
-					<div className="faq__customer-contact" onClick={onClickOpenCustomerContact}>
-					isCustomerContactOpen === true ? <OpenCustomerContact></OpenCustomerContact> : <CloseCustomerContact></CloseCustomerContact>
-					</div>
-					<div className="faq__system-information-update">
-						<div className="faq__customer-contact-text">
-							How to contact with Customer Service?
-						</div>
-					</div>
-					<div className="faq__website-response-time">
-						<div className="faq__customer-contact-text">
-							How to contact with Customer Service?
-						</div>
-					</div>
-					<div className="faq__account-creation">
-						<div className="faq__customer-contact-text">
-							How to contact with Customer Service?
-						</div>
-					</div>
+					<FaqListItem headerText="How to contact with Customer Service?" questionAnswear="Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!." />
+					<FaqListItem headerText="App installation failed, how to update system information?" questionAnswear="Please read the documentation carefully . We also have some online video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum" />
+					<FaqListItem headerText="Website reponse taking time, how to improve?" />
+					<FaqListItem headerText="How do I create a account?" />
 				</div>
 			</div>
 		</div>

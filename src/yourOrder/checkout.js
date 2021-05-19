@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
+import AddAddress from './AddAddress.js'
 import cart from '../ducks/cart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-function CheckOut() {
+function CheckOut(props) {
 	const cartStore = useSelector((state)=>state).cart
   var y = document.scrollY
 	console.log(cartStore)
 // document.getElementById("root").addEventListener("scroll", ())
+
+  const onClickAddDeliveryAddress = () => {
+    props.setIsDeliveryAddAddressOpen(true)
+    console.log(props)
+  }
 
 return (
 	<div className="checkout">
@@ -22,7 +31,7 @@ return (
 						<div className="checkout-delivery-top-name">
 							Delivery Address
 						</div>
-						<button className="add-address">
+						<button className="add-address" onClick={onClickAddDeliveryAddress} >
 							+ Add Address
 						</button>
 					</div>
@@ -185,49 +194,49 @@ return (
 					<div className="checkout-delivery-payments-lineup">
 						<div className="checkout-delivery-card">
 							<div className="checkout-delivery-typing">
-								home
+								<FontAwesomeIcon icon={faPaypal} color="#009e7f" /> PayPal
 							</div>
 							<div className="checkout-delivery-home-details-typing">
-								<div className="checkout-delivery-address-passage">
-									33 Baker Street
+								<div className="checkout-delivery-card-number-passage">
+									Card Number
 								</div>
-								<div className="checkout-delivery-address-passage">
-									Crescent Road, CA
+								<div className="checkout-delivery-number-passage">
+									<span>****</span><span>****</span><span>****</span><span>2349</span>
 								</div>
-								<div className="checkout-delivery-address-passage">
-									65746
+								<div className="checkout-delivery-name-passage">
+									Jhon Doe Smith
 								</div>
 							</div>
 						</div>
 						<div className="checkout-delivery-card">
 							<div className="checkout-delivery-typing">
-								home
+								<FontAwesomeIcon icon={faCcMastercard} color="#009e7f" /> Mastercard 
 							</div>
 							<div className="checkout-delivery-home-details-typing">
-								<div className="checkout-delivery-address-passage">
-									33 Baker Street
+								<div className="checkout-delivery-card-number-passage">
+									Card Number
 								</div>
-								<div className="checkout-delivery-address-passage">
-									Crescent Road, CA
+								<div className="checkout-delivery-number-passage">
+									<span>****</span><span>****</span><span>****</span><span>2349</span>
 								</div>
-								<div className="checkout-delivery-address-passage">
-									65746
+								<div className="checkout-delivery-name-passage">
+									Jhon Doe Smith
 								</div>
 							</div>
 						</div>
 						<div className="checkout-delivery-card">
 							<div className="checkout-delivery-typing">
-								home
+								<FontAwesomeIcon icon={faCcVisa} color="#009e7f" /> Visa
 							</div>
 							<div className="checkout-delivery-home-details-typing">
-								<div className="checkout-delivery-address-passage">
-									33 Baker Street
+								<div className="checkout-delivery-card-number-passage">
+									Card Number
 								</div>
-								<div className="checkout-delivery-address-passage">
-									Crescent Road, CA
+								<div className="checkout-delivery-number-passage">
+									<span>****</span><span>****</span><span>****</span><span>2349</span>
 								</div>
-								<div className="checkout-delivery-address-passage">
-									65746
+								<div className="checkout-delivery-name-passage">
+									Jhon Doe Smith
 								</div>
 							</div>
 						</div>

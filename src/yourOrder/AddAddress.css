@@ -1,3 +1,125 @@
 .addaddress {
-	
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 50%);
+  position: absolute;
+  top: 0;
+  /* opacity: 0.5; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.addaddress__close {
+  height: 70px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.addaddress__form {
+  height: calc(55% - 60px);
+  width: calc(23.5% - 60px);
+	padding: 30px;
+	background-color: rgb(247, 248, 249);
+  opacity: initial;
+  display: flex;
+  z-index: 999;
+	display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.addaddress__headline {
+	font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  margin-bottom: 15px;
+	text-align: left;
+}
+
+.addaddress__title {
+	width: 100%;
+	margin-bottom: 15px;
+	display: flex;
+}
+
+input {
+	margin: 0;
+}
+
+.addaddress__title-input {
+	height: 48px;
+	width: 100%;
+	padding: 0px 18px;
+	margin: 0;
+	display: block;
+  appearance: none;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  line-height: inherit;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 17, 54);
+  transition: all 0.25s ease 0s;
+}
+
+.addaddress__address {
+	width: 100%;
+	display: flex;
+}
+
+.addaddress__address-input {
+	height: auto;
+	width: 100%;
+  min-height: 171px;
+  padding: 0px 18px;
+  resize: none;
+	display: flex;
+	align-items: flex-start;
+  appearance: none;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  line-height: 10px;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 17, 54);
+  transition: all 0.25s ease 0s;
+}
+
+.button-save-address {
+	height: 38px;
+	width: 100%;
+	margin-top: 15px;
+	padding: 0%;
+	padding: 0px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 158, 127);
+  transition: all 0.3s ease 0s;
+  border-radius: 6px;
+  appearance: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  border: 0px;
 }

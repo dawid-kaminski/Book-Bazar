@@ -10,6 +10,7 @@ import CheckOut from './yourOrder/Checkout.js';
 import LogInPopUp from './logInPopUp/LogInPopUp.js';
 import Basket from './basket/Basket.js';
 import Faq from './faq/Faq.js';
+import AddAddress from './yourOrder/AddAddress.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,8 @@ import {
 function App() {
   
   const [isLogInPopUpOpen, setIsLogInPopUpOpen] = useState(false);
+
+  const [isDeliveryAddAddressOpen, setIsDeliveryAddAddressOpen] = useState(false);
 
   return (
     <Router>
@@ -44,7 +47,8 @@ function App() {
           </Route>
           <Route exact path="/checkout">
             {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
-            <CheckOut></CheckOut>  
+            <CheckOut setIsDeliveryAddAddressOpen={setIsDeliveryAddAddressOpen} />  
+            {isDeliveryAddAddressOpen === true ? <AddAddress setIsDeliveryAddAddressOpen ={setIsDeliveryAddAddressOpen}></AddAddress> : null }
           </Route>
           <Route exact path="/faq">
             {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
