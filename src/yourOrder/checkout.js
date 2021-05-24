@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Checkout.css';
+import './checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
 import AddAddress from './AddAddress.js'
@@ -26,7 +26,7 @@ return (
 				<div className="checkout-delivery-address">
 					<div className="checkout-delivery-top">
 						<div className="checkout-delivery-circle">
-							1
+
 						</div>
 						<div className="checkout-delivery-top-name">
 							Delivery Address

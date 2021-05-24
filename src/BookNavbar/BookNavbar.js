@@ -1,6 +1,6 @@
 import React from 'react';
 import './BookNavbar.css';
-import BookGenre from './bookGenre/BookGenre.js';
+import BookGenre from './BookGenre/BookGenre.js';
 
 const data = [
   {
