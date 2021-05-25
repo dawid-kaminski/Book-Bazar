@@ -14,15 +14,19 @@ const FaqListItem = (props)=>{
 		return(
 			<div className="faq__customer-question-template" onClick={toggleModal}>
 				<div className="customer-contact-closed">
-					<div className="faq__customer-question-text-styling">
-						{props.headerText}
-					</div>
-					<div className="faq__customer-contact-icon">
-						{ isCustomerContactOpen === true ? <FontAwesomeIcon icon={faMinus} /> : <FontAwesomeIcon icon={faPlus} />}
+					<div className="faq__question-and-icon-positioning">
+						<div className="faq__customer-question-text-styling">
+							{props.headerText}
+						</div>
+						<div className="faq__customer-contact-icon">
+							{ isCustomerContactOpen === true ? <FontAwesomeIcon icon={faMinus} /> : <FontAwesomeIcon icon={faPlus} />}
+						</div>
 					</div>
 				</div>
-				{ isCustomerContactOpen === true ? <div className="text">
-					{props.questionAnswear}
+				{ isCustomerContactOpen === true ? <div className="text-positioning">
+					<div className="text">
+						{props.questionAnswear}
+					</div>
 				</div> : null}
 			</div>
 		)

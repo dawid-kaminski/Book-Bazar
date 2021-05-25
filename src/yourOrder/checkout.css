@@ -4,18 +4,15 @@ html, body {
 }
 
 .checkout {
-  /* height: 200vh; */
-  height: calc(100vh - 80px);
+  height: auto;
   width: 100%;
   padding-top: 80px;
   background-color: white;
   display: flex;
-  /* flex-direction: column; */
   overflow-y: scroll;
 }
 
 .checkout-positioning {
-  height: 2000px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -23,11 +20,12 @@ html, body {
 }
 
 .checkout-details {
-  height: 75%;
+  height: auto;
   width: 62%;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  background-color: rgb(247, 247, 247);
 }
 
 .checkout-delivery-address-positioning {
@@ -39,7 +37,7 @@ html, body {
 }
 
 .checkout-delivery-address {
-  height: 16%;
+  height: auto;
   width: 62%;
   padding: 30px 30px 20px;
   margin: 73px 0px 20px 0px;
@@ -184,7 +182,7 @@ span {
 }
 
 .checkout-delivery-schedule {
-  height: 18%;
+  height: auto;
   width: 62%;
   padding: 30px 30px 20px;
   margin: 0px 0px 20px 0px;
@@ -207,7 +205,7 @@ span {
 }
 
 .checkout-delivery-contact-number {
-  height: 12%;
+  height: auto;
   width: 62%;
   padding: 30px 30px 20px;
   margin-bottom: 20px;
@@ -244,10 +242,10 @@ span {
 }
 
 .checkout-delivery-payment-option {
-  height: 31%;
+  height: auto;
   width: 62%;
   padding: 30px 30px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
   display: flex;
   flex-direction: column;
@@ -368,7 +366,7 @@ span {
   margin-left: 40px;
   display: flex;
   flex-direction: column;
-    position: absolute;
+  position: fixed;
   background-color: rgb(247, 247, 247);
 }
 

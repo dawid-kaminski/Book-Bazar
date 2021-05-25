@@ -42,7 +42,7 @@ function Header(props) {
   console.log(location.pathname === "/checkout")
 
   return (
-    <div className={(isFixedHeader === true || location.pathname === "/checkout") ? 'header-fixed' : 'header' } >
+    <div className={(isFixedHeader === true || location.pathname === "/checkout" || location.pathname === "/faq") ? 'header-fixed' : 'header' } >
       <div className="header__pickbazarlogo" onClick={onClickMainPage}>
         <img src={Logo} />
       </div>

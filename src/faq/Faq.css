@@ -2,7 +2,8 @@
 	height: calc(100vh - 80px);
 	width: 100vw;
 	margin: 0;
-	padding: 0%;
+	padding-top: 80px;
+	display: flex;
 	background-color: blue;
 }
 
@@ -43,10 +44,11 @@
 }
 
 .faq__customer-question-template {
-	height: 12.5%;
+	height: auto;
+	max-height: 100%;
 	width: 53%;
 	margin-bottom: 5px;
-	padding: 0px 25px 0px 30px;
+	padding: 23px 25px 23px 30px;
 	display: flex;
   align-items: center;
   cursor: pointer;
@@ -55,7 +57,7 @@
   border: 1px solid rgb(241, 241, 241);
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
-  overflow: hidden;
+	overflow: visible;
 	display: flex;
 	flex-direction: column;
 }
@@ -70,18 +72,27 @@
 }
 
 .customer-contact-closed {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	margin: 0%;
 	padding: 0%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.faq__question-and-icon-positioning {
+	height: auto;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .faq__customer-question-text-styling {
-	width: 50%;
+	width: auto;
 	margin: 0;
-	padding: 0;
 	margin: 0px;
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -93,15 +104,28 @@
 }
 
 .faq__customer-contact-icon {
-	width: 50%;
+	width: auto;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: flex-end;
 }
 
+.text-positioning {
+	margin: 0%;
+	padding-top: 16px;
+	overflow: hidden;
+	color: #666;
+	background-color: #fff;
+}
+
 .text {
-	background-color: teal;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 400;
+	color: rgb(119, 121, 140);
+	line-height: 1.75;
+	text-align: left;
 }
 
 .faq__system-information-update {

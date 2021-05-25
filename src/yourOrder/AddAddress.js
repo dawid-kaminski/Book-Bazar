@@ -23,7 +23,7 @@ function AddAddress(props) {
 					<input id="name" type="text" placeholder="Enter Title" class="addaddress__title-input" />
 				</div>
 				<div className="addaddress__address">
-					<input id="info" type="text" placeholder="Enter Address" class="addaddress__address-input" />
+					<textarea id="info" type="text" placeholder="Enter Address" class="addaddress__address-textarea" />
 				</div>
 				<button className="button-save-address">
 					Save Address

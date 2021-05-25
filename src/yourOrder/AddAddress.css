@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   /* opacity: 0.5; */
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
 .addaddress__form {
   height: calc(55% - 60px);
   width: calc(23.5% - 60px);
-	padding: 30px;
+	padding: 30px 30px 10px 30px;
 	background-color: rgb(247, 248, 249);
   opacity: initial;
   display: flex;
@@ -75,22 +75,21 @@ input {
 }
 
 .addaddress__address {
+  height: auto;
+  min-height: 171px;
 	width: 100%;
 	display: flex;
 }
 
-.addaddress__address-input {
-	height: auto;
-	width: 100%;
-  min-height: 171px;
-  padding: 0px 18px;
+.addaddress__address-textarea {
+  width: 100%;
+  padding: 15px 18px 0px 18px;
   resize: none;
 	display: flex;
 	align-items: flex-start;
   appearance: none;
   font-family: Lato, sans-serif;
   font-size: 15px;
-  line-height: 10px;
   border: 1px solid rgb(241, 241, 241);
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
@@ -99,11 +98,10 @@ input {
 }
 
 .button-save-address {
-	height: 38px;
+	height: 44px;
 	width: 100%;
 	margin-top: 15px;
-	padding: 0%;
-	padding: 0px 15px;
+  padding: 0%;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -111,6 +109,7 @@ input {
   background-color: rgb(0, 158, 127);
   transition: all 0.3s ease 0s;
   border-radius: 6px;
+  border: 0px;
   appearance: none;
   display: flex;
   -webkit-box-align: center;
@@ -121,5 +120,4 @@ input {
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  border: 0px;
 }

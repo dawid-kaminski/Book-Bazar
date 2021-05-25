@@ -1,6 +1,0 @@
-function (
-  addEventListener
-    addEventListener
-      addEventListener
-      
-)

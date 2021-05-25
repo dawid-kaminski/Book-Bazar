@@ -26,7 +26,7 @@ return (
 				<div className="checkout-delivery-address">
 					<div className="checkout-delivery-top">
 						<div className="checkout-delivery-circle">
-
+							1
 						</div>
 						<div className="checkout-delivery-top-name">
 							Delivery Address
