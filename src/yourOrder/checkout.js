@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './checkout.css';
+import './Checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
 import AddAddress from './AddAddress.js'
-import cart from '../ducks/cart';
+import cart from '../ducks/Cart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
 import { fab } from '@fortawesome/free-brands-svg-icons'
