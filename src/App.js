@@ -27,32 +27,32 @@ function App() {
   return (
     <Router>
       <div className="app">
-      <Header setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></Header>
+      <Header setIsLogInPopUpOpen ={setIsLogInPopUpOpen}/>
         <Switch>
           <Route exact path="/">
-            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
-            <Navbar></Navbar>
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}/> : null }
+            <Navbar/>
             <div className="app__body">
-              <Article></Article>
+              <Article/>
               <div className="app__book-list">
-                <BookNavbar></BookNavbar>
-                <Basket></Basket>
-                <BookList></BookList>
+                <BookNavbar/>
+                <Basket/>
+                <BookList/>
               </div>
             </div>
           </Route>
           <Route exact path="/book/:bookId">
-            <Basket></Basket>
-            <BookPage></BookPage>
+            <Basket/>
+            <BookPage/>
           </Route>
           <Route exact path="/checkout">
-            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}/>: null }
             <CheckOut setIsDeliveryAddAddressOpen={setIsDeliveryAddAddressOpen} />  
-            {isDeliveryAddAddressOpen === true ? <AddAddress setIsDeliveryAddAddressOpen ={setIsDeliveryAddAddressOpen}></AddAddress> : null }
+            {isDeliveryAddAddressOpen === true ? <AddAddress setIsDeliveryAddAddressOpen ={setIsDeliveryAddAddressOpen}/> : null }
           </Route>
           <Route exact path="/faq">
-            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}></LogInPopUp> : null }
-            <Faq></Faq>  
+            {isLogInPopUpOpen === true ? <LogInPopUp setIsLogInPopUpOpen ={setIsLogInPopUpOpen}/> : null }
+            <Faq/>  
           </Route>
         </Switch>
       </div>

@@ -7,9 +7,9 @@ import './Article.css';
 function Coupon(props) {
   return (
     <div className="article__coupon">
-      {props.index === 0 && <CouponSavings></CouponSavings> }
-      {props.index === 1 && <FreeDelivery></FreeDelivery> }
-      {props.index === 2 && <GiftVoucher></GiftVoucher> }
+      {props.index === 0 && <CouponSavings/> }
+      {props.index === 1 && <FreeDelivery/> }
+      {props.index === 2 && <GiftVoucher/> }
     </div>
   );
 }

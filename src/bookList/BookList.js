@@ -43,7 +43,7 @@ const GetAllBooksRender = React.memo(({title, img, id, author}) => {
             }
             return book.types.includes(genre)
           }).map((book)=>{
-            return <GetAllBooksRender title={book.title} author={book.author} id={book.id} img={book.img}></GetAllBooksRender>
+            return <GetAllBooksRender title={book.title} author={book.author} id={book.id} img={book.img}/>
           })
         }
         <div className="button-load-more">

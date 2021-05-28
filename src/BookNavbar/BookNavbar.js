@@ -50,7 +50,7 @@ function BookNavbar() {
     <div className="bookNavbar">
     {
       data.map((genre)=>{
-        return <BookGenre name={genre.name} value={genre.value}></BookGenre>
+        return <BookGenre name={genre.name} value={genre.value}/>
       })
     }
     </div>

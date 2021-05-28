@@ -19,7 +19,7 @@ html, body {
   background-color: rgb(247, 247, 247);
 }
 
-.checkout-details {
+.checkout__details {
   height: auto;
   width: 62%;
   display: flex;
@@ -28,15 +28,7 @@ html, body {
   background-color: rgb(247, 247, 247);
 }
 
-.checkout-delivery-address-positioning {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  background-color: blue;
-}
-
-.checkout-delivery-address {
+.checkout__delivery-address {
   height: auto;
   width: 62%;
   padding: 30px 30px 20px;
@@ -47,7 +39,7 @@ html, body {
   background-color: white;
 }
 
-.checkout-delivery-top {
+.checkout__delivery-top {
   height: 35px;
   width: 100%;
   padding: 0;
@@ -56,7 +48,7 @@ html, body {
   flex-direction: row;
 }
 
-.checkout-delivery-circle {
+.checkout__delivery-circle {
   height: 35px;
   width: 35px;
   margin-right: 15px;
@@ -69,7 +61,7 @@ html, body {
   border-radius: 50%;
 }
 
-.checkout-delivery-top-name {
+.checkout__delivery-top-name {
   height: 35px;
   width: 77%;
   font-family: Lato, sans-serif;
@@ -98,7 +90,7 @@ html, body {
   color: rgb(0, 158, 127);
 }
 
-.checkout-delivery-adress-list {
+.checkout__delivery-adress-list {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -106,7 +98,7 @@ html, body {
   flex-direction: row;
 }
 
-.checkout-delivery-home-address {
+.checkout__delivery-home-address {
   padding: 15px;
   margin-right: 15px;
   flex: 1 1 calc(33.3333% - 10px);
@@ -119,7 +111,7 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout-delivery-typing {
+.checkout__delivery-typing {
   font-family: Lato, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -130,13 +122,13 @@ html, body {
   text-align: start;
 }
 
-.checkout-delivery-home-details-typing {
+.checkout__delivery-home-details-typing {
   flex-direction: column;
   text-align: left;
   align-items: flex-start;
 }
 
-.checkout-delivery-office-address {
+.checkout__delivery-office-address {
   padding: 15px;
   margin-top: 0px;
   flex: 1 1 calc(33.3333% - 10px);
@@ -150,38 +142,7 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout-delivery-card-number-passage {
-  font-family: Lato, sans-serif;
-  font-size: calc(10px);
-  font-weight: 400;
-  color: rgb(119, 121, 140);
-  display: block;
-  margin-bottom: 11px;
-}
-
-.checkout-delivery-number-passage {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 9px;
-}
-span {
-  font-size: calc(14px);
-  font-weight: 700;
-  color: rgb(13, 17, 54);
-  line-height: 1.25;
-}
-
-.checkout-delivery-name-passage {
-  font-size: 12px;
-  font-weight: 700;
-  color: rgb(13, 17, 54);
-  display: block;
-}
-
-.checkout-delivery-schedule {
+.checkout__delivery-schedule {
   height: auto;
   width: 62%;
   padding: 30px 30px 20px;
@@ -192,9 +153,9 @@ span {
   background-color: white;
 }
 
-.checkout-delivery-schedule-time {
+.checkout__delivery-schedule-time {
   width: 25%;
-  padding: 15px;
+  padding: 11px 15px;
   margin-right: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -204,7 +165,7 @@ span {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout-delivery-contact-number {
+.checkout__delivery-contact-number {
   height: auto;
   width: 62%;
   padding: 30px 30px 20px;
@@ -215,7 +176,7 @@ span {
   background-color: white;
 }
 
-.checkout-delivery-contact-number-primary {
+.checkout__delivery-contact-number-primary {
   padding: 15px;
   margin-right: 15px;
   flex: 1 1 calc(33.3333% - 10px);
@@ -228,7 +189,7 @@ span {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout-delivery-contact-number-secondary {
+.checkout__delivery-contact-number-secondary {
   padding: 15px;
   margin-right: 15px;
   flex: 1 1 calc(33.3333% - 10px);
@@ -241,7 +202,7 @@ span {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout-delivery-payment-option {
+.checkout__delivery-payment-option {
   height: auto;
   width: 62%;
   padding: 30px 30px 20px;
@@ -252,13 +213,13 @@ span {
   background-color: white;
 }
 
-.checkout-delivery-saved-cards-line {
+.checkout__delivery-saved-cards-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.checkout-delivery-saved-cards {
+.checkout__delivery-saved-cards {
   font-family: Lato, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -266,12 +227,12 @@ span {
   display: block;
 }
 
-.checkout-delivery-payments-lineup {
+.checkout__delivery-payments-lineup {
   display: flex;
   flex-direction: row;
 }
 
-.checkout-delivery-card {
+.checkout__delivery-card {
   padding: 15px;
   margin-right: 15px;
   flex: 1 1 calc(33.3333% - 10px);
@@ -284,7 +245,39 @@ span {
   background-color: rgb(228, 244, 252);  
 }
 
-.checkout-delivery-payment-voucher {
+.checkout__delivery-card-number-passage {
+  font-family: Lato, sans-serif;
+  font-size: calc(10px);
+  font-weight: 400;
+  color: rgb(119, 121, 140);
+  display: block;
+  margin-bottom: 11px;
+}
+
+.checkout__delivery-number-passage {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+span {
+  font-size: calc(14px);
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  line-height: 1.25;
+}
+
+.checkout__delivery-name-passage {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  display: block;
+}
+
+.checkout__delivery-payment-voucher {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -304,7 +297,7 @@ span {
   font-weight: normal;
 }
 
-.checkout-delivery-payment-terms-and-conditions {
+.checkout__delivery-payment-terms-and-conditions {
   font-family: Lato, sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -324,7 +317,7 @@ span {
   line-height: 1.5;
 }
 
-.checkout-delivery-payment-proceed-to-checkout{
+.checkout__delivery-payment-proceed-to-checkout{
   padding-bottom: 30px;
 }
 
@@ -353,14 +346,14 @@ span {
   cursor: pointer;
 }
 
-.checkout-basket-positioning {
+.checkout__basket-positioning {
   height: 100%;
   width: 38%;
   display: flex;
   background-color: rgb(247, 247, 247);
 }
 
-.checkout-basket {
+.checkout__basket {
   height: 70%;
   width: 17%;
   margin-left: 40px;
@@ -370,7 +363,7 @@ span {
   background-color: rgb(247, 247, 247);
 }
 
-.checkout-basket-your-order {
+.checkout__basket-your-order {
   height: 18%;
   width: 97%;
   font-family: Lato, sans-serif;
@@ -383,11 +376,11 @@ span {
   margin-bottom: 40px;
 }
 
-.checkout-basket-products {
+.checkout__basket-products {
 
 }
 
-.checkout-basket-price {
+.checkout__basket-price {
   height: 50%;
   width: 100%;
   padding: 20px 15px 0px;
@@ -397,7 +390,7 @@ span {
   align-items: flex-end;
 }
 
-.checkout-basket-price-sub-total {
+.checkout__basket-price-sub-total {
   height: 13%;
   width: 100%;
   font-family: Lato, sans-serif;
@@ -409,7 +402,7 @@ span {
   align-items: center;
 }
 
-.checkout-basket-price-delivery-fee {
+.checkout__basket-price-delivery-fee {
   height: 13%;
   width: 100%;
   font-family: Lato, sans-serif;
@@ -421,7 +414,7 @@ span {
   align-items: center;
 }
 
-.checkout-basket-price-discount {
+.checkout__basket-price-discount {
   height: 13%;
   width: 100%;
   font-family: Lato, sans-serif;
@@ -433,7 +426,7 @@ span {
   align-items: center;
 }
 
-.checkout-basket-price-total {
+.checkout__basket-price-total {
   height: 13%;
   width: 100%;
   margin: 20px 0px 10px 0px;

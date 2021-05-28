@@ -114,7 +114,7 @@ function Basket() {
 	}
 
 	return(
-			isBasketPopUpOpen === true ? <OpenBasket></OpenBasket> : <ClosedBasket></ClosedBasket>
+			isBasketPopUpOpen === true ? <OpenBasket/> : <ClosedBasket/>
 		)
 	}
 

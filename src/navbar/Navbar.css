@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   background-image: url("https://shop.redq.now.sh/_next/static/images/books-f5200ba7535257ce70a563fc9ff56f35.png");

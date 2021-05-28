@@ -88,7 +88,9 @@ function Header(props) {
           </div>
         </div>
         <div className="header__button-join">
-         <button className="button-join" type="button" name="button" onClick={onClickJoinButton} >Join</button>
+          <button className="button-join" type="button" name="button" onClick={onClickJoinButton} >
+             Join
+          </button>
         </div>
       </div>
     </div>
