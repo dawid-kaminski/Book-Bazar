@@ -82,7 +82,9 @@ function Header(props) {
           Need Help
         </div>
         <div className="header__language-choice-placeholder">
-          <button className="button-language" type="button" name="button">English</button>
+          <button className="button-language" type="button" name="button">
+            English
+          </button>
           <div className="header__flag-placeholder">
             <FontAwesomeIcon icon={faFlagUsa} color="#009e7f" />
           </div>

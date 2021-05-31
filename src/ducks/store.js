@@ -1,13 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todos from './Todos.js'
-import booklist from './booklist.js'
-import cart from './Cart.js'
+import todos from './Todos'
+import booklist from './booklist'
+import cart from './Cart'
+import checkout from './Checkout'
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { applyMiddleware, createStore, combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  todos, booklist, cart
+  todos, booklist, cart, checkout
 })
 
 const middleware = composeWithDevTools(applyMiddleware(thunk));

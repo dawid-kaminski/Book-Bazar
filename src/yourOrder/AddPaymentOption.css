@@ -1,0 +1,119 @@
+.addpaymentoption {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 50%);
+  position: absolute;
+  top: 0;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.addpaymentoption__close {
+  height: 70px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.addpaymentoption__form {
+  max-height: 506px;
+  width: 360px;
+  height: auto;
+  background-color: rgb(247, 248, 249);
+  border: 0px;
+  box-sizing: border-box;
+  opacity: 1;
+  display: flex;
+  z-index: 999;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.addpaymentoption__placing {
+  width: 100%;
+  padding: 30px;
+  height: auto;
+  background-color: rgb(247, 248, 249);
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addpaymentoption__headline {
+  font-family: Poppins, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(13, 17, 54);
+  margin-bottom: 15px;
+  display: flex;
+  text-align: left;
+}
+
+.addpaymentoption-input {
+  height: 40px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.addpaymentoption-input-placement {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+
+.addpaymentoption-input-placement input {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+
+#credit-card-number {
+  border: none;
+}
+
+#credit-card-validation-date {
+  border: none;
+  text-align: end;
+}
+
+.addpaymentoption__pay-button {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.addpaymentoption__pay-button button {
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgb(50, 50, 93);
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 14px;
+  box-shadow: rgb(50 50 93 / 11%) 0px 4px 6px, rgb(0 0 0 / 8%) 0px 1px 3px;
+  border-radius: 6px;
+  font-size: calc(14px);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: all 150ms ease 0s;
+  cursor: pointer;
+}

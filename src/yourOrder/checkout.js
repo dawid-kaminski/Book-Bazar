@@ -3,6 +3,9 @@ import './Checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
 import AddAddress from './AddAddress.js'
+import AddContactNumber from './AddContactNumber.js'
+import AddPaymentOption from './AddPaymentOption.js';
+import AddVoucher from './AddVoucher.js'
 import cart from '../ducks/Cart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
@@ -18,6 +21,20 @@ function CheckOut(props) {
     props.setIsDeliveryAddAddressOpen(true)
     console.log(props)
   }
+
+	const onClickAddContactNumber = () => {
+    props.setIsContactNumberOpen(true)
+    console.log(props)
+  }
+
+	const onClickAddPaymentOption = () => {
+		props.setIsAddPaymentOptionOpen(true)
+		console.log(props)
+	}
+
+	const onTest = () => {
+		console.log("Test")
+	}
 
 return (
 	<div className="checkout">
@@ -146,8 +163,8 @@ return (
 						<div className="checkout__delivery-top-name">
 							Contact Number
 						</div>
-						<button className="add-address">
-							+ Add Address
+						<button className="add-address" onClick={onClickAddContactNumber}>
+							+ Add Contact
 						</button>
 					</div>
 					<div className="checkout__delivery-contact-number-primary">
@@ -184,8 +201,8 @@ return (
 						<div className="checkout__delivery-saved-cards">
 							Saved Cards
 						</div>
-						<button className="add-address">
-							+ Add Address
+						<button className="add-address" onClick={onClickAddPaymentOption}>
+							+ Add Card
 						</button>
 					</div>
 					<div className="checkout__delivery-payments-lineup">
@@ -238,11 +255,7 @@ return (
 							</div>
 						</div>
 					</div>
-					<div className="checkout__delivery-payment-voucher">
-						<button className="voucher">
-							Do you have a voucher?
-						</button>	
-					</div>
+						<AddVoucher/>
 					<div className="checkout__delivery-payment-terms-and-conditions">
 						By making this purchase you agree to our<span className="terms-and-conditions">terms and conditions.</span>
 					</div>
