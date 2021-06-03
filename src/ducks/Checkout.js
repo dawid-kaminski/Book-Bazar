@@ -9,7 +9,8 @@ const checkoutSlice = createSlice({
     saveAddress(state, action) {
       console.log("add Address")
       console.log(action.payload)
-      state.addresses.push({street:"test"})
+      const { title, address } = action.payload
+      state.addresses.push({titleInput: title, addressInput: address})
     },
   }
 })

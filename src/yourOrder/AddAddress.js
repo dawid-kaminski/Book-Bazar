@@ -7,6 +7,9 @@ import { saveAddress } from '../ducks/Checkout'
 
 function AddAddress(props) {
 
+	// const addaddresses = useSelector((state)=>state.addaddresses)
+	// console.log(addresses)
+
 	const dispatch = useDispatch()
 
 	const onClickCloseDeliveryAddress = () => {
@@ -14,15 +17,25 @@ function AddAddress(props) {
     console.log(props)
   }
 
+	const titleInput = React.createRef()
+
+	const addressInput = React.createRef()
+
+	const addAddress = (ev) => {
+		ev.preventDefault()
+		console.log(titleInput.current.value, addressInput.current.value)
+	}
+
 	const onClickSaveAddNewAddress = useCallback(
     () => {
-      dispatch(saveAddress());
+			console.log({titleInput: titleInput, addressInput: addressInput})
+      dispatch(saveAddress({title: titleInput.current.value, address: addressInput.current.value}));
     },
-  [dispatch],
+  [dispatch, titleInput, addressInput],
 );
 
 	return(
-		<div className="addaddress">
+		<form className="addaddress" onSubmit={addAddress}>
 			<div className="addaddress__close" onClick={onClickCloseDeliveryAddress}>
       	<FontAwesomeIcon icon={faTimesCircle} color="#ffffff" size="2x"/>
       </div>
@@ -31,16 +44,16 @@ function AddAddress(props) {
 					Add New Address
 				</div>
 				<div className="addaddress__title">
-					<input id="name" type="text" placeholder="Enter Title" class="addaddress__title-input" />
+					<input id="name" type="text" placeholder="Enter Title" class="addaddress__title-input" ref={titleInput} />
 				</div>
 				<div className="addaddress__address">
-					<textarea id="info" type="text" placeholder="Enter Address" class="addaddress__address-textarea" />
+					<textarea id="info" type="text" placeholder="Enter Address" class="addaddress__address-textarea" ref={addressInput} />
 				</div>
-				<button className="button-save-address" onClick={onClickSaveAddNewAddress}>
+				<button className="button-save-address" onClick={onClickSaveAddNewAddress} type="submit" >
 					Save Address
 				</button>
 			</div>
-		</div>
+		</form>
 		)
 	}
 
