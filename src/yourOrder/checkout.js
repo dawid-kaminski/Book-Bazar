@@ -2,305 +2,82 @@ import React, {useState} from 'react';
 import './Checkout.css';
 import { useSelector } from "react-redux";
 import Header from '../header/Header.js';
-import AddAddress from './AddAddress.js'
-import AddContactNumber from './AddContactNumber.js'
-import AddPaymentOption from './AddPaymentOption.js';
-import AddVoucher from './AddVoucher.js'
+import CheckoutDeliveryAddress from './checkoutDeliveryAddress/CheckoutDeliveryAddress.js'
+import CheckoutDeliverySchedule from './checkoutDeliverySchedule/CheckoutDeliverySchedule';
+import CheckoutDeliveryContactNumber from './checkoutDeliveryContactNumber/CheckoutDeliveryContactNumber';
+import CheckoutDeliveryPaymentOption from './checkoutDeliveryPaymentOption/CheckoutDeliveryPaymentOption';
+import AddAddress from './checkoutDeliveryAddress/addAddress/AddAddress.js'
+import AddContactNumber from './checkoutDeliveryContactNumber/addContactNumber/AddContactNumber.js'
+import AddPaymentOption from './checkoutDeliveryPaymentOption/addPaymentOption/AddPaymentOption'
 import cart from '../ducks/Cart';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function CheckOut(props) {
+function CheckOut() {
 	const cartStore = useSelector((state)=>state).cart
   var y = document.scrollY
 	console.log(cartStore)
 // document.getElementById("root").addEventListener("scroll", ())
 
-  const onClickAddDeliveryAddress = () => {
-    props.setIsDeliveryAddAddressOpen(true)
-    console.log(props)
-  }
+	const [isDeliveryAddAddressOpen, setIsDeliveryAddAddressOpen] = useState(false);
 
-	const onClickAddContactNumber = () => {
-    props.setIsContactNumberOpen(true)
-    console.log(props)
-  }
+  const [isContactNumberOpen, setIsContactNumberOpen] = useState(false);
 
-	const onClickAddPaymentOption = () => {
-		props.setIsAddPaymentOptionOpen(true)
-		console.log(props)
-	}
-
-	const onTest = () => {
-		console.log("Test")
-	}
+  const [isAddPaymentOptionOpen, setIsAddPaymentOptionOpen] = useState(false);
 
 return (
-	<div className="checkout">
-		<div className="checkout-positioning">
-			<div className="checkout__details">
-				<div className="checkout__delivery-address">
-					<div className="checkout__delivery-top">
-						<div className="checkout__delivery-circle">
-							1
-						</div>
-						<div className="checkout__delivery-top-name">
-							Delivery Address
-						</div>
-						<button className="add-address" onClick={onClickAddDeliveryAddress} >
-							+ Add Address
-						</button>
-					</div>
-					<div className="checkout__delivery-adress-list">
-						<div className="checkout__delivery-home-address">
-							<div className="checkout__delivery-typing">
-								home
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									33 Baker Street
-								</div>
-								<div className="checkout__delivery-address-passage">
-									Crescent Road, CA
-								</div>
-								<div className="checkout__delivery-address-passage">
-									65746
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-office-address">
-							<div className="checkout__delivery-typing">
-								office
-							</div>
-							<div className="checkout__delivery-address-passage">
-								33 Baker Street
-							</div>
-							<div className="checkout__delivery-address-passage">
-								Crescent Road, CA
-							</div>
-							<div className="checkout__delivery-address-passage">
-								65746
-							</div>
-						</div>
-					</div>
+	<Router>
+		{isDeliveryAddAddressOpen === true ? <AddAddress setIsDeliveryAddAddressOpen ={setIsDeliveryAddAddressOpen}/> : null }
+		{isContactNumberOpen === true ? <AddContactNumber setIsContactNumberOpen ={setIsContactNumberOpen}/> : null }
+	  {isAddPaymentOptionOpen === true ? <AddPaymentOption setIsAddPaymentOptionOpen ={setIsAddPaymentOptionOpen}/> : null }
+		<div className="checkout">
+			<div className="checkout-positioning">
+				<div className="checkout__details">
+					<CheckoutDeliveryAddress setIsDeliveryAddAddressOpen={setIsDeliveryAddAddressOpen} />
+					<CheckoutDeliverySchedule />
+					<CheckoutDeliveryContactNumber setIsContactNumberOpen ={setIsContactNumberOpen} />
+					<CheckoutDeliveryPaymentOption setIsAddPaymentOptionOpen ={setIsAddPaymentOptionOpen} />
 				</div>
-				<div className="checkout__delivery-schedule">
-					<div className="checkout__delivery-top">
-						<div className="checkout__delivery-circle">
-							2
+				<div className="checkout__basket-positioning">
+					<div className="checkout__basket">
+						<div className="checkout__basket-your-order">
+							Your Order
 						</div>
-						<div className="checkout__delivery-top-name">
-							Delivery Schedule
+						<div className="checkout__basket-cart">
+							{cartStore.list.map((book)=>{
+								return(
+									<div className="checkout__basket-cart-item">
+										<div>{book.id}</div>
+										<div>{book.amount}</div>
+									</div>
+								)
+							})}
 						</div>
-					</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								Express-Delivery
+						<div className="checkout__basket-products">
+						</div>
+						<div className="checkout__basket-price">
+							<div className="checkout__basket-price-sub-total">
+								Sub Total
 							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									90 min express delivery
-								</div>
+							<div className="checkout__basket-price-delivery-fee">
+								Delivery Fee
 							</div>
-						</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								8am-11am
+							<div className="checkout__basket-price-discount">
+								Discount
 							</div>
-							<div className="checkout-delivery-home-details-typing">
-								<div className="checkout-delivery-address-passage">
-									8.00 AM - 11.00 AM
-								</div>
+							<div className="checkout__basket-price-total">
+								Total (Inlc. Vat)
 							</div>
-						</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								11am-2pm
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									11.00 AM - 2.00 PM
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								2pm-5pm
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									2.00 PM - 5.00 PM
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								5pm-8pm
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									5.00 PM - 8.00 PM
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-schedule-time">
-							<div className="checkout__delivery-typing">
-								Next Day
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-address-passage">
-									Next Day
-								</div>
-							</div>
-						</div>
-				</div>
-				<div className="checkout__delivery-contact-number">
-					<div className="checkout__delivery-top">
-						<div className="checkout__delivery-circle">
-							3
-						</div>
-						<div className="checkout__delivery-top-name">
-							Contact Number
-						</div>
-						<button className="add-address" onClick={onClickAddContactNumber}>
-							+ Add Contact
-						</button>
-					</div>
-					<div className="checkout__delivery-contact-number-primary">
-						<div className="checkout__delivery-typing">
-							Primary
-						</div>
-						<div className="checkout__delivery-home-details-typing">
-							<div className="checkout__delivery-address-passage">
-								202-555-0191
-							</div>
-						</div>
-					</div>
-					<div className="checkout__delivery-contact-number-secondary">
-						<div className="checkout__delivery-typing">
-							Secondary
-						</div>
-						<div className="checkout__delivery-home-details-typing">
-							<div className="checkout__delivery-address-passage">
-								202-555-0701
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="checkout__delivery-payment-option">
-					<div className="checkout__delivery-top">
-						<div className="checkout__delivery-circle">
-							4
-						</div>
-						<div className="checkout__delivery-top-name">
-							Payment Option
-						</div>
-					</div>
-					<div className="checkout__delivery-saved-cards-line">
-						<div className="checkout__delivery-saved-cards">
-							Saved Cards
-						</div>
-						<button className="add-address" onClick={onClickAddPaymentOption}>
-							+ Add Card
-						</button>
-					</div>
-					<div className="checkout__delivery-payments-lineup">
-						<div className="checkout__delivery-card">
-							<div className="checkout__delivery-typing">
-								<FontAwesomeIcon icon={faPaypal} color="#009e7f" /> PayPal
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-card-number-passage">
-									Card Number
-								</div>
-								<div className="checkout__delivery-number-passage">
-									<span>****</span><span>****</span><span>****</span><span>2349</span>
-								</div>
-								<div className="checkout__delivery-name-passage">
-									Jhon Doe Smith
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-card">
-							<div className="checkout__delivery-typing">
-								<FontAwesomeIcon icon={faCcMastercard} color="#009e7f" /> Mastercard 
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-card-number-passage">
-									Card Number
-								</div>
-								<div className="checkout__delivery-number-passage">
-									<span>****</span><span>****</span><span>****</span><span>2349</span>
-								</div>
-								<div className="checkout__delivery-name-passage">
-									Jhon Doe Smith
-								</div>
-							</div>
-						</div>
-						<div className="checkout__delivery-card">
-							<div className="checkout__delivery-typing">
-								<FontAwesomeIcon icon={faCcVisa} color="#009e7f" /> Visa
-							</div>
-							<div className="checkout__delivery-home-details-typing">
-								<div className="checkout__delivery-card-number-passage">
-									Card Number
-								</div>
-								<div className="checkout__delivery-number-passage">
-									<span>****</span><span>****</span><span>****</span><span>2349</span>
-								</div>
-								<div className="checkout__delivery-name-passage">
-									Jhon Doe Smith
-								</div>
-							</div>
-						</div>
-					</div>
-						<AddVoucher/>
-					<div className="checkout__delivery-payment-terms-and-conditions">
-						By making this purchase you agree to our<span className="terms-and-conditions">terms and conditions.</span>
-					</div>
-					<div className="checkout__delivery-payment-proceed-to-checkout">
-						<button className="checkout-button">
-							Proceed to Checkout
-						</button>
-					</div>
-				</div>
-			</div>
-			<div className="checkout__basket-positioning">
-				<div className="checkout__basket">
-					<div className="checkout__basket-your-order">
-						Your Order
-					</div>
-					<div className="checkout__basket-cart">
-						{cartStore.list.map((book)=>{
-							return(
-								<div className="checkout__basket-cart-item">
-									<div>{book.id}</div>
-									<div>{book.amount}</div>
-								</div>
-							)
-						})}
-					</div>
-					<div className="checkout__basket-products">
-					</div>
-					<div className="checkout__basket-price">
-						<div className="checkout__basket-price-sub-total">
-							Sub Total
-						</div>
-						<div className="checkout__basket-price-delivery-fee">
-							Delivery Fee
-						</div>
-						<div className="checkout__basket-price-discount">
-							Discount
-						</div>
-						<div className="checkout__basket-price-total">
-							Total (Inlc. Vat)
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</Router>
 	)
 }
 

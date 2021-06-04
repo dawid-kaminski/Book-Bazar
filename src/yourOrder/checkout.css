@@ -111,6 +111,12 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
+.checkout__delivery-home-details-typing {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
 .checkout__delivery-typing {
   font-family: Lato, sans-serif;
   font-size: 13px;
@@ -120,12 +126,6 @@ html, body {
   margin-bottom: 5px;
   text-transform: capitalize;
   text-align: start;
-}
-
-.checkout__delivery-home-details-typing {
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
 }
 
 .checkout__delivery-office-address {
