@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useHistory, useLocation } from "react-router-dom";
 import './Basket.css';
 import { useSelector } from "react-redux";
+import { getAllBooks } from "../BookData.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag, faTimesCircle, faPlus, faMinus, faTimes } from '@fortawesome/free-solid-svg-icons'
 
@@ -49,7 +50,7 @@ function Basket() {
 		)
 	}
 
-	const OpenBasket = ()=>{
+	const OpenBasket = (props)=>{
 		return(
 			<div className="open-basket" >
 				<div className="open-basket-items-amount">
@@ -73,7 +74,7 @@ function Basket() {
 							</button>
 						</div>
 						<div className="book-picture">
-
+							
 						</div>
 						<div className="book-details">
 							<div className="book-name">

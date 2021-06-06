@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './CheckoutDeliverySchedule.css';
 
 function CheckoutDeliverySchedule() {
+
+  const [isDeliveryTimeOpen, setIsDeliveryTimeOpen] = useState(true);
+
+  var changeClass = document.getElementsByClassName("checkout__delivery-schedule-time")[0];
+
+	const toggleModal = () => {
+		setIsDeliveryTimeOpen(!isDeliveryTimeOpen)
+		console.log('modal')
+	}
+
   return(
     <div className="checkout__delivery-schedule">
       <div className="checkout__delivery-top">
@@ -12,7 +22,17 @@ function CheckoutDeliverySchedule() {
           Delivery Schedule
         </div>
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time-template">
+      { isDeliveryTimeOpen === true ? <div className="schedule-time-on-click">
+      <div className="checkout__delivery-typing">
+          Express-Delivery
+        </div>
+        <div className="checkout__delivery-home-details-typing">
+          <div className="checkout__delivery-address-passage">
+            90 min express delivery
+          </div>
+        </div>
+				</div> : <div className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           Express-Delivery
         </div>
@@ -21,8 +41,9 @@ function CheckoutDeliverySchedule() {
             90 min express delivery
           </div>
         </div>
+        </div>}
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           8am-11am
         </div>
@@ -32,7 +53,7 @@ function CheckoutDeliverySchedule() {
           </div>
         </div>
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           11am-2pm
         </div>
@@ -42,7 +63,7 @@ function CheckoutDeliverySchedule() {
           </div>
         </div>
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           2pm-5pm
         </div>
@@ -52,7 +73,7 @@ function CheckoutDeliverySchedule() {
           </div>
         </div>
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           5pm-8pm
         </div>
@@ -62,7 +83,7 @@ function CheckoutDeliverySchedule() {
           </div>
         </div>
       </div>
-      <div className="checkout__delivery-schedule-time">
+      <div onClick={toggleModal} className="checkout__delivery-schedule-time">
         <div className="checkout__delivery-typing">
           Next Day
         </div>

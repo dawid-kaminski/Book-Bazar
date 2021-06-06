@@ -138,7 +138,7 @@ function BookPage() {
               </div>
             </div>
             <div className="book-page__info-price">
-              $25
+              {book.price}$
             </div>
             <div className="book-page__info-button">
               <div class="button">

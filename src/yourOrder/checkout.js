@@ -10,6 +10,8 @@ import AddAddress from './checkoutDeliveryAddress/addAddress/AddAddress.js'
 import AddContactNumber from './checkoutDeliveryContactNumber/addContactNumber/AddContactNumber.js'
 import AddPaymentOption from './checkoutDeliveryPaymentOption/addPaymentOption/AddPaymentOption'
 import cart from '../ducks/Cart';
+import { getAllBooks } from "../BookData.js";
+import { getBookById } from '../BookData.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +21,8 @@ import {
 
 function CheckOut() {
 	const cartStore = useSelector((state)=>state).cart
+	const bookList = useSelector((state)=>state).booklist
+	console.log(bookList)
   var y = document.scrollY
 	console.log(cartStore)
 // document.getElementById("root").addEventListener("scroll", ())
@@ -51,6 +55,7 @@ return (
 							{cartStore.list.map((book)=>{
 								return(
 									<div className="checkout__basket-cart-item">
+										{bookList.list.map((book)=>{return(<div>{book.img}</div>)})}
 										<div>{book.id}</div>
 										<div>{book.amount}</div>
 									</div>
