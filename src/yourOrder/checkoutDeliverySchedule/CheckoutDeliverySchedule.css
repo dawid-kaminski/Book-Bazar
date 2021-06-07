@@ -68,6 +68,10 @@
   display: flex;
   flex-direction: column;
   border-radius: 6px;
+  background-color: rgb(247, 247, 247);
+}
+
+.schedule-time-on-click--active {
   border: 1px solid rgb(0, 158, 127);
   background-color: rgb(255, 255, 255);
 }

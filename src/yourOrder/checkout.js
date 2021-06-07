@@ -20,10 +20,15 @@ import {
 } from "react-router-dom";
 
 function CheckOut() {
+
 	const cartStore = useSelector((state)=>state).cart
+
 	const bookList = useSelector((state)=>state).booklist
+
 	console.log(bookList)
+
   var y = document.scrollY
+
 	console.log(cartStore)
 // document.getElementById("root").addEventListener("scroll", ())
 

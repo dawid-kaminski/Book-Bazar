@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './AddContactNumber.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { useDispatch } from "react-redux";
+import { saveNumber } from "../../../ducks/Number.js"
 
 function AddContactNumber(props) {
 
@@ -9,6 +11,22 @@ function AddContactNumber(props) {
     props.setIsContactNumberOpen(false)
     console.log(props)
   }
+  const dispatch = useDispatch()
+
+  const numberInput = React.createRef()
+
+  const addAddress = (ev) => {
+		ev.preventDefault()
+		console.log(numberInput.current.value)
+	}
+
+  const onClickSaveAddNewNumber = useCallback(
+    () => {
+			console.log({numberInput: numberInput})
+      dispatch(saveNumber({number: numberInput.current.value}));
+    },
+  [dispatch, numberInput],
+);
 
   return(
     <div className="addcontactnumber">
@@ -21,9 +39,9 @@ function AddContactNumber(props) {
             Add New Contact
           </div>
           <div className="addcontactnumber__input">
-            <input type="text" placeholder="Enter a phone number" />
+            <input type="text" placeholder="Enter a phone number" ref={numberInput} />
           </div>
-          <div className="addcontactnumber__button">
+          <div className="addcontactnumber__button" onClick={onClickSaveAddNewNumber} type="submit">
             <button id="button-contact">
               Save Contact
             </button>

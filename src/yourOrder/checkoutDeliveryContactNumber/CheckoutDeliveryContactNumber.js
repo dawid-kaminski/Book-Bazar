@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import AddContactNumber from './addContactNumber/AddContactNumber.js';
+import { useSelector } from "react-redux";
 import './CheckoutDeliveryContactNumber.css';
+import { saveNumber } from "../../ducks/Number.js"
 
 function CheckoutDeliveryContactNumber(props) {
 
@@ -8,6 +10,13 @@ function CheckoutDeliveryContactNumber(props) {
     props.setIsContactNumberOpen(true)
     console.log(props)
   }
+
+  const numberStore = useSelector((state)=>state.number)
+  console.log(numberStore)
+
+  const GetNumberItemRender = React.memo(({number}) => {
+    return <AddContactNumber number={number} />  
+  }, [])
 
   return(
     <div className="checkout__delivery-contact-number">
@@ -42,6 +51,10 @@ function CheckoutDeliveryContactNumber(props) {
           </div>
         </div>
       </div>
+      {
+        numberStore.numbers.map((number)=>
+        {return <GetNumberItemRender number={number} />})
+      }
     </div>
   )
 }
