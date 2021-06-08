@@ -1,0 +1,33 @@
+.schedule-time-on-click {
+  width: 25%;
+  padding: 11px 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: rgb(247, 247, 247);
+}
+
+.schedule-time-on-click--active {
+  border: 1px solid rgb(0, 158, 127);
+  background-color: rgb(255, 255, 255);
+}
+
+.checkout__delivery-typing {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.checkout__delivery-home-details-typing {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+

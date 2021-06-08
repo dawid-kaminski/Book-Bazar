@@ -1,0 +1,10 @@
+.checkout__delivery-contact-number {
+  height: auto;
+  width: 62%;
+  padding: 30px 30px 20px;
+  margin-bottom: 20px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}

@@ -1,0 +1,35 @@
+.checkout__delivery-address {
+  height: auto;
+  width: 62%;
+  padding: 30px 30px 20px;
+  margin: 73px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
+  background-color: white;
+}
+
+.add-address {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  justify-content: end;
+  border: 0px;
+  outline: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(0, 158, 127);
+}
+
+.checkout__delivery-adress-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}

@@ -3,13 +3,13 @@ import './AddContactNumberItem.css';
 
 function AddContactNumberItem(props) {
   return(
-    <div className="checkout__delivery-contact-number-secondary">
+    <div className={props.isActive ? "checkout__contact-number checkout__contact-number--active" : "checkout__contact-number" } onClick={props.onClickItem} >
       <div className="checkout__delivery-typing">
-       Secondary
-     </div>
-     <div className="checkout__delivery-home-details-typing">
+        {props.title}
+      </div>
+      <div className="checkout__delivery-home-details-typing">
         <div className="checkout__delivery-address-passage">
-         {props.number}
+          {props.number}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import AddContactNumber from './addContactNumber/AddContactNumber.js';
+import AddContactNumberItem from './addContactNumber/AddContactNumberItem';
 import { useSelector } from "react-redux";
 import './CheckoutDeliveryContactNumber.css';
 import { saveNumber } from "../../ducks/Number.js"
@@ -15,8 +15,14 @@ function CheckoutDeliveryContactNumber(props) {
   console.log(numberStore)
 
   const GetNumberItemRender = React.memo(({number}) => {
-    return <AddContactNumber number={number} />  
+    return <AddContactNumberItem number={number} />  
   }, [])
+
+  const [isContactNumberActive, setisContactNumberActive] = useState(0);
+  
+	const setContactNumberActive = (value) => {
+		setisContactNumberActive(value)  
+	}
 
   return(
     <div className="checkout__delivery-contact-number">
@@ -31,26 +37,8 @@ function CheckoutDeliveryContactNumber(props) {
           + Add Contact
         </button>
       </div>
-      <div className="checkout__delivery-contact-number-primary">
-        <div className="checkout__delivery-typing">
-          Primary
-        </div>
-        <div className="checkout__delivery-home-details-typing">
-          <div className="checkout__delivery-address-passage">
-            202-555-0191
-          </div>
-        </div>
-      </div>
-      <div className="checkout__delivery-contact-number-secondary">
-        <div className="checkout__delivery-typing">
-          Secondary
-        </div>
-        <div className="checkout__delivery-home-details-typing">
-          <div className="checkout__delivery-address-passage">
-            202-555-0701
-          </div>
-        </div>
-      </div>
+      <AddContactNumberItem title={isContactNumberActive === 0 ? "Primary" : "Secondary"} number="202-555-0191" onClickItem={() =>setContactNumberActive(0)} isActive={isContactNumberActive === 0} />
+      <AddContactNumberItem title={isContactNumberActive === 1 ? "Primary" : "Secondary"} number="202-555-0701" onClickItem={() =>setContactNumberActive(1)} isActive={isContactNumberActive === 1} />
       {
         numberStore.numbers.map((number)=>
         {return <GetNumberItemRender number={number} />})

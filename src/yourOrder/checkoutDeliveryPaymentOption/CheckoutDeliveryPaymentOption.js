@@ -4,13 +4,22 @@ import AddVoucher from './addVoucher/AddVoucher.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { useHistory, useLocation } from "react-router-dom";
 
 function CheckoutDeliveryPaymentOption(props) {
+
+  const location = useLocation()
+
+  const history = useHistory()
 
   const onClickAddPaymentOption = () => {
 		props.setIsAddPaymentOptionOpen(true)
 		console.log(props)
 	}
+
+  const onClickSummary = () => {
+    history.push('/order-summary')
+  }
 
   return(
     <div className="checkout__delivery-payment-option">
@@ -85,7 +94,7 @@ function CheckoutDeliveryPaymentOption(props) {
         By making this purchase you agree to our<span className="terms-and-conditions">terms and conditions.</span>
       </div>
       <div className="checkout__delivery-payment-proceed-to-checkout">
-        <button className="checkout-button">
+        <button className="checkout-button" onClick={onClickSummary} >
           Proceed to Checkout
         </button>
       </div>

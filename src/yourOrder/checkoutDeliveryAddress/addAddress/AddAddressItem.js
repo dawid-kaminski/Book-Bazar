@@ -3,7 +3,7 @@ import './AddAddressItem.css';
 
 function AddAddressItem(props) {
   return(
-    <div className="checkout__delivery-home-address">
+    <div className={props.isActive ? "checkout__address checkout__address--active" : "checkout__address" } onClick={props.onClickItem}>
       <div className="checkout__delivery-typing">
         {props.title}
       </div>

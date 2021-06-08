@@ -28,42 +28,6 @@ html, body {
   background-color: rgb(247, 247, 247);
 }
 
-.checkout__delivery-address {
-  height: auto;
-  width: 62%;
-  padding: 30px 30px 20px;
-  margin: 73px 0px 20px 0px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
-  background-color: white;
-}
-
-.add-address {
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  background-color: transparent;
-  justify-content: end;
-  border: 0px;
-  outline: 0px;
-  border-radius: 0px;
-  padding: 0px;
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgb(0, 158, 127);
-}
-
-.checkout__delivery-adress-list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-}
-
 .checkout__delivery-home-address {
   padding: 15px;
   margin-right: 15px;
@@ -91,41 +55,26 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 
-.checkout__delivery-contact-number {
-  height: auto;
-  width: 62%;
-  padding: 30px 30px 20px;
-  margin-bottom: 20px;
-  box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
+.checkout__delivery-top-name {
+  height: 35px;
+  width: 76%;
+  font-family: Lato, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
   display: flex;
-  flex-wrap: wrap;
-  background-color: white;
+  align-items: center;
 }
-
-.checkout__delivery-contact-number-primary {
-  padding: 15px;
-  margin-right: 15px;
-  flex: 1 1 calc(33.3333% - 10px);
-  max-width: calc(33.3333% - 10px);
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(0, 158, 127);
-  border-radius: 6px;
-  background-color: rgb(255, 255, 255);
-}
-
-.checkout__delivery-contact-number-secondary {
-  padding: 15px;
-  margin-right: 15px;
-  flex: 1 1 calc(33.3333% - 10px);
-  max-width: calc(33.3333% - 10px);
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(0, 158, 127);
-  border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+.checkout__delivery-typing {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  text-align: start;
 }
 
 .checkout__delivery-payment-option {
@@ -140,6 +89,7 @@ html, body {
 }
 
 .checkout__delivery-saved-cards-line {
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;

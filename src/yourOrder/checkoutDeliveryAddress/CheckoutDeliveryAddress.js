@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useState } from 'react';
 import AddAddress from './addAddress/AddAddress.js';
 import AddAddressItem from './addAddress/AddAddressItem.js';
 import { useSelector } from "react-redux";
@@ -19,6 +19,12 @@ function CheckoutDeliveryAddress(props) {
     return <AddAddressItem title={title} address={address} />  
   }, [])
 
+  const [isAddressOpen, setIsAddressOpen] = useState(0);
+  
+	const setAddressActive = (value) => {
+		setIsAddressOpen(value)  
+	}
+
   return(
     <div className="checkout__delivery-address">
       <div className="checkout__delivery-top">
@@ -33,36 +39,8 @@ function CheckoutDeliveryAddress(props) {
         </button>
       </div>
       <div className="checkout__delivery-adress-list">
-        <div className="checkout__delivery-home-address">
-          <div className="checkout__delivery-typing">
-            home
-          </div>
-          <div className="checkout__delivery-home-details-typing">
-            <div className="checkout__delivery-address-passage">
-              33 Baker Street
-            </div>
-            <div className="checkout__delivery-address-passage">
-              Crescent Road, CA
-            </div>
-            <div className="checkout__delivery-address-passage">
-              65746
-            </div>
-          </div>
-        </div>
-        <div className="checkout__delivery-office-address">
-          <div className="checkout__delivery-typing">
-            office
-          </div>
-          <div className="checkout__delivery-address-passage">
-            33 Baker Street
-          </div>
-          <div className="checkout__delivery-address-passage">
-            Crescent Road, CA
-          </div>
-          <div className="checkout__delivery-address-passage">
-            65746
-          </div>
-        </div>
+      <AddAddressItem title="home" address="33 Baker Street Crescent Road, CA 65746" onClickItem={() =>setAddressActive(0)} isActive={isAddressOpen === 0} />
+      <AddAddressItem title="office" address="33 Baker Street Crescent Road, CA 65746" onClickItem={() =>setAddressActive(1)} isActive={isAddressOpen === 1} />
         {
           checkoutStore.addresses.map((title, address)=>
           {return <GetAddressItemRender title={title} address={address} />})
