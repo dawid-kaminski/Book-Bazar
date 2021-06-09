@@ -1,5 +1,6 @@
-import React from 'react';
-import './CheckoutDeliveryPaymentOption';
+import React, { useState } from 'react';
+import './CheckoutDeliveryPaymentOption.css';
+import AddPaymentOptionItem from './addPaymentOption/AddPaymentOptionItem'
 import AddVoucher from './addVoucher/AddVoucher.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCcMastercard, faCcVisa, faPaypal } from "@fortawesome/free-brands-svg-icons";
@@ -21,6 +22,12 @@ function CheckoutDeliveryPaymentOption(props) {
     history.push('/order-summary')
   }
 
+  const [isCardOpen, setIsCardOpen] = useState(0);
+  
+	const setCardActive = (value) => {
+		setIsCardOpen(value)  
+	}
+
   return(
     <div className="checkout__delivery-payment-option">
       <div className="checkout__delivery-top">
@@ -40,7 +47,7 @@ function CheckoutDeliveryPaymentOption(props) {
         </button>
       </div>
       <div className="checkout__delivery-payments-lineup">
-        <div className="checkout__delivery-card">
+        <div className={isCardOpen===0 ? "checkout__delivery-card checkout__delivery-card--active" : "checkout__delivery-card" } onClick={() =>{setCardActive(0)}}>
           <div className="checkout__delivery-typing">
             <FontAwesomeIcon icon={faPaypal} color="#009e7f" /> PayPal
           </div>
@@ -55,8 +62,8 @@ function CheckoutDeliveryPaymentOption(props) {
               Jhon Doe Smith
             </div>
           </div>
-       </div>
-        <div className="checkout__delivery-card">
+        </div>
+        <div className={isCardOpen===1 ? "checkout__delivery-card checkout__delivery-card--active" : "checkout__delivery-card" } onClick={() =>{setCardActive(1)}}>
           <div className="checkout__delivery-typing">
             <FontAwesomeIcon icon={faCcMastercard} color="#009e7f" /> Mastercard 
           </div>
@@ -72,7 +79,7 @@ function CheckoutDeliveryPaymentOption(props) {
             </div>
           </div>
         </div>
-        <div className="checkout__delivery-card">
+        <div className={isCardOpen===2 ? "checkout__delivery-card checkout__delivery-card--active" : "checkout__delivery-card" } onClick={() =>{setCardActive(2)}}>
           <div className="checkout__delivery-typing">
             <FontAwesomeIcon icon={faCcVisa} color="#009e7f" /> Visa
           </div>

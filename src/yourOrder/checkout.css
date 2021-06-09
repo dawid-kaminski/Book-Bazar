@@ -77,82 +77,6 @@ html, body {
   text-align: start;
 }
 
-.checkout__delivery-payment-option {
-  height: auto;
-  width: 62%;
-  padding: 30px 30px 20px;
-  margin-bottom: 100px;
-  box-shadow: rgb(0 0 0 / 8%) 0px 2px 16px 0px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
-.checkout__delivery-saved-cards-line {
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.checkout__delivery-saved-cards {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgb(0, 158, 127);
-  display: block;
-}
-
-.checkout__delivery-payments-lineup {
-  display: flex;
-  flex-direction: row;
-}
-
-.checkout__delivery-card {
-  padding: 15px;
-  margin-right: 15px;
-  flex: 1 1 calc(33.3333% - 10px);
-  max-width: calc(33.3333% - 10px);
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgb(0, 158, 127);
-  border-radius: 6px;
-  background-color: rgb(228, 244, 252);  
-}
-
-.checkout__delivery-card-number-passage {
-  font-family: Lato, sans-serif;
-  font-size: calc(10px);
-  font-weight: 400;
-  color: rgb(119, 121, 140);
-  display: block;
-  margin-bottom: 11px;
-}
-
-.checkout__delivery-number-passage {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 9px;
-}
-
-span {
-  font-size: calc(14px);
-  font-weight: 700;
-  color: rgb(13, 17, 54);
-  line-height: 1.25;
-}
-
-.checkout__delivery-name-passage {
-  font-size: 12px;
-  font-weight: 700;
-  color: rgb(13, 17, 54);
-  display: block;
-}
-
 .checkout__delivery-payment-voucher {
   display: flex;
   flex-direction: column;
@@ -171,55 +95,6 @@ span {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 158, 127);
   font-weight: normal;
-}
-
-.checkout__delivery-payment-terms-and-conditions {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(119, 121, 140);
-  line-height: 1.5;
-  margin-top: 30px;
-  display: flex;
-}
-
-.terms-and-conditions {
-  font-family: Lato, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(255, 91, 96);
-  margin-left: 5px;
-  cursor: pointer;
-  line-height: 1.5;
-}
-
-.checkout__delivery-payment-proceed-to-checkout{
-  padding-bottom: 30px;
-}
-
-.checkout-button {
-  height: 48px;
-  width: 100%;
-  padding-bottom: 10px;
-  margin-top: 25px;
-  font-size: 15px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 158, 127);
-  transition: all 0.3s ease 0s;
-  border-radius: 6px;
-  appearance: none;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  flex-shrink: 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-  border: 0px;
-  cursor: pointer;
 }
 
 .checkout__basket-positioning {

@@ -16,6 +16,9 @@ function CheckoutDeliverySchedule() {
         <div className="checkout__delivery-circle">
           2
         </div>
+        <div className="checkout__delivery-top-name">
+          Delivery Schedule
+        </div>
       </div>
       <CheckoutDeliveryScheduleItem title="Express-Delivery" hour="90 min express delivery" onClickItem={() =>setDeliveryTimeActive(0)} isActive={isDeliveryTimeOpen === 0} />
       <CheckoutDeliveryScheduleItem title="8am-11am" hour="8.00 AM - 11.00 AM" onClickItem={() =>setDeliveryTimeActive(1)} isActive={isDeliveryTimeOpen === 1} />

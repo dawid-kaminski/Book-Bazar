@@ -1,16 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AddPaymentOptionItem.css';
 
 function AddPaymentOptionItem(props) {
-
-  const [isDeliveryTimeOpen, setIsDeliveryTimeOpen] = useState(0);
-  
-	const setDeliveryTimeActive = (value) => {
-		setIsDeliveryTimeOpen(value)  
-	}
   
   return(
-
+    <div className={props.isActive ? "checkout__delivery-card checkout__delivery-card--active" : "checkout__delivery-card" } onClick={props.onClickItem} />
   )
 }
 
