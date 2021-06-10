@@ -27,7 +27,7 @@
   outline: 0px;
   cursor: pointer;
   position: relative;
-  top: 50%;
+  top: 0%;
   left: 40px;
   z-index: 99;
 }
@@ -57,7 +57,7 @@
   outline: 0px;
   cursor: pointer;
   position: relative;
-  top: 50%;
+  top: 0%;
   right: 40px;
   z-index: 99;
 }
