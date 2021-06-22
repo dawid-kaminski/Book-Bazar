@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Faq.css';
 import FaqListItem from './FaqListItem.js';
 
