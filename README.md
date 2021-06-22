@@ -26,7 +26,7 @@
  3. React
  4. React Hooks
  5. React Router
- 6. Redux Library(https://redux.js.org/)
+ 6. [Redux Library](https://redux.js.org/)
  7. [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
  8. [Font Awesome](https://fontawesome.com/)
 &nbsp;
