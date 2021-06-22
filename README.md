@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# EndlessProject
+&nbsp;
 
-## Available Scripts
+# Table of contents
+1. [What is this repository about](#introduction)
+2. [Tools and external libraries used for the project](#tools)
+3. [Images of the project](#images)
+4. [How to view the project](#installation)
+5. [Contact](#Contact)
+6. [License](#License)
+7. [Acknowledgments](#Acknowledgments)
+&nbsp;
+---
+<a name="introduction"></a>
+### What is this repository about
 
-In the project directory, you can run:
+#### Endless Project is a project in which I have recreated an existing website with as accurately similar styling as possible. The main idea of the project was to copy the looks of the website without looking into the source code. After that I wanted to compare my own version with the original created by the authors for educational purposes. The links to the original websites:
+1. [Gallery Grid](http://react.pixelstrap.com/endless/gallery/imageGallery#javascript)
+2. [User Profile](http://react.pixelstrap.com/endless/users/userProfile#javascript)
+3. [Basic Tables](http://react.pixelstrap.com/endless/table/basic#javascript)
+&nbsp;
+---
+<a name="tools"></a>
+### Tools and external libraries used for the project
+ 1. HTML 5
+ 2. CSS 3
+ 3. [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+ 4. [Font Awesome](https://fontawesome.com/)
+&nbsp;
+---
+<a name="images"></a>
+### Images of the Project
+&nbsp;
+![](images/1.PNG)
+![](images/2.PNG)
+![](images/3.PNG)
+&nbsp;
 
-### `npm start`
+<a name="installation"></a>
+### How to view the project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### In order to see the project simply clone the repository and run the index.html file in your browser.
+&nbsp;
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Contact
 
-### `npm test`
+#### You can contact me via my personal Email: dawidk65@gmail.com
+&nbsp;
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### License
 
-### `npm run build`
+#### This project is licensed under the MIT License
+&nbsp;
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Acknowledgments
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Endless Project is my first repository in which I have recreated an existing website for training purposes. I wanted to put my acquired front-end skills into practice and design a website.
+&nbsp;
