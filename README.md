@@ -32,7 +32,7 @@
 &nbsp;
 ---
 <a name="images"></a>
-### Gifs of the Project
+### Presentation of the Project
 &nbsp;
 ![](images/presentation.gif)
 &nbsp;
