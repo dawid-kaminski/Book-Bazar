@@ -32,9 +32,9 @@
 &nbsp;
 ---
 <a name="images"></a>
-### Images of the Project
+### Gifs of the Project
 &nbsp;
-![](images/1.PNG)
+![](images/gif1.gif)
 ![](images/2.PNG)
 ![](images/3.PNG)
 &nbsp;
