@@ -12,6 +12,7 @@ import OrderSummary from '../orderSummary/OrderSummary.js'
 import cart from '../ducks/Cart';
 import { getAllBooks } from "../BookData.js";
 import { getBookById } from '../BookData.js';
+import CheckoutBookItem from './CheckoutBookItem.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,14 +24,7 @@ function CheckOut() {
 
 	const cartStore = useSelector((state)=>state).cart
 
-	const bookList = useSelector((state)=>state).booklist
-
-	console.log(bookList)
-
   var y = document.scrollY
-
-	console.log(cartStore)
-// document.getElementById("root").addEventListener("scroll", ())
 
 	const [isDeliveryAddAddressOpen, setIsDeliveryAddAddressOpen] = useState(false);
 
@@ -38,13 +32,20 @@ function CheckOut() {
 
   const [isAddPaymentOptionOpen, setIsAddPaymentOptionOpen] = useState(false);
 
+	const cartStoreTotalPriceArray = cartStore.list.map((book)=>{
+		const bookDetails = getBookById(book.id)
+		return bookDetails.price * book.amount
+	})
+
+	const cartStoreTotalPrice = cartStoreTotalPriceArray.length > 0 ? cartStoreTotalPriceArray.reduce((a, b)=> a + b) : 0
+
 return (
 	<Router>
 		{isDeliveryAddAddressOpen === true ? <AddAddress setIsDeliveryAddAddressOpen ={setIsDeliveryAddAddressOpen}/> : null }
 		{isContactNumberOpen === true ? <AddContactNumber setIsContactNumberOpen ={setIsContactNumberOpen}/> : null }
 	  {isAddPaymentOptionOpen === true ? <AddPaymentOption setIsAddPaymentOptionOpen ={setIsAddPaymentOptionOpen}/> : null }
 		<div className="checkout">
-			<div className="checkout-positioning">
+			<div className="checkout__positioning">
 				<div className="checkout__details">
 					<CheckoutDeliveryAddress setIsDeliveryAddAddressOpen={setIsDeliveryAddAddressOpen} />
 					<CheckoutDeliverySchedule />
@@ -57,13 +58,9 @@ return (
 							Your Order
 						</div>
 						<div className="checkout__basket-cart">
-							{cartStore.list.map((book)=>{
+							{cartStore.list.map((book, index)=>{
 								return(
-									<div className="checkout__basket-cart-item">
-										{bookList.list.map((book)=>{return(<div>{book.img}</div>)})}
-										<div>{book.id}</div>
-										<div>{book.amount}</div>
-									</div>
+									<CheckoutBookItem key={index} book={book}/>
 								)
 							})}
 						</div>
@@ -72,15 +69,27 @@ return (
 						<div className="checkout__basket-price">
 							<div className="checkout__basket-price-sub-total">
 								Sub Total
+								<div className="checkout__basket-price-sub-total--redux-input">
+									${cartStoreTotalPrice}
+								</div>
 							</div>
 							<div className="checkout__basket-price-delivery-fee">
 								Delivery Fee
+								<div className="checkout__basket-price-delivery-fee-number">
+									$0
+								</div>
 							</div>
 							<div className="checkout__basket-price-discount">
 								Discount
+								<div className="checkout__basket-price-discount-number">
+									$0
+								</div>
 							</div>
 							<div className="checkout__basket-price-total">
 								Total (Inlc. Vat)
+								<div className="checkout__basket-price-total--redux-input">
+									${cartStoreTotalPrice}
+								</div>
 							</div>
 						</div>
 					</div>

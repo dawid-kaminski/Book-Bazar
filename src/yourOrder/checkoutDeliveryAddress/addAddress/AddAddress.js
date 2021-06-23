@@ -11,7 +11,6 @@ function AddAddress(props) {
 
 	const onClickCloseDeliveryAddress = () => {
     props.setIsDeliveryAddAddressOpen(false)
-    console.log(props)
   }
 
 	const titleInput = React.createRef()

@@ -1,4 +1,4 @@
-.addpaymentoption {
+.add-payment-option {
   height: 100vh;
   width: 100vw;
   background-color: rgb(0, 0, 0, 50%);
@@ -11,7 +11,7 @@
   z-index: 999;
 }
 
-.addpaymentoption__close {
+.add-payment-option__close {
   height: 70px;
   width: 100px;
   display: flex;
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-.addpaymentoption__form {
+.add-payment-option__form {
   max-height: 506px;
   width: 360px;
   height: auto;
@@ -37,7 +37,7 @@
   border-radius: 3px 3px 0px 0px;
 }
 
-.addpaymentoption__placing {
+.add-payment-option__placing {
   width: 100%;
   padding: 30px;
   height: auto;
@@ -47,7 +47,7 @@
   flex-direction: column;
 }
 
-.addpaymentoption__headline {
+.add-payment-option__headline {
   font-family: Poppins, sans-serif;
   font-size: 19px;
   font-weight: 600;
@@ -57,7 +57,7 @@
   text-align: left;
 }
 
-.addpaymentoption-input {
+.add-payment-option--input {
   height: 40px;
   padding: 10px 12px;
   margin-bottom: 15px;
@@ -70,13 +70,13 @@
   background-color: rgb(255, 255, 255);
 }
 
-.addpaymentoption-input-placement {
+.add-payment-option--input-placement {
   height: auto;
   width: 100%;
   display: flex;
 }
 
-.addpaymentoption-input-placement input {
+.add-payment-option--input-placement input {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -91,14 +91,14 @@
   text-align: end;
 }
 
-.addpaymentoption__pay-button {
+.add-payment-option__pay--button {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.addpaymentoption__pay-button button {
+.add-payment-option__pay--button button {
   border: none;
   outline: none;
   color: rgb(255, 255, 255);

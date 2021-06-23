@@ -9,11 +9,9 @@ function CheckoutDeliveryAddress(props) {
 
   const onClickAddDeliveryAddress = () => {
     props.setIsDeliveryAddAddressOpen(true)
-    console.log(props)
   }
 
   const checkoutStore = useSelector((state)=>state.checkout)
-	console.log(checkoutStore)
 
   const GetAddressItemRender = React.memo(({title, address}) => {
     return <AddAddressItem title={title} address={address} />  

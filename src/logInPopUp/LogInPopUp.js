@@ -11,7 +11,6 @@ function LogInPopUp(props) {
 
   const onClickJoinButton = () => {
     props.setIsLogInPopUpOpen(false)
-    console.log(props)
   }
 
   return (

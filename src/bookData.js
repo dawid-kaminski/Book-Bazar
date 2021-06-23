@@ -27,7 +27,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "3",
+    id: "4",
     title: "The Girl on the Train",
     author: "Paula Hawkins",
     price: 25,
@@ -36,7 +36,7 @@ const books = [
     types: ["thriller", "all"]
   },
   {
-    id: "4",
+    id: "5",
     title: "Duma i uprzedzenie",
     author: "Jane Austen",
     price: 25,
@@ -45,7 +45,7 @@ const books = [
     types: ["novel", "romantic", "all"]
   },
   {
-    id: "5",
+    id: "6",
     title: "Wielki Gatsby",
     author: "F. Scott Fitzgerald",
     price: 25,
@@ -54,7 +54,7 @@ const books = [
     types: ["novel", "romantic", "all"]
   },
   {
-    id: "6",
+    id: "7",
     title: "Flowers for Algernon",
     author: "Daniel Keyes",
     price: 25,
@@ -63,7 +63,7 @@ const books = [
     types: ["science_fiction", "all"]
   },
   {
-    id: "7",
+    id: "8",
     title: "Proces",
     author: "Franz Kafka",
     price: 25,
@@ -72,7 +72,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "8",
+    id: "9",
     title: "Nieznośna lekkość bytu",
     author: "Milan Kundera",
     price: 25,
@@ -81,7 +81,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "9",
+    id: "10",
     title: "The Silence of the Lambs",
     author: "Thomas Harris",
     price: 25,
@@ -90,7 +90,7 @@ const books = [
     types: ["thriller", "all"]
   },
   {
-    id: "10",
+    id: "11",
     title: "Zbrodnia i Kara",
     author: "Fiodor Dostojewski",
     price: 25,
@@ -99,7 +99,7 @@ const books = [
     types: ["romantic", "novel", "all"]
   },
   {
-    id: "11",
+    id: "12",
     title: "Green Lantern",
     author: "Bill Finger, Martin Nodell",
     price: 25,
@@ -108,7 +108,7 @@ const books = [
     types: ["comic_book", "all"]
   },
   {
-    id: "12",
+    id: "13",
     title: "Batman",
     author: "Bob Kane, Bill Finger",
     price: 25,
@@ -117,7 +117,7 @@ const books = [
     types: ["children_literature", "comic_book", "all"]
   },
   {
-    id: "13",
+    id: "14",
     title: "Sto lat samotności",
     author: "Gabriel García Márquez",
     price: 25,
@@ -126,7 +126,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "14",
+    id: "15",
     title: "It",
     author: "Stephen King",
     price: 25,
@@ -135,7 +135,7 @@ const books = [
     types: ["horror", "all"]
   },
   {
-    id: "15",
+    id: "16",
     title: "Mały Książę",
     author: "Antoine de Saint-Exupéry",
     price: 25,
@@ -144,7 +144,7 @@ const books = [
     types: ["children_literature", "fantasy", "novel", "all"]
   },
   {
-    id: "16",
+    id: "17",
     title: "Folwark Zwierzęcy",
     author: "George Orwell",
     price: 25,
@@ -153,7 +153,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "17",
+    id: "18",
     title: "Podziemny krąg",
     author: "Chuck Palahniuk",
     price: 25,
@@ -162,7 +162,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "18",
+    id: "19",
     title: "Mechaniczna Pomarańcza",
     author: "Anthony Burgess",
     price: 25,
@@ -171,7 +171,7 @@ const books = [
     types: ["science_fiction", "fantasy", "thriller", "all"]
   },
   {
-    id: "19",
+    id: "20",
     title: "Dracula",
     author: "Bram Stoker",
     price: 25,
@@ -180,7 +180,7 @@ const books = [
     types: ["horror", "all"]
   },
   {
-    id: "20",
+    id: "21",
     title: "To Kill a Mockingbird",
     author: "Harper Lee",
     price: 25,
@@ -189,7 +189,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "21",
+    id: "22",
     title: "A Passage to India",
     author: "E.M. Foster",
     price: 25,
@@ -198,7 +198,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "22",
+    id: "23",
     title: "Don Quixote",
     author: "Miguel de Cervantes",
     price: 25,
@@ -207,7 +207,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "23",
+    id: "24",
     title: "Jane Eyre",
     author: "Charlotte Brontë",
     price: 25,
@@ -216,7 +216,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "24",
+    id: "25",
     title: "44 Scotland Street",
     author: "Alexander McCall Smith",
     price: 25,
@@ -225,7 +225,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "25",
+    id: "26",
     title: "1984",
     author: "George Orwell",
     price: 25,
@@ -234,7 +234,7 @@ const books = [
     types: ["novel", "all", "thriller"]
   },
   {
-    id: "26",
+    id: "27",
     title: "Heart of Darkness",
     author: "Joseph Conrad",
     price: 25,
@@ -243,7 +243,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "27",
+    id: "28",
     title: "Odyssey",
     author: "Homer",
     price: 25,
@@ -252,60 +252,7 @@ const books = [
     types: ["novel", "all"]
   },
   {
-    id: "28",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    price: 25,
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
     id: "29",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
-    id: "30",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    price: 25,
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
-    id: "31",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    price: 25,
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
-    id: "32",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    price: 25,
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
-    id: "33",
-    title: "44 Scotland Street",
-    author: "Alexander McCall Smith",
-    price: 25,
-    description: "Jonathan Harker, młody, naiwny prawnik, wyrusza w podróż do Transylwanii na spotkanie z hrabią Draculą, który przymierza się do przyjazdu do Anglii. Na miejscu wychodzi na jaw, że ekscentryczny arystokrata nie jest tym, kim się wydaje być, a jego plany mają krwawy, zbrodniczy wymiar.",
-    img: "https://cdn-lubimyczytac.pl/upload/books/72000/72398/352x500.jpg",
-    types: ["novel", "all"]
-  },
-  {
-    id: "34",
     title: "44 Scotland Street",
     author: "Alexander McCall Smith",
     price: 25,

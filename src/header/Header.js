@@ -17,7 +17,6 @@ function Header(props) {
 
   const onClickJoinButton = () => {
     props.setIsLogInPopUpOpen(true)
-    console.log(props)
   }
 
   const onClickNeedHelp = () => {
@@ -26,20 +25,16 @@ function Header(props) {
 
   useEffect(() => {
     const listener = (event) => {
-      // console.log(event.target.getBoundingClientRect())
       if(window.scrollY > 400 && isFixedHeader === false ) {
         setIsFixedHeader(true)
-        console.log("true")
       } 
       if(window.scrollY < 400 && isFixedHeader === true ) { 
         setIsFixedHeader(false)
-        console.log("false")
       }
     }
     document.addEventListener('scroll', listener );
     return () => {document.removeEventListener('scroll', listener)}
   }, [isFixedHeader])
-  console.log(location.pathname === "/checkout")
 
   return (
     <div className={(isFixedHeader === true || location.pathname === "/checkout" || location.pathname === "/faq" || location.pathname === "/order-summary") ? 'header-fixed' : 'header' } >

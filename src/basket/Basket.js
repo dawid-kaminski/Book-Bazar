@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import { useHistory, useLocation } from "react-router-dom";
+import BasketItem from './BasketItem';
+import AddVoucher from '../yourOrder/checkoutDeliveryPaymentOption/addVoucher/AddVoucher.js'
 import './Basket.css';
 import { useSelector } from "react-redux";
-import { getAllBooks } from "../BookData.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingBag, faTimesCircle, faPlus, faMinus, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingBag, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { getBookById } from '../BookData';
 
 function Basket() {
 
 	const cartStore = useSelector((state)=>state).cart
-
-	console.log(cartStore.list)
 
 	const cartAmount = cartStore.list.map(book=>book.amount)
 
@@ -32,18 +32,18 @@ function Basket() {
     history.push(`/checkout`)
   }
 
-	const ClosedBasket = ()=>{
+	const ClosedBasket = (props)=>{
 		return(
 			<div className="closed-basket">
-				<button className="basket" type="button" name="button" onClick={onClickOpenBasketButton}>
-					<div className="closed-basket-items-amount">
+				<button className="closed-basket__open--button" type="button" name="button" onClick={onClickOpenBasketButton}>
+					<div className="closed-basket__items-amount">
 						<FontAwesomeIcon icon={faShoppingBag} color="#ffffff"/>
-						<div className="books-amount-closed-basket">
+						<div className="closed-basket__books-amount">
 							{cartAmountSum} Items
 						</div>
 					</div>
-					<div className="closed-basket-price">
-						$
+					<div className="closed-basket__price">
+						${cartStoreTotalPrice}
 					</div>
 				</button>
 			</div>
@@ -53,69 +53,46 @@ function Basket() {
 	const OpenBasket = (props)=>{
 		return(
 			<div className="open-basket" >
-				<div className="open-basket-items-amount">
+				<div className="open-basket__items-amount">
 					<FontAwesomeIcon icon={faShoppingBag} color="#rgb(0, 158, 127)" size="2x"/>
-					<div className="books-amount-open-basket">{cartAmountSum} Item</div>
-					<button className="close-basket" onClick={onClickCloseBasketButton}>
+					<div className="open-basket__books-amount">
+						{cartAmountSum} Item
+					</div>
+					<button className="open-basket__close--button-top" onClick={onClickCloseBasketButton}>
 						<FontAwesomeIcon icon={faTimesCircle} color="#rgb(0, 158, 127)" size="2x"/>
 					</button>
 				</div>
-				<div className="open-basket-books-list">
-					<div className="open-basket-item">
-						<div className="open-basket-book-counter">
-							<button className="plus-counter">
-								<FontAwesomeIcon icon={faPlus} color="#rgb(119, 121, 140)"/>
-							</button>
-							<div className="book-count-state">
-
-							</div>
-							<button className="minus-counter">
-								<FontAwesomeIcon icon={faMinus} color="#rgb(119, 121, 140)"/>
-							</button>
-						</div>
-						<div className="book-picture">
-							
-						</div>
-						<div className="book-details">
-							<div className="book-name">
-
-							</div>
-							<div className="book-piece-price">
-								$60
-							</div>
-							<div className="">
-
-							</div>
-						</div>
-						<div className="book-total-price">
-							$60.00
-						</div>
-						<div className="book-cancelation">
-							<button className="close-basket" onClick={onClickCloseBasketButton}>
-								<FontAwesomeIcon icon={faTimes} size="1x"/>
-							</button>
-						</div>
-					</div>
+				<div className="open-basket__books-list">
+					{cartStore.list.map((book, index)=>{
+						return <BasketItem key={index} book={book}/>
+					})}
 				</div>
-				<div className="open-basket-voucher">
-					<button className="voucher">
-						Do you have a voucher?
-					</button>	
-				</div>
-				<div className="open-basket-checkout" onClick={onClickCheckoutPage}>
-					<div className="open-basket-checkout-typing">
-						Checkout
+				<div className="open-basket__checkout-and-voucher-positioning">
+					<div className="open-basket__voucher">
+						<AddVoucher/>
 					</div>
-					<div className="open-basket-checkout-price">
-						$60
+					<div className="open-basket__checkout" onClick={onClickCheckoutPage}>
+						<div className="open-basket__checkout-typing">
+							Checkout
+						</div>
+						<div className="open-basket__checkout-price">
+							${props.cartStoreTotalPrice}
+						</div>
 					</div>
 				</div>
 			</div>
 		)
 	}
 
+	const cartStoreTotalPriceArray = cartStore.list.map((book)=>{
+		const bookDetails = getBookById(book.id)
+		return bookDetails.price * book.amount
+	})
+
+	const cartStoreTotalPrice = cartStoreTotalPriceArray.length > 0 ? cartStoreTotalPriceArray.reduce((a, b)=> a + b) : 0
+
 	return(
-			isBasketPopUpOpen === true ? <OpenBasket/> : <ClosedBasket/>
+			isBasketPopUpOpen === true ? <OpenBasket cartStoreTotalPrice={cartStoreTotalPrice} /> : <ClosedBasket/>
 		)
 	}
 

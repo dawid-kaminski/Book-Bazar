@@ -9,13 +9,10 @@ import { useHistory, useLocation } from "react-router-dom";
 
 function CheckoutDeliveryPaymentOption(props) {
 
-  const location = useLocation()
-
   const history = useHistory()
 
   const onClickAddPaymentOption = () => {
 		props.setIsAddPaymentOptionOpen(true)
-		console.log(props)
 	}
 
   const onClickSummary = () => {

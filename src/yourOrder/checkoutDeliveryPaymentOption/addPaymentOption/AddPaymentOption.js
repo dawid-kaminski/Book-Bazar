@@ -7,27 +7,26 @@ function AddPaymentOption(props) {
   
   const onClickCloseAddPaymentOption = () => {
     props.setIsAddPaymentOptionOpen(false)
-    console.log(props)
   }
 
   return(
-    <div className="addpaymentoption">
-      <div className="addpaymentoption__close" onClick={onClickCloseAddPaymentOption}>
+    <div className="add-payment-option">
+      <div className="add-payment-option__close" onClick={onClickCloseAddPaymentOption}>
       	<FontAwesomeIcon icon={faTimesCircle} color="#ffffff" size="2x"/>
       </div>
-      <div className="addpaymentoption__form">
-        <div className="addpaymentoption__placing">
-          <div className="addpaymentoption__headline">
+      <div className="add-payment-option__form">
+        <div className="add-payment-option__placing">
+          <div className="add-payment-option__headline">
             Enter card info
           </div>
-          <div className="addpaymentoption-input">
+          <div className="add-payment-option--input">
             <FontAwesomeIcon icon={faCreditCard} />
-            <div className="addpaymentoption-input-placement">
+            <div className="add-payment-option--input-placement">
               <input type="text" id="credit-card-number" placeholder="Card Number"/>
               <input type="text" id="credit-card-validation-date" placeholder="MM/YY"/>
             </div>
           </div>
-          <div className="addpaymentoption__pay-button">
+          <div className="add-payment-option__pay--button">
             <button>
               Pay Now
             </button>

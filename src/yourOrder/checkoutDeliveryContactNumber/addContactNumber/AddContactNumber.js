@@ -9,7 +9,6 @@ function AddContactNumber(props) {
 
   const onClickOpenAddContactNumber = () => {
     props.setIsContactNumberOpen(false)
-    console.log(props)
   }
   const dispatch = useDispatch()
 

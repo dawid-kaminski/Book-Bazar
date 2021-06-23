@@ -8,11 +8,9 @@ function CheckoutDeliveryContactNumber(props) {
 
   const onClickAddContactNumber = () => {
     props.setIsContactNumberOpen(true)
-    console.log(props)
   }
 
   const numberStore = useSelector((state)=>state.number)
-  console.log(numberStore)
 
   const GetNumberItemRender = React.memo(({number}) => {
     return <AddContactNumberItem number={number} />  

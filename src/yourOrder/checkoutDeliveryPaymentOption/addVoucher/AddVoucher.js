@@ -5,13 +5,10 @@ import VoucherOpen from './VoucherOpen.js'
 
 function AddVoucher(props) {
 
-  console.log(props)
-
   const [isVoucherInputOpen, setIsVoucherInputOpen] = useState(false);
 	
   const voucherActivation = () => {
 		setIsVoucherInputOpen(!isVoucherInputOpen)
-		console.log("active")
 	}
 
   return(

@@ -8,12 +8,11 @@ const FaqListItem = (props)=>{
 
 	const toggleModal = () => {
 		setIsCustomerContactOpen(!isCustomerContactOpen)
-		console.log("modal")
 	}
 
 		return(
 			<div className="faq__customer-question-template" onClick={toggleModal}>
-				<div className="customer-contact-closed">
+				<div className="faq__customer-contact-closed">
 					<div className="faq__question-and-icon-positioning">
 						<div className="faq__customer-question-text-styling">
 							{props.headerText}

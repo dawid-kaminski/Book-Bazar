@@ -62,16 +62,7 @@
 	flex-direction: column;
 }
 
-.customer-contact-open {
-	height: 100%;
-	width: 100%;
-	margin: 0%;
-	padding: 0%;
-	display: flex;
-	align-items: center;
-}
-
-.customer-contact-closed {
+.faq__customer-contact-closed {
 	height: auto;
 	width: 100%;
 	margin: 0%;

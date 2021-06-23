@@ -7,8 +7,6 @@ const checkoutSlice = createSlice({
   },
   reducers: {
     saveAddress(state, action) {
-      console.log("add Address")
-      console.log(action.payload)
       const { title, address } = action.payload
       state.addresses.push({titleInput: title, addressInput: address})
     },

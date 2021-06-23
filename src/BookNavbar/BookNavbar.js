@@ -47,7 +47,7 @@ export function getAllData() {
 
 function BookNavbar() {
   return (
-    <div className="bookNavbar">
+    <div className="book-navbar">
     {
       data.map((genre)=>{
         return <BookGenre name={genre.name} value={genre.value}/>

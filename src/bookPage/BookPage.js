@@ -14,35 +14,14 @@ import {
 } from "react-router-dom";
 import { getBookById } from '../BookData.js';
 
-// function useState(defaultValue) {
-//   const value = defaultValue
-//   const set=(setValue)=>{
-//     value = setValue
-//   }
-//   return [value, set]
-// }
-
 function BookPage() {
 
   const dispatch = useDispatch()
   let { bookId } = useParams();
 
   const book = getBookById(bookId);
-  console.log(book)
-
-// let url = useParams()
-// console.log(url.bookId)
-// let bookId = url.bookId
 
   const [count, setCount] = useState(1)
-  
-// const count = useState(1)[0]
-// const setCount = useState(1)[1]
-
-// const useStateTable = useState(1)
-// const count = useStateTable[0]
-// const setCount = useState[1]
-// useState zwraca tablice, której zerowym elementem jest zmienna count, która będzie przechowywać naszą wartość (liczbę), a drugim elementem tej tablicy jest funkcja, która będzie zmieniać tą wartość.
 
   var onClickButtonLeft=()=>{
     if (count > 0) {
@@ -56,7 +35,6 @@ function BookPage() {
 
   const onClick = useCallback(
     () => {
-      console.log({bookId: book.id, bookAmount: count})
       dispatch(addBookToCart({bookId: book.id, bookAmount: count}));
     },
   [book.id, count, dispatch],
@@ -140,14 +118,14 @@ function BookPage() {
             <div className="book-page__info-price">
               {book.price}$
             </div>
-            <div className="book-page__info-button">
+            <div className="book-page__info--button">
               <div class="button">
               <button className="button-sign" onClick={onClickButtonLeft}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
               </button>{count}
               <button className="button-sign" onClick={onClickButtonRight}>+</button>
               </div>
-              <div className="book-page__info-add-button">
+              <div className="book-page__info-add--button">
                 <button type="button" onClick={onClick}>
                   Add to cart
                 </button>
@@ -163,23 +141,7 @@ function BookPage() {
         <div className="book-description">
           About The Book
           <div className="book-page__description">
-            Głównym bohaterem powieści jest Józef K., kawaler, prokurent
-            bankowy, mieszkający w nieznanym z nazwy mieście, określanym jako
-            „stolica”. Pewnego dnia budzi się w swoim mieszkaniu i zostaje
-            zaskoczony najściem urzędników, którzy oświadczają mu, że zostaje
-            aresztowany, mimo iż nic złego nie popełnił. Mimo aresztowania może
-            prowadzić normalne życie, musi jedynie pozostać do dyspozycji sądu.
-            Pomimo pozorów normalności w życiu K. następuje seria absurdalnych,
-            niezrozumiałych wydarzeń. Wiadomość o aresztowaniu dochodzi do
-            wszystkich znajomych Józefa, który staje się dla nich pariasem.
-            Na przesłuchaniach K. nieudolnie protestuje przeciwko osaczeniu go
-            przez władzę sądową, nie udaje mu się jednak zmienić tej sytuacji.
-            Wobec tego szuka pomocy u innych: żony woźnego sądowego (która
-            okazuje się prostytutką), wuja Karola, prawnika Hulda, malarza
-            sądowego Titorelliego, innego oskarżonego – Blocka, w końcu u
-            więziennego kapelana (który stara się naświetlić jego sytuację
-            poprzez przypowieść). Uzyskane przez niego informacje są jednak
-            niepełne i niespójne.
+            {book.description}
           </div>
         </div>
         <div className="book-page__about">
@@ -188,17 +150,10 @@ function BookPage() {
             <div className="feather-icon">
               <FontAwesomeIcon icon={faFeatherAlt} color="##0D1136" />
             </div>
-            Franz Kafka
+            {book.author}
           </div>
           <div className="book-page__author-description">
-             niemieckojęzyczny pisarz pochodzenia żydowskiego, przez całe życie
-             związany z Pragą. W swoich powieściach stworzył model sytuacji
-             zwanej sytuacją kafkowską i określanej w języku niemieckim za
-             pomocą przymiotnika „kafkaesk”, którego istotą jest konflikt
-             zniewolonej jednostki z anonimową, nadrzędną wobec niej instancją.
-             Deformacja groteskowa, niejednoznaczne, paraboliczne obrazy oraz
-             poczucie zagrożenia i niepewności składają się na panoramę
-             literackiego świata Kafki.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </div>
         </div>
         <div className="book-page__related">Related items

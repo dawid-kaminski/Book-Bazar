@@ -11,7 +11,6 @@ function BookGenre(props) {
   const history = useHistory()
 
   var onClickBook=()=>{
-    console.log(props.name)
     history.push(`/?genre=${props.value}`)
   }
 

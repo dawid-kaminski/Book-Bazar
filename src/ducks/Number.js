@@ -7,7 +7,6 @@ const numberSlice = createSlice({
   },
   reducers: {
     saveNumber(state, action) {
-     console.log("add number")
      const number = action.payload
      state.numbers.push({numberInput: number})
     },
