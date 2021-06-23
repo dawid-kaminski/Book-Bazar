@@ -34,9 +34,7 @@
 <a name="images"></a>
 ### Gifs of the Project
 &nbsp;
-![](images/gif1.gif)
-![](images/2.PNG)
-![](images/3.PNG)
+![](images/presentation.gif)
 &nbsp;
 
 <a name="installation"></a>
