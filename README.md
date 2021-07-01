@@ -4,7 +4,7 @@
 # Table of contents
 1. [What is this repository about](#introduction)
 2. [Tools and external libraries used for the project](#tools)
-3. [Images of the project](#images)
+3. [Presentation of the project](#Presentation)
 4. [How to view the project](#installation)
 5. [Contact](#Contact)
 6. [License](#License)
