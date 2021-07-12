@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todos from './Todos'
+import todos from './todos'
 import booklist from './booklist'
-import cart from './Cart'
+import cart from './cart'
 import checkout from './Checkout'
 import number from './Number'
 import thunk from 'redux-thunk';

@@ -50,7 +50,7 @@ const books = [
     author: "F. Scott Fitzgerald",
     price: 25,
     description: "Nick Carraway, absolwent Uniwersytetu Yale’a, który walczył w I wojnie światowej, wraca do domu z zamiarem rozpoczęcia kariery. Zniecierpliwiony przenosi się do Nowego Jorku. Powieść zaczyna się wczesnym latem 1922 w fikcyjnym miasteczku West Egg na Long Island, gdzie Nick wynajmuje mieszkanie. W posiadłości obok mieszka Gatsby. Tom i Daisy Buchananowie mieszkają nad zatoką w bardziej prestiżowej miejscowości, East Egg. Daisy jest kuzynką Nicka, a Tom był w tej samej społeczności na Uniwersytecie Yale’a. Zapraszają Nicka na obiad do swojej rezydencji, gdzie poznaje on młodą kobietę, Jordan Baker, z którą Daisy chce go umówić na randkę.",
-    img: "https://ecsmedia.pl/c/wielki-gatsby-w-iext41765483.jpg",
+    img: "https://ecsmedia.pl/c/wielki-gatsby-b-iext58711294.jpg",
     types: ["novel", "romantic", "all"]
   },
   {

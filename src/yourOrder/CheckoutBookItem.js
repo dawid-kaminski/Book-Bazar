@@ -1,6 +1,6 @@
 import React from 'react';
 import './CheckoutBookItem.css';
-import { getBookById } from "../BookData.js";
+import { getBookById } from "../bookData.js";
 
 function CheckoutBookItem(props) {
 

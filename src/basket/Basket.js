@@ -6,7 +6,7 @@ import './Basket.css';
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
-import { getBookById } from '../BookData';
+import { getBookById } from '../bookData';
 
 function Basket() {
 

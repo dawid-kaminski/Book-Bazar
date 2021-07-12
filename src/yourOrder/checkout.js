@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Checkout.css';
+import './checkout.css';
 import { useSelector } from "react-redux";
 import CheckoutDeliveryAddress from './checkoutDeliveryAddress/CheckoutDeliveryAddress.js'
 import CheckoutDeliverySchedule from './checkoutDeliverySchedule/CheckoutDeliverySchedule';
@@ -9,9 +9,9 @@ import AddAddress from './checkoutDeliveryAddress/addAddress/AddAddress.js'
 import AddContactNumber from './checkoutDeliveryContactNumber/addContactNumber/AddContactNumber.js'
 import AddPaymentOption from './checkoutDeliveryPaymentOption/addPaymentOption/AddPaymentOption'
 import OrderSummary from '../orderSummary/OrderSummary.js'
-import cart from '../ducks/Cart';
-import { getAllBooks } from "../BookData.js";
-import { getBookById } from '../BookData.js';
+import cart from '../ducks/cart';
+import { getAllBooks } from "../bookData.js";
+import { getBookById } from '../bookData.js';
 import CheckoutBookItem from './CheckoutBookItem.js'
 import {
   BrowserRouter as Router,

@@ -2,7 +2,7 @@ import React, {useState, useCallback} from 'react';
 import './BookPage.css';
 import Header from '../header/Header.js';
 import BookList from '../bookList/BookList.js'
-import { addBookToCart } from '../ducks/Cart'
+import { addBookToCart } from '../ducks/cart'
 import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons'
@@ -12,7 +12,7 @@ import {
   Route,
   useParams
 } from "react-router-dom";
-import { getBookById } from '../BookData.js';
+import { getBookById } from '../bookData.js';
 
 function BookPage() {
 

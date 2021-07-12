@@ -1,8 +1,8 @@
 import React, {useCallback} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faMinus, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { getBookById } from "../BookData.js";
-import { addBookToCart, removeBookFromCart } from "../ducks/Cart.js"
+import { getBookById } from "../bookData.js";
+import { addBookToCart, removeBookFromCart } from "../ducks/cart.js"
 import { useDispatch } from "react-redux";
 
 function BasketItem(props) {
