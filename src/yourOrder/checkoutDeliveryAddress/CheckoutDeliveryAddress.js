@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddAddress from './addAddress/AddAddress.js';
 import AddAddressItem from './addAddress/AddAddressItem.js';
 import { useSelector } from "react-redux";
-import { saveAddress } from "../../ducks/Checkout.js"
+import { saveAddress } from "../../ducks/checkout.js"
 import './CheckoutDeliveryAddress.css';
 
 function CheckoutDeliveryAddress(props) {
