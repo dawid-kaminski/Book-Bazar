@@ -1,7 +1,7 @@
 .book-page {
-  height: 100%;
+  height: calc(100% - 80px);
   width: 100%;
-  display: flex;;
+  display: flex;
   flex-direction: column;
   background-color: #ffffff;
   overflow-x: hidden;
@@ -11,28 +11,28 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;;
+  display: flex;
   flex-direction: column;
   background-color: inherit;
 }
 
 .book-page__picture-info {
-  width: 100%;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;;
+  display: flex;
   flex-direction: row;
   background-color: inherit;
 }
 
 .book-page__picture {
-  width: 50%;
   height: 100%;
+  width: 50%;
   padding: 55px 60px;
   margin: 0;
   border-right: 1px solid rgb(241, 241, 241);
-  display: flex;;
+  display: flex;
   flex-direction: column;
   background-color: inherit;
 }
@@ -74,17 +74,13 @@
   align-items: center;
 }
 
-.book-page__picture-styling img {
-
-}
-
 .book-page__info {
-  width: 50%;
   height: 100%;
+  width: 50%;
   border-left: 1px solid rgb(241, 241, 241);
   margin: 0;
   padding: 55px 60px;
-  display: flex;;
+  display: flex;
   flex-direction: column;
   background-color: inherit;
 }
@@ -131,6 +127,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .book-page__description a {
   color: #009e7f;
   font-weight: 700;
@@ -171,27 +168,27 @@
 }
 
 .book-page__info-price {
+  margin: 0px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   box-sizing: border-box;
-  margin: 0px;
   font-family: Lato, sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: rgb(0, 158, 127);
 }
 
-.book-page__info--button {
-  width: 100%;
+.book-page__info-button {
   height: 66px;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .button {
-  width: 104px;
   height: 36px;
+  width: 104px;
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -206,7 +203,6 @@
   align-items: center;
   overflow: hidden;
   flex-shrink: 0;
-
 }
 
 .button-sign {
@@ -230,8 +226,8 @@
 }
 
 .book-page__info-add--button {
-  width: 104px;
   height: 36px;
+  width: 104px;
   margin: 30px 0px 0px 50px;
   display: flex;
   flex-direction: row;
@@ -259,6 +255,7 @@ button {
 }
 
 .book-page__info-category {
+  height: 30px;
   width: 5%;
   padding: 0px 15px;
   margin-top: 60px;
@@ -269,7 +266,6 @@ button {
   background-color: rgb(247, 247, 247);
   border-radius: 6px;
   cursor: pointer;
-  height: 30px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -358,6 +354,6 @@ button {
   line-height: 1.2;
 }
 
-.book-page__related-books{
+.book-page__related-books {
   border-radius: 6px 0px 0px 6px;
 }

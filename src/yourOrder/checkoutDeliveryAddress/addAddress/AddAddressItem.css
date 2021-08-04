@@ -1,8 +1,8 @@
 .checkout__address {
+  max-width: calc(33.3333% - 10px);
   padding: 15px;
   margin-right: 15px;
   flex: 1 1 calc(33.3333% - 10px);
-  max-width: calc(33.3333% - 10px);
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
@@ -32,15 +32,11 @@
   align-items: flex-start;
 }
 
-.delivery-address-passage {
-
-}
-
 .checkout__delivery-office-address {
+  max-width: calc(33.3333% - 10px);
   padding: 15px;
   margin-top: 0px;
   flex: 1 1 calc(33.3333% - 10px);
-  max-width: calc(33.3333% - 10px);
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;

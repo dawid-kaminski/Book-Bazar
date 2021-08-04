@@ -24,14 +24,13 @@
 }
 
 .addcontactnumber__form {
+  height: auto;
   max-height: 506px;
   width: 360px;
-  height: auto;
   margin: 0;
   position: absolute;
   background-color: rgb(247, 248, 249);
   display: flex;
-
 }
 .addcontactnumber__placing {
   height: auto;
@@ -62,8 +61,8 @@
 }
 
 .addcontactnumber__input input {
-  width: 100%;
   height: 54px;
+  width: 100%;
   padding: 0px 18px;
   border-radius: 6px;
   font-family: Lato, sans-serif;
@@ -76,13 +75,13 @@
 }
 
 .addcontactnumber__button {
-  width: 100%;
   height: 44px;
+  width: 100%;
 }
 
 .addcontactnumber__button button {
-  width: 100%;
   height: 44px;
+  width: 100%;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;

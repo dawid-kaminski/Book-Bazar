@@ -3,7 +3,7 @@ import './AddContactNumber.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from "react-redux";
-import { saveNumber } from "../../../ducks/Number.js"
+import { saveNumber } from "../../../ducks/number.js"
 
 function AddContactNumber(props) {
 

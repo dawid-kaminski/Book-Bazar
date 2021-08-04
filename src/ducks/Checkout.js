@@ -1,18 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const checkoutSlice = createSlice({
-  name: 'checkout',
+  name: "checkout",
   initialState: {
     addresses: [],
   },
   reducers: {
     saveAddress(state, action) {
-      const { title, address } = action.payload
-      state.addresses.push({titleInput: title, addressInput: address})
+      const { title, address } = action.payload;
+      state.addresses.push({ titleInput: title, addressInput: address });
     },
-  }
-})
+  },
+});
 
-export const { saveAddress } = checkoutSlice.actions
+export const { saveAddress } = checkoutSlice.actions;
 
-export default checkoutSlice.reducer
+export default checkoutSlice.reducer;

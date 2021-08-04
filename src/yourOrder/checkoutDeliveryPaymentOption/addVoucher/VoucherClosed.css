@@ -1,7 +1,3 @@
-.addvoucher {
-
-}
-
 .addvoucher__delivery-payment-voucher {
   display: flex;
   flex-direction: column;
@@ -20,4 +16,10 @@
   background-color: rgb(255, 255, 255);
   color: rgb(0, 158, 127);
   font-weight: normal;
+}
+
+@media screen and (max-width: 576px) {
+  .addvoucher__delivery-payment-voucher {
+    align-items: center;
+  }
 }

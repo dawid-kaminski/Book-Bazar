@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import AddContactNumberItem from './addContactNumber/AddContactNumberItem';
 import { useSelector } from "react-redux";
 import './CheckoutDeliveryContactNumber.css';
-import { saveNumber } from "../../ducks/Number.js"
+import { saveNumber } from "../../ducks/number.js"
 
 function CheckoutDeliveryContactNumber(props) {
 

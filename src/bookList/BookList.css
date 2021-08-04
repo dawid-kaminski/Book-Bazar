@@ -13,7 +13,7 @@
   min-height: 540px;
   max-height: 100vh;
   background-color: rgb(250, 250, 250);
-  display: flex;;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
@@ -30,7 +30,8 @@
   align-items: center;
 }
 
-.book-list__load-more--button button {
+.book-list__load-more-button button {
+  height: 38px;
   font-size: 14px;
   padding: 0px 15px;
   font-weight: 700;
@@ -45,10 +46,9 @@
   justify-content: center;
   flex-shrink: 0;
   text-align: center;
-  height: 38px;
   text-decoration: none;
   font-family: inherit;
   color: rgb(0, 158, 127);
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(241, 241, 241)
+  border: 1px solid rgb(241, 241, 241);
 }

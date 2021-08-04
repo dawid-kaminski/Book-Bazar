@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -78,11 +79,11 @@ html, body {
 }
 
 .checkout__delivery-payment-voucher {
+  width: 100%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  margin-top: 50px;
   font-family: Lato, sans-serif;
   font-weight: 0;
   font-size: 15px;
@@ -125,10 +126,6 @@ html, body {
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 40px;
-}
-
-.checkout__basket-products {
-
 }
 
 .checkout__basket-price {

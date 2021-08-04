@@ -1,6 +1,6 @@
 .navbar {
-  width: 100%;
   height: calc(100vh - 80px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-image: url("https://shop.redq.now.sh/_next/static/images/books-f5200ba7535257ce70a563fc9ff56f35.png");
@@ -9,8 +9,8 @@
 }
 
 .navbar__banner {
-  width: 100%;
   height: 37.5%;
+  width: 100%;
   margin-bottom: 20px;
   display: flex;
   align-items: flex-end;
@@ -44,13 +44,13 @@
 .navbar__search-bar {
   height: 48%;
   min-height: 50px;
+  width: 700px;
   display: flex;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
   border-radius: 6px;
   overflow: hidden;
-  width: 700px;
   color: rgb(119, 121, 140);
   background-color: rgb(255, 255, 255);
   border-width: 0px;
@@ -61,6 +61,7 @@
 
 .navbar__book-sign_green {
   width: 5%;
+  margin: 5px;
   font-size: 14px;
   font-weight: 640;
   line-height: 38px;
@@ -69,7 +70,6 @@
   color: rgb(0, 158, 127);
   background-color: rgb(247, 247, 247);
   border-radius: 6px;
-  margin: 5px;
   white-space: nowrap;
   text-transform: capitalize;
 }
@@ -105,4 +105,66 @@
 
 .navbar__search-icon {
   padding-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: calc(30% - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .navbar__banner {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(13, 17, 54);
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .navbar__book-sign_green {
+    display: none;
+  }
+
+  .navbar__banner-description {
+    display: none;
+  }
+
+  .navbar__search-bar-container {
+    height: 60%;
+    width: calc(100% - 40px);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .navbar__search {
+    height: 100%;
+    width: 20%;
+    padding: 0px;
+    background-color: rgb(0, 158, 127);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+  }
+
+  .navbar__search-icon {
+    padding-right: 5px;
+  }
 }

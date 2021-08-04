@@ -1,6 +1,6 @@
-import React from 'react';
-import './BookNavbar.css';
-import BookGenre from './BookGenre/BookGenre.js';
+import React from "react";
+import "./BookNavbar.css";
+import BookGenre from "./BookGenre/BookGenre.js";
 
 const data = [
   {
@@ -13,33 +13,33 @@ const data = [
   },
   {
     value: "comic_book",
-    name: "Comic Book"
+    name: "Comic Book",
   },
   {
     value: "fantasy",
-    name: "Fantasy"
+    name: "Fantasy",
   },
   {
     value: "horror",
-    name: "Horror"
+    name: "Horror",
   },
   {
     value: "novel",
-    name: "Novel"
+    name: "Novel",
   },
   {
     value: "romantic",
-    name: "Romantic"
+    name: "Romantic",
   },
   {
     value: "science_fiction",
-    name: "Science Fiction"
+    name: "Science Fiction",
   },
   {
     value: "thriller",
-    name: "Thriller"
+    name: "Thriller",
   },
-]
+];
 
 export function getAllData() {
   return data;
@@ -48,11 +48,9 @@ export function getAllData() {
 function BookNavbar() {
   return (
     <div className="book-navbar">
-    {
-      data.map((genre)=>{
-        return <BookGenre name={genre.name} value={genre.value}/>
-      })
-    }
+      {data.map((genre) => {
+        return <BookGenre name={genre.name} value={genre.value} />;
+      })}
     </div>
   );
 }

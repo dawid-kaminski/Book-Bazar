@@ -7,11 +7,12 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(241, 241, 241);
 }
 
-.article__button-container--left {
+.article__button-container-left {
   height: 40px;
   width: 50px;
   display: flex;
@@ -40,7 +41,7 @@
   outline: none;
 }
 
-.article__button-container--right {
+.article__button-container-right {
   height: 40px;
   width: 50px;
   display: flex;
@@ -79,4 +80,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media screen and (max-width: 576px) {
 }

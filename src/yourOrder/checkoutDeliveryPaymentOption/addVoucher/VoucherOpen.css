@@ -41,3 +41,15 @@
   border: 0px;
   padding: 0px 30px;
 }
+
+@media screen and (max-width: 576px) {
+  .addvoucher__open-voucher {
+    height: auto;
+    width: 80%;
+    padding: 0%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
