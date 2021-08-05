@@ -20,7 +20,7 @@ function BookList() {
 
   const onClick = useCallback(() => {
     dispatch(loadMoreBooks({ amount: 10 }));
-  }, []);
+  }, [dispatch]);
 
   const GetAllBooksRender = React.memo(({ title, img, id, author }) => {
     return (
@@ -43,13 +43,14 @@ function BookList() {
             }
             return book.types.includes(genre);
           })
-          .map((book) => {
+          .map((book, index) => {
             return (
               <GetAllBooksRender
                 title={book.title}
                 author={book.author}
                 id={book.id}
                 img={book.img}
+                key={index}
               />
             );
           })}

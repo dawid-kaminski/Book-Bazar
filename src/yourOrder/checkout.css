@@ -10,7 +10,6 @@ body {
   padding-top: 80px;
   background-color: white;
   display: flex;
-  overflow-y: scroll;
 }
 
 .checkout__positioning {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import AddContactNumberItem from "./addContactNumber/AddContactNumberItem";
 import { useSelector } from "react-redux";
 import "./CheckoutDeliveryContactNumber.css";
-import { saveNumber } from "../../ducks/number.js";
 
 function CheckoutDeliveryContactNumber(props) {
   const onClickAddContactNumber = () => {

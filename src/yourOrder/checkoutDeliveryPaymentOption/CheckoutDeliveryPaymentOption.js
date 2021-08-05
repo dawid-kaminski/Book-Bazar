@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./CheckoutDeliveryPaymentOption.css";
-import AddPaymentOptionItem from "./addPaymentOption/AddPaymentOptionItem";
 import AddVoucher from "./addVoucher/AddVoucher.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +7,6 @@ import {
   faCcVisa,
   faPaypal,
 } from "@fortawesome/free-brands-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useHistory } from "react-router-dom";
 
 function CheckoutDeliveryPaymentOption(props) {

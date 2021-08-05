@@ -1,4 +1,3 @@
-import { configureStore } from "@reduxjs/toolkit";
 import booklist from "./booklist";
 import cart from "./cart";
 import checkout from "./checkout";

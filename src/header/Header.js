@@ -10,7 +10,6 @@ import {
   faAngleDown,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
-import LogInPopUp from "../logInPopUp/LogInPopUp.js";
 
 function Header(props) {
   const location = useLocation();
@@ -56,7 +55,7 @@ function Header(props) {
       }
     >
       <div className="header__pickbazarlogo" onClick={onClickMainPage}>
-        <img src={Logo} />
+        <img src={Logo} alt="" />
       </div>
       <div className="header__left-menu">
         <div className="header__choice-placeholder">
@@ -81,7 +80,7 @@ function Header(props) {
             <div className="header__search-bar">
               <div className="header__search-icon-placeholder">
                 <div className="header__search-icon">
-                  <FontAwesomeIcon icon={faSearch} color="black" size="1.2x" />
+                  <FontAwesomeIcon icon={faSearch} color="black" size="1x" />
                 </div>
               </div>
               <input

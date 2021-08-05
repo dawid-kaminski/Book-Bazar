@@ -4,8 +4,8 @@ import Card from "./CouponSavings.png";
 
 function CouponSavings() {
   return (
-    <div class="article__coupon-content">
-      <img src={Card} />
+    <div className="article__coupon-content">
+      <img src={Card} alt="" />
     </div>
   );
 }

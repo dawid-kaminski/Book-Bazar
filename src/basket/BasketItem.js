@@ -27,7 +27,7 @@ function BasketItem(props) {
         bookAmount: props.book.amount,
       })
     );
-  }, [props.book.id, dispatch]);
+  }, [props.book.id, props.book.amount, dispatch]);
 
   return (
     <div className="open-basket__item">

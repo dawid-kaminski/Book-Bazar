@@ -8,7 +8,7 @@ const booklistSlice = createSlice({
   },
   reducers: {
     loadMoreBooks(state, action) {
-      const { amount } = action.payload;
+      // const { amount } = action.payload;
       // const amount = action.payload.amount
       const nextTenBooks = getAllBooks().slice(11, 21);
       state.list = [...state.list, ...nextTenBooks];

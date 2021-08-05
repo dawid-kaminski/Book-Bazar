@@ -48,8 +48,8 @@ export function getAllData() {
 function BookNavbar() {
   return (
     <div className="book-navbar">
-      {data.map((genre) => {
-        return <BookGenre name={genre.name} value={genre.value} />;
+      {data.map((genre, index) => {
+        return <BookGenre name={genre.name} value={genre.value} key={index} />;
       })}
     </div>
   );

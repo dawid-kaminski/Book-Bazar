@@ -5,7 +5,7 @@ import { addBookToCart } from "../ducks/cart";
 import { useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter as Router, useParams } from "react-router-dom";
+import { BrowserRouter as useParams } from "react-router-dom";
 import { getBookById } from "../bookData.js";
 
 function BookPage() {
@@ -44,7 +44,7 @@ function BookPage() {
               </button>
             </div>
             <div className="book-page__picture-styling">
-              <img src={book.img} height="450px" width="300px" />
+              <img src={book.img} height="450px" width="300px" alt="" />
             </div>
           </div>
           <div className="book-page__info">

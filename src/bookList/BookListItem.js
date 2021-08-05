@@ -12,7 +12,7 @@ function BookListItem(props) {
   return (
     <div className="book-list-item" onClick={onClickBook}>
       <div className="book-list-item__img">
-        <img src={props.img} height="180px" width="140px" />
+        <img src={props.img} height="180px" width="140px" alt="" />
       </div>
       <div className="book-list-item__book">
         <div className="book-list-item__book-title">{props.title}</div>
