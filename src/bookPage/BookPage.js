@@ -5,7 +5,7 @@ import { addBookToCart } from "../ducks/cart";
 import { useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter as useParams } from "react-router-dom";
+import { BrowserRouter as Router, useParams } from "react-router-dom";
 import { getBookById } from "../bookData.js";
 
 function BookPage() {
