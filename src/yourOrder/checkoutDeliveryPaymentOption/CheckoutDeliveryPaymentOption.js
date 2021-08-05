@@ -9,7 +9,7 @@ import {
   faPaypal,
 } from "@fortawesome/free-brands-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function CheckoutDeliveryPaymentOption(props) {
   const history = useHistory();

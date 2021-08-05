@@ -343,20 +343,20 @@
   color: rgb(0, 158, 127);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .open-basket {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0px;
-    position: absolute;
-    z-index: 999;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(0 0 0 / 16%) 0px 21px 36px;
+    width: 40%;
   }
 
   .open-basket__items-amount {
     width: calc(100% - 50px);
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .open-basket {
+    width: 100%;
+    position: absolute;
   }
 }

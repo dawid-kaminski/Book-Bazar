@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import BasketItem from "./BasketItem";
 import AddVoucher from "../yourOrder/checkoutDeliveryPaymentOption/addVoucher/AddVoucher.js";
 import "./Basket.css";
@@ -22,12 +22,12 @@ function Basket() {
   const [isBasketPopUpOpen, setIsBasketPopUpOpen] = useState(false);
 
   const [isMobileViewOpen, setIsMobileViewOpen] = useState(
-    window.innerWidth <= 992
+    window.innerWidth <= 576
   );
 
   useEffect(() => {
     const listener = (event) => {
-      setIsMobileViewOpen(window.innerWidth <= 992);
+      setIsMobileViewOpen(window.innerWidth <= 576);
     };
     window.addEventListener("resize", listener);
     return () => {

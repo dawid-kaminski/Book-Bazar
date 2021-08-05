@@ -1,9 +1,8 @@
 import React from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./OrderSummary.css";
 
 function OrderSummary() {
-  const location = useLocation();
   const history = useHistory();
   const onClickBackHome = () => {
     history.push(``);

@@ -4,3 +4,16 @@
   padding-top: 35px;
   background-color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 768px) {
+  .book-navbar {
+    width: 30%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .book-navbar {
+    width: 100%;
+  }
+}

@@ -283,3 +283,56 @@ input:focus {
   color: rgb(119, 121, 140);
   background-color: rgb(247, 247, 247);
 }
+
+@media screen and (max-width: 992px) {
+  .loginpopup__form {
+    height: 85%;
+    width: 70%;
+    border-radius: 5px;
+  }
+
+  .button-continue {
+    width: 70%;
+  }
+
+  .button-fb {
+    width: 70%;
+  }
+
+  .button-google {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-continue {
+    width: 72%;
+  }
+
+  .button-fb {
+    width: 72%;
+  }
+
+  .button-google {
+    width: 72%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .loginpopup__form {
+    height: 70%;
+    width: 85%;
+  }
+
+  .button-continue {
+    width: 76%;
+  }
+
+  .button-fb {
+    width: 76%;
+  }
+
+  .button-google {
+    width: 76%;
+  }
+}

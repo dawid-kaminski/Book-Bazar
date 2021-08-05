@@ -17,3 +17,13 @@
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 576px) {
+  .app__body {
+    height: fit-content;
+  }
+
+  .app__book-list {
+    flex-direction: column;
+  }
+}
