@@ -354,6 +354,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .open-basket__book-details {
+    margin: 0px;
+  }
+
+  .open-basket__book-title {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .open-basket {
     width: 100%;
