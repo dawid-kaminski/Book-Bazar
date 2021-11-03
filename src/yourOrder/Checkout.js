@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./checkout.css";
+import "./Checkout.css";
 import { useSelector } from "react-redux";
 import CheckoutDeliveryAddress from "./checkoutDeliveryAddress/CheckoutDeliveryAddress.js";
 import CheckoutDeliverySchedule from "./checkoutDeliverySchedule/CheckoutDeliverySchedule";
