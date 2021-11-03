@@ -26,42 +26,42 @@
 .addaddress__form {
   height: calc(55% - 60px);
   width: calc(23.5% - 60px);
-	padding: 30px 30px 10px 30px;
-	background-color: rgb(247, 248, 249);
+  padding: 30px 30px 10px 30px;
+  background-color: rgb(247, 248, 249);
   opacity: initial;
   display: flex;
   z-index: 999;
-	display: flex;
+  display: flex;
   flex-direction: column;
   overflow: auto;
   border-radius: 3px 3px 0px 0px;
 }
 
 .addaddress__headline {
-	font-family: sans-serif;
+  font-family: sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: rgb(13, 17, 54);
   margin-bottom: 15px;
-	text-align: left;
+  text-align: left;
 }
 
 .addaddress__title {
-	width: 100%;
-	margin-bottom: 15px;
-	display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
 }
 
 input {
-	margin: 0;
+  margin: 0;
 }
 
 .addaddress__title-input {
-	height: 48px;
-	width: 100%;
-	padding: 0px 18px;
-	margin: 0;
-	display: block;
+  height: 48px;
+  width: 100%;
+  padding: 0px 18px;
+  margin: 0;
+  display: block;
   appearance: none;
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -76,16 +76,16 @@ input {
 .addaddress__address {
   height: auto;
   min-height: 171px;
-	width: 100%;
-	display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .addaddress__address-textarea {
   width: 100%;
   padding: 15px 18px 0px 18px;
   resize: none;
-	display: flex;
-	align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
   appearance: none;
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -97,9 +97,9 @@ input {
 }
 
 .button-save-address {
-	height: 44px;
-	width: 100%;
-	margin-top: 15px;
+  height: 44px;
+  width: 100%;
+  margin-top: 15px;
   padding: 0%;
   font-size: 15px;
   font-weight: 700;

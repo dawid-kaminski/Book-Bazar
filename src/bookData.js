@@ -16,7 +16,7 @@ const books = [
     price: 25,
     description:
       "Wszystkie trzy części opowiadają o Wojnie o Pierścień z mitologii Śródziemia oraz o związanej z nią wędrówce hobbita Froda Bagginsa do Mordoru, opisanych w powieści Władca Pierścieni J.R.R. Tolkiena. Frodo musi zniszczyć tytułowy Pierścień, a dokonać tego można tylko w Szczelinach Zagłady. W tym samym czasie Władca Ciemności, Sauron, rozpętuje wojnę, pragnąc odzyskać Pierścień – przedmiot, którego brakuje mu, by stać się niepokonanym.",
-    img: "https://ecsmedia.pl/c/wladca-pierscieni-druzyna-pierscienia-dwie-wieze-powrot-krola-w-iext66694333.jpg",
+    img: "https://ecsmedia.pl/c/wladca-pierscieni-druzyna-pierscienia-dwie-wieze-powrot-krola-w-iext85837949.jpg",
     types: ["novel", "fantasy", "all"],
   },
   {
@@ -86,7 +86,7 @@ const books = [
     price: 25,
     description:
       "To przypadek decyduje, że zakochujemy się właśnie w tej, a nie w innej osobie. Przypadek decyduje również o tym, czym zajmujemy się przez całe życie, kim jesteśmy, z jakimi ludźmi się stykamy. A w państwie totalitarnym czynnik losowy staje się tym bardziej paradoksalny, im bardziej wszechwładny ustrój stara się go wyeliminować i narzucić obywatelom sztuczne ograniczenia.",
-    img: "https://ecsmedia.pl/c/nieznosna-lekkosc-bytu-b-iext43789567.jpg",
+    img: "https://ecsmedia.pl/c/nieznosna-lekkosc-bytu-w-iext82806351.jpg",
     types: ["novel", "all"],
   },
   {
