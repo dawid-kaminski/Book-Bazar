@@ -15,7 +15,7 @@ code {
 }
 
 #root {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
